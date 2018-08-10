@@ -1,4 +1,4 @@
- with open("words_data.txt", 'r') as f:
+with open("words_data.txt", 'r') as f:
     word_list = f.read().lower().split('\n')
     word_list.sort()
 
