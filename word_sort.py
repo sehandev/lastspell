@@ -25,7 +25,7 @@ def new_words():
             f.write(t+'\n')
             
 def make_tf_data():
-    with open("words_data.txt", 'r') as f:
+    with open("./words_data.txt", 'r') as f:
         word_list = f.read().split('\n')
         # word_list : ["able$에이블$o", "about$어바웃$o", ...]
     
@@ -33,7 +33,6 @@ def make_tf_data():
     syllable_check = []
     for t in word_list:
         # t : administration$어드미니스트래이션$o
-        
         last5.append(t.split('$')[0])
         
         cy = t.split('$')[2]
@@ -44,12 +43,16 @@ def make_tf_data():
             
     # last5 : ["able", "about", ...]
     # syllable_check : [1, 1, ...]
+    r_last5 = []
     for t in last5:
         # t : "able"
         t = t[::-1]
+        if len(t) > 7:
+            t = t[:7]
         while len(t) < 7:
-            t += ' '
-        print(t + '$')
-            
-            
-make_tf_data()
+            t += '$'
+        r_last5.append(t)
+    
+#     print('last5 length: ' + str(len(r_last5)))
+#     print('syllable_check length: ' + str(len(syllable_check)))
+    return r_last5, syllable_check, len(last5)

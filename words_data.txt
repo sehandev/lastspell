@@ -134,7 +134,7 @@ cash$캐쉬$x
 casual$캐쥬얼$o
 cause$커스$x
 cave$케이브$x
-cell$셀$
+cell$셀$o
 center$센터$x
 central$센트랄$o
 chair$체어$x
