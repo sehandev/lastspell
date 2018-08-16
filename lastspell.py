@@ -75,8 +75,6 @@ with tf.Session() as sess:
 
 
     prediction = tf.cast(tf.argmax(model, 1), tf.int32)
-    print('prediction: ' + str(prediction))
-    print('Y: ' + str(Y))
     prediction_check = tf.equal(prediction, Y)
     accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
 
