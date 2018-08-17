@@ -1,5 +1,6 @@
 import tensorflow as tf
 import numpy as np
+import random
 
 import word_sort
 
@@ -7,6 +8,9 @@ import word_sort
 last5, syll_check, count_word = word_sort.make_tf_data()
 # last5 : ["elba$$$", "tuoba$$", ...]
 # syll_check : [1, 1, ...]
+
+#syll_check = [random.randint(0, 1) for _ in range(count_word)]
+#print(syll_check)
     
 eng = ['$', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 dic_eng = {n: i for i, n in enumerate(eng)}
@@ -22,21 +26,22 @@ for t in last5:
     
     
 # Set options
-learning_rate = 0.05
-n_hidden = 128
-total_epoch = 1000
-n_step = len(last5[0])  # 7
+learning_rate = 0.01  # ?
+n_hidden = 128  # hidden layer's depth?
+total_epoch = 400
+n_step = len(last5[0])  # input length
+# len(last5[0]) : 7
 
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False
 
 
 # Modeling RNN
-X = tf.placeholder(tf.float32, [None, n_step, n_input])
-Y = tf.placeholder(tf.int32, [None])
+X = tf.placeholder(tf.float32, [None, n_step, n_input])  # X : input layer
+Y = tf.placeholder(tf.int32, [None])  # Y : ?
 
-W = tf.Variable(tf.random_normal([n_hidden, n_class]))
-b = tf.Variable(tf.random_normal([n_class]))
+W = tf.Variable(tf.random_normal([n_hidden, n_class]))  # W : weight
+b = tf.Variable(tf.random_normal([n_class]))  # B : bias
 
 
 # RNN cell
@@ -62,23 +67,24 @@ cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=mode
 optimizer = tf.train.AdamOptimizer(learning_rate).minimize(cost)
 
 
-with tf.Session() as sess:
-    sess.run(tf.global_variables_initializer())
+re = 1
+acc = 0
+for i in range(re):
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
 
-    for epoch in range(total_epoch):
-        _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
+        for epoch in range(total_epoch):
+            _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
+            print('Epoch:', '%04d' % (epoch), 'cost =', '{:.6f}'.format(loss))
+
+
+        prediction = tf.cast(tf.argmax(model, 1), tf.int32)
+        prediction_check = tf.equal(prediction, Y)
+        accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
+
+        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
+        acc += accuracy_val
         
-        print('Epoch:', '%04d' % (epoch + 1),
-              'cost =', '{:.6f}'.format(loss))
-
-    print('==Complete==')
-
-
-    prediction = tf.cast(tf.argmax(model, 1), tf.int32)
-    prediction_check = tf.equal(prediction, Y)
-    accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
-
-    predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
-    accuracy_val *= 100
-print('\n=== 예측 결과 ===')
-print('정확도: %.8f%%'%accuracy_val)
+    print('%03d 정확도: %.8f%%'%(re, (accuracy_val*100)))
+    
+print('\n\n평균 정확도: %.8f%%'%(acc*100/re))
