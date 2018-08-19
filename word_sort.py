@@ -47,9 +47,9 @@ def make_tf_data():
     for t in last5:
         # t : "able"
         t = t[::-1]
-        if len(t) > 7:
-            t = t[:7]
-        while len(t) < 7:
+        if len(t) > 5:
+            t = t[:5]
+        while len(t) < 5:
             t += '$'
         r_last5.append(t)
     
