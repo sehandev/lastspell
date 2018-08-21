@@ -40,7 +40,7 @@ def seperate_test(origin_input, origin_target):
 # Set options
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
-total_epoch = 500
+total_epoch = 50
 n_step = len(last5[0])  # input length
 # len(last5[0]) : 7
 
@@ -103,5 +103,5 @@ with tf.Session() as sess:
 #         predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})
 #         acc += accuracy_val
         
-    print('%02d 정확도: %.3f%%\n\n\n'%(i+1, (accuracy_val*100)))
+    print('%02d 정확도: %.3f%%\n'%(epoch+1, (accuracy_val*100)))
     
