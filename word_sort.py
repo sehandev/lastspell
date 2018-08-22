@@ -1,8 +1,5 @@
-import numpy as np
-
-
 def new_words():
-    with open("words_data.txt", 'r') as f:
+    with open("training_data/words_data.txt", 'r') as f:
         word_list = f.read().lower().split('\n')
         word_list.sort()
 
@@ -25,7 +22,7 @@ def new_words():
             f.write(t+'\n')
             
 def make_tf_data():
-    with open("./words_data.txt", 'r') as f:
+    with open("training_data/words_data.txt", 'r') as f:
         word_list = f.read().split('\n')
         # word_list : ["able$에이블$o", "about$어바웃$o", ...]
     
@@ -56,3 +53,22 @@ def make_tf_data():
 #     print('last5 length: ' + str(len(r_last5)))
 #     print('syllable_check length: ' + str(len(syllable_check)))
     return r_last5, syllable_check, len(last5)
+
+def deduplication():
+    with open("training_data/data_in.txt", 'r') as f:
+        words = []
+        for line in f:
+            words.append(line.strip().lower())
+            
+        return(list(set(words)))
+        
+def sort():
+    words = deduplication()
+    words.sort()
+    
+    with open("training_data/data_in_sorted.txt", 'w') as f:
+        for word in words:
+            f.write(word + '\n')
+            
+if __name__ == "__main__":
+    sort()
