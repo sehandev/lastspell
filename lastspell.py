@@ -1,13 +1,19 @@
+from __future__ import print_function
+
+# import
 import tensorflow as tf
 import numpy as np
 import random
+from sklearn.metrics import average_precision_score, precision_recall_curve 
 
+# custom import
 import word_sort
 
 
 last5, syll_check, count_word = word_sort.make_tf_data()
 # last5 : ["elba$$$", "tuoba$$", ...]
 # syll_check : [1, 1, ...]
+# count_word : 1038
 
 #syll_check = [random.randint(0, 1) for _ in range(count_word)]
 #print(syll_check)
@@ -26,21 +32,26 @@ for t in last5:
     
     
 # Seperate test data
-n_test = int(count_word * 0.05)
-def seperate_test(origin_input, origin_target):
-    randstart = random.randint(0, count_word-n_test)
-    print(randstart)
-    test_input = np.array(origin_input[randstart:randstart+n_test])
-    test_target = np.array(origin_target[randstart:randstart+n_test])
-    input_batch = np.array(origin_input[:randstart] + origin_input[randstart+n_test:])
-    target_batch = np.array(origin_target[:randstart] + origin_target[randstart+n_test:])
+batch_size = int(count_word * 0.05)  # 51
+randstart = random.randint(0, count_word-batch_size)
+test_input = np.array(origin_input[randstart:randstart+batch_size])
+test_target = np.array(origin_target[randstart:randstart+batch_size])
+train_input = np.array(origin_input[:randstart] + origin_input[randstart+batch_size:])
+train_target = np.array(origin_target[:randstart] + origin_target[randstart+batch_size:])
+
+next = - batch_size
+def next_batch(train_input, train_target):
+    global next
+    next += batch_size
+    if next > count_word:
+        next -= count_word
+    return train_input[next:next+batch_size], train_target[next:next+batch_size]
     
-    return input_batch, target_batch, test_input, test_target
     
 # Set options
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
-total_epoch = 50
+total_epoch = 100
 n_step = len(last5[0])  # input length
 # len(last5[0]) : 7
 
@@ -62,11 +73,7 @@ cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
 cell2 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
 multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2])
 
-outputs, states = tf.nn.dynamic_rnn(multi_cell, X, dtype=tf.float32)
-
-
-# cell = tf.nn.rnn_cell.BasicRNNCell(n_hidden)
-# outputs, states = tf.nn.dynamic_rnn(cell, X, dtype=tf.float32)
+outputs, _ = tf.nn.dynamic_rnn(multi_cell, X, dtype=tf.float32)
 # outputs: [?, 7, 128]
 
 outputs = tf.transpose(outputs, [1, 0, 2])  # [7, ?, 128]
@@ -87,21 +94,13 @@ accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
-    input_batch, target_batch, test_input, test_target = seperate_test(origin_input, origin_target)
-    for epoch in range(total_epoch):
+    for epoch in range(1, total_epoch+1):
+        input_batch, target_batch = next_batch(train_input, train_target)
         _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
-        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})
-        if epoch%10 == 0:
-            print('Epoch: {:03d} // cost: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
-            print('Predict : {}'.format(predict))
-            print('Actual  : {}'.format(np.array(test_target)))
+        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
+        if epoch % 10 == 0:
+            print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
+#             print(predict)
 
-#         prediction = tf.cast(tf.argmax(model, 1), tf.int32)
-#         prediction_check = tf.equal(prediction, Y)
-#         accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
-
-#         predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})
-#         acc += accuracy_val
-        
-    print('%02d 정확도: %.3f%%\n'%(epoch+1, (accuracy_val*100)))
-    
+    predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})       
+    print("테스트 정확도: %.3f%%\n"%(accuracy_val*100))
