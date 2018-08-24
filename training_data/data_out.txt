@@ -1,4 +1,3 @@
-a$에이$x
 abandon$애밴던$o
 ability$애빌리티$x
 able$에이블$o
@@ -66,7 +65,6 @@ activation$액티베이션$o
 activity$액티비티$x
 actual$악투$x
 actually$악투리$x
-ad$에이디$x
 adapt$어댑트$x
 add$에이디드$x
 addict$디딕트$x
@@ -285,7 +283,6 @@ artificial$아티피셜$o
 artist$아티스트$x
 artistic$아티스틱$o
 artistry$아티스트리$x
-as$에스$x
 ash$아시$x
 ashamed$아샤메드$x
 ashore$아쇼어$x
@@ -316,7 +313,6 @@ astound$아스타운드$x
 astronaut$아스트로노트$x
 astronomer$아스트로노머$x
 astronomical$아트트로노미컬$o
-at$에이티$x
 athlete$애틀리트$x
 athletic$애틀레틱$o
 atmosphere$애트모스피어$x
@@ -427,7 +423,6 @@ battery$배터리$x
 battle$배틀$o
 battlefield$배틀필드$x
 bay$베이$x
-be$비$x
 bead$비드$x
 beam$빔$o
 bean$빈$o
@@ -627,7 +622,6 @@ butt$버트$x
 button$버튼$o
 buy$부이$x
 buzz$버즈$x
-by$비$x
 cabbage$카비지$x
 cabin$카빈$o
 cabinet$카비네$x
@@ -1462,7 +1456,6 @@ divine$디빈$o
 division$디비전$o
 divorce$디보스$x
 dizzy$디치$x
-do$도오$x
 dock$독$o
 doctor$닥터$x
 document$도큐멘트$x
@@ -1541,7 +1534,6 @@ dwindle$드윈들$o
 dye$다이$x
 dynamic$다이내믹$o
 dynasty$디너스티$x
-e-mail$엠일$o
 each$이치$x
 eager$이어$x
 eagle$이글$o
@@ -2154,7 +2146,6 @@ glorious$글로리우스$x
 glory$글로리$x
 glow$글로$x
 glue$글루$x
-go$고$x
 goal$골인$o
 goat$고트$x
 god$지오드$x
@@ -2303,7 +2294,6 @@ haven$헤이벤$o
 hawk$호크$x
 hay$헤이$x
 hazard$하자르$x
-he$헤이$x
 head$헤드$x
 headquarter$헤드쿼터$x
 heal$힐$o
@@ -2439,7 +2429,6 @@ husband$휴스번드$x
 hydro$하이드로$x
 hydrogen$하이드로겐$o
 hygrometer$하이그로미터$x
-i$아이$x
 ice$아이스$x
 icy$아이시$x
 idea$아이디$x
@@ -2453,7 +2442,6 @@ identity$아이덴티티$x
 ideological$이디올로기칼$o
 idiom$이디엄$o
 idler$아들러$x
-if$아이프$x
 ignorance$이그노런스$x
 ignorant$이그노런트$x
 ignore$이그노어$x
@@ -2511,7 +2499,6 @@ imprudent$임프루던트$x
 impulse$임펄스$x
 impulsive$임펄시브$x
 impure$임퓨$x
-in$인$o
 inaccurate$이낙큐레이트$x
 inaccurately$이낙커라틀리$x
 inaudible$이노디블$o
@@ -2708,7 +2695,6 @@ island$일일랜드$x
 isolate$이솔레이트$x
 isolation$이솔레이션$o
 issue$이슈$x
-it$아이티$x
 itch$아치$x
 item$아이템$o
 its$아이츠$x
@@ -2983,7 +2969,6 @@ majesty$메이제스티$x
 major$메이저$x
 majority$마조리티$x
 make$메이크$x
-make-up$메이크업$o
 makeup$메이크업$o
 male$메이레$x
 mall$몰$o
@@ -3042,7 +3027,6 @@ maximum$맥시멈$o
 may$메이$x
 maybe$메이브$x
 maze$메이즈$x
-me$엠이$x
 meadow$미도$x
 mealtime$멀얼타임$o
 mean$민$o
@@ -3221,7 +3205,6 @@ mouthful$마우스풀$o
 move$무브$x
 movement$무베멘트$x
 movie$무비$x
-mr$엠아르$x
 mrs$엠아스$x
 much$무치$x
 muddy$머디$x
@@ -3244,13 +3227,11 @@ musical$무지컬$o
 musician$무시시언$o
 must$머스트$x
 mutual$무툴얼$o
-my$미$x
 myself$마이셀프$x
 mysterious$미스테리우스$x
 myth$미스$x
 mythical$미티컬$o
 mythology$미톨로지$x
-n't$엔티티$x
 nail$네일$o
 naive$네이브$x
 naked$나케드$x
@@ -3318,7 +3299,6 @@ night$나이트$x
 nightmare$나이트마어$x
 nighttime$나이트타임$o
 nitrogen$니트로겐$o
-no$노$x
 noble$노블$o
 nobody$노보디$x
 noise$노이스$x
@@ -3403,7 +3383,6 @@ occur$오커$x
 occurrence$오커런스$x
 ocean$오션$o
 odd$오디디$x
-of$오에프$x
 off$오프$x
 offend$오펀드$x
 offense$오펀스$x
@@ -3414,13 +3393,10 @@ officer$오피서$x
 official$오피셜$o
 offspring$오프스프링$o
 often$오프텐$o
-oh$오$x
 oil$오일$o
-ok$오케이$x
 old$올드$x
 olive$올리브$x
 omit$오밋$o
-on$온$o
 once$온스$x
 one$원$o
 ongoing$온가잉$o
@@ -3449,7 +3425,6 @@ optimal$옵티멀$o
 optimism$옵티미즘$o
 optimistic$옵티미스틱$o
 option$옵션$o
-or$오어$x
 oral$오랄$o
 orally$오랄리$x
 orbit$오비트$x
@@ -3520,7 +3495,6 @@ owe$오워$x
 own$원$o
 owner$오우너$x
 ownership$오너십$o
-ox$오오스$x
 oxygen$옥시겐$o
 ozone$오존$o
 pace$페이스$x
@@ -3724,7 +3698,6 @@ plot$플로$x
 plug$플러프$x
 plunge$플런지$x
 plus$플루스$x
-pm$피엠$o
 pneumonia$프뉴모니아$x
 pocket$포킷$o
 poem$포$x
@@ -4603,7 +4576,6 @@ sneeze$스니즈$x
 snow$스노$x
 snowstorm$스노스토$x
 snowy$스노위$x
-so$에스오$x
 soak$소크$x
 sob$소브$x
 soccer$소서$x
@@ -5104,7 +5076,6 @@ tip$티프$x
 tire$타이어$x
 tissue$티슈$x
 title$타이틀$o
-to$토$x
 tobacco$토백코$x
 today$토데이$x
 toe$토$x
@@ -5219,7 +5190,6 @@ turn$턴$o
 turner$터너$x
 turtle$터틀$o
 tutor$튜터$x
-tv$티브이$x
 twice$트위스$x
 twin$트윈$o
 twinkle$트윙클$o
@@ -5342,7 +5312,6 @@ unusually$우후주얼리$x
 unwanted$언원테드$x
 unwillingness$언윌링그니스$x
 unwitnessed$유위트네세드$x
-up$유피$x
 upgrade$업그레이드$x
 uphold$우폴드$x
 upon$우폰$o
@@ -5354,7 +5323,6 @@ upward$업워드$x
 urban$워번$o
 urge$유지$x
 urgent$어전트$x
-us$유에스$x
 usability$우사빌리티$x
 usage$유지지$x
 use$유제이$x
@@ -5491,7 +5459,6 @@ wavelength$웨이블런스$x
 wax$왁스$x
 way$웨이$x
 wayfarer$웨이파러$x
-we$웨$x
 weaken$위켄$o
 weakness$위크니스$x
 wealthy$웰시$x

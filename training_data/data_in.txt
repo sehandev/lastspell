@@ -634,7 +634,6 @@ cabinet
 cable
 cafeteria
 caffeine
-café
 calculate
 calculator
 calendar

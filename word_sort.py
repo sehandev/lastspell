@@ -1,5 +1,7 @@
 def make_tf_data():
-    with open("training_data/words_data_after.txt", 'r') as f:
+    train_length = 5
+    
+    with open("training_data/data_out_after.txt", 'r') as f:
         word_list = f.read().split('\n')
         # word_list : ["able$에이블$o", "about$어바웃$o", ...]
     
@@ -21,9 +23,9 @@ def make_tf_data():
     for t in last5:
         # t : "able"
         t = t[::-1]
-        if len(t) > 5:
-            t = t[:5]
-        while len(t) < 5:
+        if len(t) > train_length:
+            t = t[:train_length]
+        while len(t) < train_length:
             t += '$'
         r_last5.append(t)
     
@@ -32,12 +34,17 @@ def make_tf_data():
     return r_last5, syllable_check, len(last5)
 
 def deduplication():
+    words = []
+    
     with open("training_data/data_in.txt", 'r') as f:
-        words = []
         for line in f:
-            words.append(line.strip().lower())
-            
-        return(list(set(words)))
+            line = line.strip().lower()
+            if len(line) > 2 and line.isalpha():
+                words.append(line)
+            else:
+                print(line)
+                
+    return(list(set(words)))
         
 def sort():
     words = deduplication()

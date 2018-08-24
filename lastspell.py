@@ -2,7 +2,10 @@
 import tensorflow as tf
 import numpy as np
 import random
-from sklearn.metrics import average_precision_score, precision_recall_curve 
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from sklearn.metrics import precision_recall_curve, average_precision_score
 
 # custom import
 import word_sort
@@ -49,9 +52,9 @@ def next_batch(train_input, train_target):
 # Set options
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
-total_epoch = 1000
+total_epoch = 500
 n_step = len(last5[0])  # input length
-# len(last5[0]) : 7
+# len(last5[0]) : 5
 
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False
@@ -72,9 +75,9 @@ cell2 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
 multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2])
 
 outputs, _ = tf.nn.dynamic_rnn(multi_cell, X, dtype=tf.float32)
-# outputs: [?, 7, 128]
+# outputs: [?, 5, 128]
 
-outputs = tf.transpose(outputs, [1, 0, 2])  # [7, ?, 128]
+outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
 outputs = outputs[-1]  # [?, 128]
 
 # model = tf.nn.tanh(tf.matmul(outputs, W) + b)
@@ -102,3 +105,35 @@ with tf.Session() as sess:
 
     predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})       
     print("테스트 정확도: %.3f%%\n"%(accuracy_val*100))
+    
+    
+# precision-recall curve
+a = np.array(test_target)
+b = np.array(predict)
+
+print("\n\n y_test ==========================")
+print(a)
+print("\n\n y_score ==========================")
+print(b)
+
+average_precision = average_precision_score(a, b)
+precision, recall, _ = precision_recall_curve(a, b)
+
+print("\n\n precision ==========================")
+print(precision)
+print("\n\n recall ==========================")
+print(recall)
+
+plt.step(recall, precision, color='b', alpha=0.2,
+         where='post')
+plt.fill_between(recall, precision, step='post', alpha=0.2,
+                 color='b')
+
+plt.xlabel('Recall')
+plt.ylabel('Precision')
+plt.ylim([0.0, 1.05])
+plt.xlim([0.0, 1.0])
+plt.title('2-class Precision-Recall curve: AP={0:0.2f}'.format(
+          average_precision))
+
+plt.savefig('test.png')

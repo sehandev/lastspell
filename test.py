@@ -36,15 +36,16 @@ print('Average precision-recall score: {0:0.2f}'.format(
 
 
 import matplotlib
-matplotlib.use('Agg')
 
-from sklearn.metrics import precision_recall_curve
+matplotlib.use('Agg')
+from sklearn.metrics import precision_recall_curve, average_precision_score
 import matplotlib.pyplot as plt
 
 print("\n\n y_test ==========================")
 print(y_test)
 print("\n\n y_score ==========================")
 print(y_score)
+average_precision = average_precision_score(y_test, y_score)
 precision, recall, _ = precision_recall_curve(y_test, y_score)
 
 print("\n\n precision ==========================")
