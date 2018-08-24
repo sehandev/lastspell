@@ -30,7 +30,7 @@ for t in last5:
     
     
 # Seperate test data
-batch_size = int(count_word * 0.05)  # 51
+batch_size = int(count_word * 0.1)
 randstart = random.randint(0, count_word-batch_size)
 test_input = np.array(origin_input[randstart:randstart+batch_size])
 test_target = np.array(origin_target[randstart:randstart+batch_size])
@@ -49,7 +49,7 @@ def next_batch(train_input, train_target):
 # Set options
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
-total_epoch = 100
+total_epoch = 1000
 n_step = len(last5[0])  # input length
 # len(last5[0]) : 7
 
