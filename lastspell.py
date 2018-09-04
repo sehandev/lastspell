@@ -9,7 +9,7 @@ from sklearn.metrics import precision_recall_curve, average_precision_score
 
 # custom import
 import word_sort
-
+import check_pr
 
 last5, syll_check, count_word = word_sort.make_tf_data()
 # last5 : ["elba$$$", "tuoba$$", ...]
@@ -102,27 +102,27 @@ with tf.Session() as sess:
         if epoch % 10 == 0:
             print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
 #             print(predict)
-
-    predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})       
-    print("테스트 정확도: %.3f%%\n"%(accuracy_val*100))
+            predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})       
+            print("테스트 정확도: %.3f%%\n"%(accuracy_val*100))
     
     
 # precision-recall curve
-a = np.array(test_target)
-b = np.array(predict)
+            a = np.array(test_target)
+            b = np.array(predict)
 
-print("\n\n y_test ==========================")
-print(a)
-print("\n\n y_score ==========================")
-print(b)
+            print("\n\n y_test ==========================")
+            print(a)
+            print("\n\n y_score ==========================")
+            print(b)
 
-average_precision = average_precision_score(a, b)
-precision, recall, _ = precision_recall_curve(a, b)
+            average_precision = average_precision_score(a, b)
+            precision, recall, _ = precision_recall_curve(a, b)
 
-print("\n\n precision ==========================")
-print(precision)
-print("\n\n recall ==========================")
-print(recall)
+            print("\n\n precision, recall == ==========================")
+            print(precision)
+            print(recall)
+
+            precision, recall = check_pr(a, b)
 
 plt.step(recall, precision, color='b', alpha=0.2,
          where='post')
@@ -136,4 +136,4 @@ plt.xlim([0.0, 1.0])
 plt.title('2-class Precision-Recall curve: AP={0:0.2f}'.format(
           average_precision))
 
-plt.savefig('test.png')
+plt.savefig('test0.png')
