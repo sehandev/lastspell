@@ -29,8 +29,6 @@ def make_tf_data():
             t += '$'
         r_last5.append(t)
     
-#     print('last5 length: ' + str(len(r_last5)))
-#     print('syllable_check length: ' + str(len(syllable_check)))
     return r_last5, syllable_check, len(last5)
 
 def deduplication():

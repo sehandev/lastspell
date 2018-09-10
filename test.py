@@ -35,19 +35,8 @@ matplotlib.use('Agg')
 from sklearn.metrics import precision_recall_curve, average_precision_score
 import matplotlib.pyplot as plt
 
-print("\n\n X_test ==========================")
-print(X_test)
-print("\n\n y_test ==========================")
-print(y_test)
-print("\n\n y_score ==========================")
-print(y_score)
 average_precision = average_precision_score(y_test, y_score)
 precision, recall, _ = precision_recall_curve(y_test, y_score)
-
-print("\n\n precision ==========================")
-print(precision)
-print("\n\n recall ==========================")
-print(recall)
 
 plt.step(recall, precision, color='b', alpha=0.2,
          where='post')
@@ -67,8 +56,9 @@ from sklearn.preprocessing import label_binarize
 
 # Use label_binarize to be multi-label like settings
 Y = label_binarize(y, classes=[0, 1, 2])
+print(Y)
 n_classes = Y.shape[1]
-
+print(n_classes)
 # Split into training and test
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=.5,
                                                     random_state=random_state)
@@ -83,12 +73,6 @@ y_score = classifier.decision_function(X_test)
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import average_precision_score
 
-print("\n\n y_test ==========================")
-print(Y_test)
-print(Y_test[:, 0])
-print("\n\n y_score ==========================")
-print(y_score)
-print(y_score[:, 0])
 
 # For each class
 precision = dict()
@@ -98,15 +82,15 @@ for i in range(n_classes):
     precision[i], recall[i], _ = precision_recall_curve(Y_test[:, i],
                                                         y_score[:, i])
     average_precision[i] = average_precision_score(Y_test[:, i], y_score[:, i])
-
-print("\n\n precision ==========================")
-print(precision)
-print("\n\n recall ==========================")
-print(recall)
     
 # A "micro-average": quantifying score on all classes jointly
 precision["micro"], recall["micro"], _ = precision_recall_curve(Y_test.ravel(),
     y_score.ravel())
+print("\n\n precision ==========================")
+print(precision)
+print("\n\n recall ==========================")
+print(recall)
+
 average_precision["micro"] = average_precision_score(Y_test, y_score,
                                                      average="micro")
 print('Average precision score, micro-averaged over all classes: {0:0.2f}'
