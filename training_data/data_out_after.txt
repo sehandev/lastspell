@@ -14,7 +14,7 @@ absolute$아솔루트$x
 absolutely$아브솔러틀리$x
 absorb$애브소브$x
 absorption$압브소크션$o
-abstract$애브스랙트$x
+abstract$애브스랙트$o
 abstraction$애브스랙션$o
 absurd$압저드$x
 abundance$아번댄스$x
@@ -25,7 +25,7 @@ academy$아카데미$x
 accelerate$액셀러레이트$x
 accent$액센트$x
 accentuate$액센튜아트$x
-accept$액셉트$x
+accept$액셉트$o
 acceptable$액셉터블$o
 acceptance$액체스턴스$x
 access$액세스$x
@@ -63,11 +63,11 @@ action$액션$o
 activate$액티베이트$x
 activation$액티베이션$o
 activity$액티비티$x
-actual$악투$x
+actual$악투$o
 actually$악투리$x
-adapt$어댑트$x
+adapt$어댑트$o
 add$에이디드$x
-addict$디딕트$x
+addict$디딕트$o
 addictive$디딕티브$x
 addition$디디션$o
 additional$디디셔널$o
@@ -83,7 +83,7 @@ admission$애드미션$o
 admit$어밋$o
 adolescence$아돌리센스$x
 adolescent$아돌리스센트$x
-adopt$어닷트$x
+adopt$어닷트$o
 adrift$아드리프트$x
 adult$애들트$x
 adulthood$애덜드드$x
@@ -141,12 +141,12 @@ aisle$에이슬$o
 alarm$앨람$o
 album$앨범$o
 alcohol$알코올$o
-alert$앨러트$x
-algebraic$알지브레이크$x
+alert$앨러트$o
+algebraic$알지브레이크$o
 alienation$얼리에네이션$o
 alike$알리케$x
 all$올$o
-allergic$앨러기$x
+allergic$앨러기$o
 alley$앨리$x
 allocate$앨로케이트$x
 allow$앨로$x
@@ -294,7 +294,7 @@ aspiration$아스피레이션$o
 aspirin$아스피린$o
 assemble$아셈블$o
 assembly$어셈블리$x
-asset$아세트$x
+asset$아세트$o
 assign$아사인$o
 assignment$아시그먼트$x
 assimilation$아시밀레이션$o
@@ -354,7 +354,7 @@ average$애버리지$x
 aviation$아이비에이션$o
 avoid$아보이드$x
 avoidable$아보다아블$o
-await$아와이트$x
+await$아와이트$o
 awake$오워크$x
 awaken$아워컨$o
 award$워워드$x
@@ -471,8 +471,8 @@ beverage$베버리지$x
 beware$버어$x
 beyond$베이언드$x
 bias$비아스$x
-big$비그$x
-bilingual$빌링과$x
+big$비그$o
+bilingual$빌링과$o
 bill$빌$o
 billion$빌리온$o
 bin$빈$o
@@ -543,7 +543,7 @@ bough$버$x
 bounce$분스$x
 bound$바운드$x
 boundary$바운데리$x
-boundless$바들$o
+boundless$바들$x
 bouquet$부큇$o
 bow$보$x
 bowl$보울$o
@@ -600,7 +600,7 @@ bug$버그$x
 build$빌드$x
 builder$빌더$x
 building$빌딩$o
-buildup$빌유듀$x
+buildup$빌유듀$o
 built$빌트$x
 bulb$벌브$x
 bull$불$o
@@ -617,7 +617,7 @@ bury$버리$x
 bus$버스$x
 busiest$비시스트$x
 business$비즈니스$x
-but$부트$x
+but$부트$o
 butt$버트$x
 button$버튼$o
 buy$부이$x
@@ -674,7 +674,7 @@ cargo$카고$x
 carnival$카르니발$o
 carpet$카펫$o
 carrier$카리어$x
-carrot$카로$x
+carrot$카로$o
 carry$카리$x
 cart$카트$x
 carve$카르브$x
@@ -738,7 +738,7 @@ charming$샤밍$o
 chart$차트$x
 charter$샤터$x
 chase$체이스$x
-chat$샤$x
+chat$샤$o
 chatter$채터$x
 chatty$채티$x
 cheat$치트$x
@@ -795,7 +795,7 @@ civilize$시빌리즈$x
 claim$클레임$o
 clam$클램$o
 clan$클랜$o
-clap$클래프$x
+clap$클래프$ㅐ
 clarify$클라리프$x
 clarity$클라리티$x
 class$클라스$x
@@ -814,14 +814,14 @@ cleanly$클린리$x
 clear$클리어$x
 clearer$클리어러$x
 clearly$클리얼리$x
-clerk$클러크$x
+clerk$클러크$o
 clever$클레버$x
 cleverness$클레버네스$x
 click$클릭$o
 client$클리앙트$x
 cliff$클리프$x
 climate$클라이메이트$x
-climb$클림브$x
+climb$클림브$o
 climber$클림버$x
 clinic$클리닉$o
 clip$클립$o
@@ -878,7 +878,7 @@ come$컴$o
 comeback$코메백$o
 comedian$코미디언$o
 comedy$코미디$x
-comet$코메트$x
+comet$코메트$o
 comfort$컴포트$x
 comfortable$컴포터블$o
 comfortably$컴포터블리$x
@@ -1063,7 +1063,7 @@ correlation$코렐레이션$o
 correspond$코리스폰드$x
 correspondence$코리스폰던스$x
 correspondingly$코리스폰딩글리$x
-corrupt$코럽트$x
+corrupt$코럽트$o
 cosmetic$코스메틱$o
 cost$코스트$x
 costly$코스틀리$x
@@ -1112,7 +1112,7 @@ creativity$크레이티비티$x
 creature$크리아추$x
 credibility$크레디빌리티$x
 credible$크레다이블$o
-credit$크리디트$x
+credit$크리디트$o
 creep$크리프$x
 crime$크라임$o
 criminal$크리미널$o
@@ -1124,7 +1124,7 @@ critical$크리티컬$o
 criticism$크리티시즘$o
 criticize$크리티치즈$x
 crocodile$크로코다일$o
-crook$크룩$o
+crook$크룩$x
 crop$크롭$o
 cross$크로스$x
 crosser$크로스$x
@@ -1369,7 +1369,7 @@ dine$딘인$o
 dinner$디너$x
 dinosaur$디노소$x
 dioxide$디옥시드$x
-dip$디$x
+dip$디$o
 diploma$디플로마$x
 dipper$디퍼$x
 direct$디렉트$x
@@ -1464,7 +1464,7 @@ doll$돌$o
 dollar$달러$x
 dome$돔$o
 domestic$도메스틱$o
-dominant$도미낭$o
+dominant$도미낭$x
 dominate$도미네이트$x
 dominion$도미니온$o
 donate$도네이트$x
@@ -1509,7 +1509,7 @@ driven$드리벤$o
 driver$드라이버$x
 driveway$드리브웨이$x
 drop$드롭$o
-drought$드러트$x
+drought$드러트$o
 drove$드로브$x
 drown$드라운$o
 drug$드러그$x
@@ -1538,7 +1538,7 @@ eager$이어$x
 eagle$이글$o
 ear$이어$x
 early$얼리$x
-earn$이$x
+earn$이$o
 earnest$이너스트$x
 earnestly$어네스틀리$x
 earring$이링$o
@@ -1561,7 +1561,7 @@ economy$이코노미$x
 ecosystem$이코시스템$o
 edge$에지$x
 edible$에디블$o
-edit$이디트$x
+edit$이디트$o
 edition$에디션$o
 editor$에디터$x
 education$에듀케이션$o
@@ -1578,7 +1578,7 @@ effort$에프포트$x
 effortlessly$에프포틀슬리$x
 egg$에그$x
 ego$이고$x
-eight$이트$x
+eight$이트$o
 either$아이서$x
 elaborate$일라보레테$x
 elbow$엘보$x
@@ -1681,7 +1681,7 @@ enviroment$엔비로먼트$x
 environment$엔비로먼트$x
 environmental$엔버러먼탈$o
 envy$엔비$x
-epic$이피히$x
+epic$이피히$o
 episode$에피소드$x
 equal$이퀄$o
 equality$이퀄리티$x
@@ -1701,7 +1701,7 @@ erect$에렉트$x
 erode$에로드$x
 errand$에런드$x
 error$에러$x
-erupt$에루트$x
+erupt$에루트$o
 escalator$에스칼레이터$x
 escape$에스케이프$x
 especially$에스페셜리$x
@@ -1797,7 +1797,7 @@ expire$엑스파르$x
 explain$엑스플레인$o
 explanation$엑스플라네이션$o
 explode$엑스플로드$x
-exploit$엑슬로트$x
+exploit$엑슬로트$o
 exploration$엑스플로레이션$o
 explorer$엑스플로러$x
 explosion$엑스플로전$o
@@ -1837,7 +1837,7 @@ facility$패실리티$x
 fact$팩트$x
 factor$팩토$x
 factory$팩토리$x
-factual$팩투$x
+factual$팩투$o
 fade$페이드$x
 fail$파일$o
 failure$파일루어$x
@@ -1863,7 +1863,7 @@ fantastic$판타스틱$o
 fantasy$판타시$x
 far$파$x
 fare$페어$x
-farm$파$x
+farm$파$o
 farmer$파머$x
 farmhouse$파하우스$x
 farther$파서$x
@@ -1876,9 +1876,9 @@ fatal$패탈$o
 fate$페이트$x
 father$파테르$x
 fatigue$패티그$x
-faucet$포세$x
+faucet$포세$o
 fault$폴트$x
-favor$파버$x
+favor$파버$x 
 favorable$패보러블$o
 favorably$패보러블리$x
 favorite$파보라이트$x
@@ -2057,7 +2057,7 @@ fuel$풀$o
 fulfill$풀필$o
 full$풀$o
 fully$풀리$x
-fume$퓨$x
+fume$퓨$o
 fun$펀$o
 function$펑크션$o
 functional$펑크셔널$o
@@ -2120,9 +2120,9 @@ geometry$조오메트리$x
 germ$게름$o
 german$게르만$o
 gesture$게스처$x
-get$제$x
+get$제$o
 ghost$고스트$x
-giant$자앙$o
+giant$자앙$x
 gift$기프트$x
 giggle$기글$o
 giraffe$지래프$x
@@ -2147,7 +2147,7 @@ glow$글로$x
 glue$글루$x
 goal$골인$o
 goat$고트$x
-god$지오드$x
+god$지오드$o
 gold$골드$x
 goldfish$골드피시$x
 golf$골프$x
@@ -2164,7 +2164,7 @@ gourd$고드$x
 govern$고번$o
 government$고버먼트$x
 governor$고버너$x
-grab$그래브$x
+grab$그래브$o
 grace$그레이스$x
 graceful$그레이스풀$o
 gracefully$그레이스풀리$x
@@ -2213,7 +2213,7 @@ groom$그룸$o
 gross$그로스$x
 ground$그라운드$x
 groundless$그라운드리스$x
-group$그루프$x
+group$그루프$o
 groupthink$그룹딩크$x
 grow$그로$x
 grown$그라운$o
@@ -2236,7 +2236,7 @@ guy$가이$x
 gym$김$o
 gymnasium$짐나슘$o
 habit$하빗$o
-habitat$하비타$x
+habitat$하비타$o
 habitual$하비투얼$o
 habitually$하비툴리$x
 hair$헤어$x
@@ -2282,7 +2282,7 @@ harvest$하브스트$x
 haste$하스트$x
 hasten$하스텐$o
 hasty$해스티$x
-hat$해트$x
+hat$해트$o
 hatch$해치$x
 hate$헤이트$x
 hateful$해테펄$o
@@ -2300,12 +2300,12 @@ healer$헬러$x
 health$헬스$x
 healthful$헬앨풀$o
 healthy$헬시$x
-heap$히프$x
+heap$히프$o
 hear$하어$x
 heart$하트$x
 heartache$하르타치$x
 heartfelt$하트펠트$x
-heartland$하틀$o
+heartland$하틀$x
 heat$히트$x
 heater$히터$x
 heaven$하이번$o
@@ -2321,7 +2321,7 @@ helpful$헬프풀$o
 helpless$헬플레스$x
 hemisphere$헤미스페르$x
 hence$헨스$x
-her$에이어$x
+her$에이어$o
 herald$헤랄드$x
 herb$허브$x
 here$헤르$x
@@ -2356,7 +2356,7 @@ historic$히스토릭$o
 historical$히스토리칼$o
 historically$히스토리칼리$x
 history$히스토리$x
-hit$히트$x
+hit$히트$o
 hitch$히치$x
 hitter$히터$x
 hobby$호비$x
@@ -2399,7 +2399,7 @@ hospital$호스피탈$o
 host$호스트$x
 hostile$호스타일$o
 hostility$호스틸리티$x
-hot$호트$x
+hot$호트$o
 hotel$호텔$o
 hour$하워$x
 house$하우스$x
@@ -2431,7 +2431,7 @@ hygrometer$하이그로미터$x
 ice$아이스$x
 icy$아이시$x
 idea$아이디$x
-ideal$아이디$x
+ideal$아이디$o
 ideally$이딜리$x
 identical$이덴티컬$o
 identifiable$이덴티피아블$o
@@ -2464,7 +2464,7 @@ immediate$임미디아트$x
 immense$아이멘스$x
 immigrant$이미그란트$x
 immoral$이무랄$o
-immune$이뮤$x
+immune$이뮤$o
 impact$임팩트$x
 impair$임페어$x
 impatience$임파티언스$x
@@ -2472,7 +2472,7 @@ impatient$임파티엔트$x
 impatiently$임파티엔틀리$x
 imperfect$임퍼펙트$x
 imperium$임피륨$o
-impersonal$임퍼스소$x
+impersonal$임퍼스소$o
 implication$임플리케이션$o
 imply$임플리$x
 import$임이포트$x
@@ -2542,7 +2542,7 @@ induce$인듀스$x
 indulge$인덜지$x
 industrial$인더스트리올$o
 industrialization$인더스트리얼리지션$o
-industrialize$인더스트리열$o
+industrialize$인더스트리열$x
 industry$인더스트리$x
 inefficient$인네피사인트$x
 inert$이너트$x
@@ -2565,7 +2565,7 @@ information$인포메이션$o
 infrasound$인프라사운드$x
 infrastructure$인프라스트럭처$x
 ingredient$잉리디엔트$x
-inhabit$인하비트$x
+inhabit$인하비트$o
 inhabitant$인하비탄트$x
 inherit$인히릿$o
 initial$이니셜$o
@@ -2647,7 +2647,7 @@ intermission$인터미션$o
 internal$인터널$o
 international$인터내셔널$o
 internationally$인터내셔널리$x
-internet$인터네트$x
+internet$인터네트$o
 interpret$인터프렛$o
 interpretation$인터프레테이션$o
 interrelate$인테릴레이트$x
@@ -2682,7 +2682,7 @@ inward$인워드$x
 iron$이론$o
 ironic$이로닉$o
 irregularity$어리굴러리티$x
-irrelevant$아릴르방$o
+irrelevant$아릴르방$x
 irresistible$어리지스티블$o
 irresistibly$어리시스티블리$x
 irresponsible$어리스폰서블$o
@@ -2733,7 +2733,7 @@ just$저스트$x
 justify$저스티피$x
 kangaroo$캉가루$x
 keen$킨$o
-keep$키프$x
+keep$키프$o
 kettle$케틀$o
 key$키$x
 keyboard$키보드$x
@@ -2749,7 +2749,7 @@ kinder$킨더$x
 king$킹$o
 kingdom$킹덤$o
 kiss$키스$x
-kit$키트$x
+kit$키트$o
 kitchen$키친$o
 kite$카이트$x
 knee$니$x
@@ -2809,7 +2809,7 @@ lead$리드$x
 leader$리더$x
 leadership$리더쉽$o
 league$리그$x
-leak$리크$x
+leak$리크$o
 lean$린$o
 leap$레프$x
 learn$런$o
@@ -2969,7 +2969,7 @@ major$메이저$x
 majority$마조리티$x
 make$메이크$x
 makeup$메이크업$o
-male$메이레$x
+male$메이레$o
 mall$몰$o
 malnutrition$말뉴트리션$o
 mammal$매멀$o
@@ -3001,7 +3001,7 @@ marketer$마키터$x
 marketplace$마케플레이스$x
 marriage$마리지$x
 marry$매리$x
-martial$마르샤$x
+martial$마르샤$o
 marvel$마벌$o
 marvle$마블$o
 masculine$매스쿨린$o
@@ -3069,7 +3069,7 @@ mercifully$머르시풀리$x
 mere$메어$x
 merely$메릴리$x
 merge$머지$x
-merit$메리트$x
+merit$메리트$o
 merriment$메리먼트$x
 merry$메리$x
 mess$메스스$x
@@ -3165,7 +3165,7 @@ money$머니$x
 monitor$모니터$x
 monk$멍크$x
 monkey$몬키$x
-monolingual$모놀린과$x
+monolingual$모놀린과$o
 monologue$모놀로그$x
 monotonous$모노토나우스$x
 month$몬스$x
@@ -3181,7 +3181,7 @@ more$모어$x
 moreover$모리오버$x
 morning$모닝$o
 morse$모스$x
-mosaic$모자$x
+mosaic$모자$o
 mosquito$모스키토$x
 moss$모스$x
 most$모스트$x
@@ -3236,7 +3236,7 @@ naive$네이브$x
 naked$나케드$x
 name$네임$o
 namely$나멀리$x
-nap$엔이피$x
+nap$엔이피$o
 napkin$냅킨$o
 narration$나레이션$o
 narrator$나라터$x
@@ -3279,7 +3279,7 @@ neighborhood$나이보후드$x
 nerve$네르$x
 nervousness$네르부스네스$x
 nest$네스트$x
-net$네트$x
+net$네트$o
 network$네트워크$x
 neutral$뉴트랄$o
 neutrality$뉴트랄리티$x
@@ -3322,7 +3322,7 @@ north$노스$x
 northeastern$노스하스턴$o
 northern$노던$o
 northwestern$노스웨스턴$o
-not$노$x
+not$노$o
 notation$노테이션$o
 note$노트$x
 notebook$노트$x
@@ -3347,7 +3347,7 @@ numerous$뉴메라우스$x
 nurse$너스$x
 nursery$너서리$x
 nurture$너처$x
-nut$누트$x
+nut$누트$o
 nutrient$뉴리엔트$x
 nutrition$뉴리션$o
 nutritional$뉴트리셔널$o
@@ -3368,7 +3368,7 @@ observe$오브서브$x
 observer$옵서버$x
 obsession$옵세션$o
 obstacle$오브스타클$o
-obstruct$오브스트럼$o
+obstruct$오브스트럼$x
 obtain$오빈$o
 obtainable$오타아나이블$o
 obvious$오브비우스$x
@@ -3532,7 +3532,7 @@ park$파크$x
 parliament$팔리아먼트$x
 parrot$패럿$o
 part$파트$x
-partial$파르샤$x
+partial$파르샤$o
 partiality$파르샤리티$x
 participant$파티시팬트$x
 participate$파티시페이트$x
@@ -3555,7 +3555,7 @@ paste$파스트$x
 pastime$파스타임$o
 pastry$패스트리$x
 pastureland$패스튜랜드$x
-pat$패$x
+pat$패$o
 patch$패치$x
 patent$퍼텐트$x
 path$패스$x
@@ -3628,7 +3628,7 @@ persuasive$퍼수아사이브$x
 pessimistic$페시미스틱$o
 pest$페스트$x
 pesticide$페스티사이드$x
-pet$페$x
+pet$페$o
 petal$페탈$o
 phantom$팬텀$o
 phase$페이스$x
@@ -3645,13 +3645,13 @@ photon$포톤$o
 phrase$프라스$x
 physical$피시컬$o
 physically$피시칼리$x
-physician$피시샤$x
+physician$피시샤$o
 physicist$피시시스트$x
 physics$피식스$x
 physiological$피실올로지컬$o
 physiology$피사올로지$x
 pianist$피아니스트$x
-pick$피$x
+pick$피$o
 picture$피처$x
 pie$파이$x
 piece$피스$x
@@ -3660,7 +3660,7 @@ pile$파일$o
 pill$필$o
 pillar$필라$x
 pillow$필로$x
-pilot$파일로$x
+pilot$파일로$o
 pioneer$피오니에$x
 pitch$피치$x
 pitfall$피트폴$o
@@ -3693,14 +3693,14 @@ pleasure$플리저$x
 pledge$플리지$x
 plentiful$플렌티풀$o
 plethora$플레토라$x
-plot$플로$x
+plot$플로$o
 plug$플러프$x
 plunge$플런지$x
 plus$플루스$x
 pneumonia$프뉴모니아$x
 pocket$포킷$o
-poem$포$x
-poet$포트$x
+poem$포$o
+poet$포트$o
 poetic$포틱$o
 poetry$포트리$x
 point$포인트$x
@@ -3715,7 +3715,7 @@ polish$폴리시$x
 politeness$폴리테네스$x
 political$폴리티컬$o
 politically$폴리티칼리$x
-politician$폴리티샤$x
+politician$폴리티샤$o
 politics$폴리틱스$x
 poll$폴$o
 pollen$폴런$o
@@ -3735,7 +3735,7 @@ porch$포치$x
 pore$포$x
 pork$포크$x
 portion$포션$o
-portrait$포트라이트$x
+portrait$포트라이트$o
 portray$포트레이$x
 pose$포스$x
 position$포지션$o
@@ -3918,7 +3918,7 @@ purity$푸리티$x
 purple$퍼플$o
 purpose$푸포스$x
 pursue$푸르슈$x
-pursuit$푸르수트$x
+pursuit$푸르수트$o
 push$푸시$x
 put$풋$o
 pyramid$피라미드$x
@@ -3942,7 +3942,7 @@ quit$큇$o
 quite$큇$o
 quotation$쿼테이션$o
 quote$퀘트$x
-rabbit$래비트$x
+rabbit$래비트$o
 race$레이스$x
 racial$라셜$o
 racist$라시스트$x
@@ -3958,7 +3958,7 @@ railroad$레일로드$x
 rain$레인$o
 rainfall$레인폴$o
 rainforest$레인포리스트$x
-rainstorm$레인스토$x
+rainstorm$레인스토$o
 raise$레이스$x
 ramp$램프$x
 ranch$랑치$x
@@ -3971,7 +3971,7 @@ rapidly$래피들리$x
 rapport$래프포트$x
 rare$레어$x
 rarely$레릴리$x
-rat$라트$x
+rat$라트$o
 rate$레이트$x
 rather$라더$x
 rational$라셔널$o
@@ -4028,7 +4028,7 @@ recover$리코버$x
 recovery$리커버리$x
 recreation$리크리에이션$o
 recreational$리크리에셔널$o
-recruit$리크루트$x
+recruit$리크루트$o
 recruitment$리크루트먼트$x
 rectangle$렉탱글$o
 rectangular$리턴굴라$x
@@ -4043,7 +4043,7 @@ reexamine$리아사민$o
 refer$레퍼$x
 referee$리퍼리$x
 reference$리퍼렌스$x
-refine$리파인네$x
+refine$리파인네$o
 reflect$리플렉트$x
 reflection$리플렉션$o
 reform$르폼$o
@@ -4095,7 +4095,7 @@ relief$릴리프$x
 relieve$릴리브$x
 religion$릴리전$o
 religious$릴리기우스$x
-reluctant$릴루턴$o
+reluctant$릴루턴$x
 rely$릴리$x
 remain$리맹$o
 remark$리마크$x
@@ -4228,11 +4228,11 @@ river$라이버$x
 riverboat$리버보트$x
 riverfront$리버프론트$x
 road$로드$x
-roam$로$x
+roam$로$o
 roar$로어$x
 rob$로$x
 robe$로브$x
-robot$로보$x
+robot$로보$o
 rock$록$o
 rocky$로키$x
 rod$로드$x
@@ -4250,7 +4250,7 @@ roommate$룸메이트$x
 root$루트$x
 rope$로프$x
 rose$로즈$x
-rot$로트$x
+rot$로트$o
 rotate$로테이트$x
 rotten$로튼$o
 rough$러그$x
@@ -4334,7 +4334,7 @@ scholarship$스컬라십$o
 school$스쿨$o
 schoolyard$스쿨리드$x
 science$사이언스$x
-scientific$사인티프프$x
+scientific$사인티프프$o
 scientist$시엔티스트$x
 scold$스콜드$x
 score$스코어$x
@@ -4372,7 +4372,7 @@ securely$시커릴리$x
 security$시큐리티$x
 see$시$x
 seed$시드$x
-seek$시크$x
+seek$시크$o
 seeker$시커$x
 seem$심$o
 seemingly$시밍글리$x
@@ -4414,7 +4414,7 @@ servant$서번트$x
 serve$서브$x
 service$서비스$x
 session$세션$o
-set$세트$x
+set$세트$o
 setback$셋백$o
 settlement$세틀먼트$x
 seven$세븐$o
@@ -4436,7 +4436,7 @@ shanty$산티$x
 shape$셰이프$x
 share$샤어$x
 shark$샤크$x
-sharpen$샤프$x
+sharpen$샤프$o
 sharply$샤플리$x
 sharpness$샤프스$x
 shave$셰이브$x
@@ -4480,7 +4480,7 @@ shrine$슈린$o
 shrink$슈링크$x
 shrinkage$슈린키지$x
 shrug$슈러그$x
-shut$슈$x
+shut$슈$o
 shutter$셔터$x
 shuttle$셔틀$o
 shy$시$x
@@ -4521,7 +4521,7 @@ single$싱글$o
 sink$싱크$x
 sip$십$o
 sister$시스터$x
-sit$사트$x
+sit$사트$o
 site$사이트$x
 situate$시튜아트$x
 situation$시추에이션$o
@@ -4538,13 +4538,13 @@ skinny$스키니$x
 skip$스킵$o
 skull$스컬$o
 sky$스카이$x
-slab$슬래브$x
+slab$슬래브$o
 slack$슬랙$o
 slam$슬람$o
 slang$슬랑$o
 slap$슬랩$o
 sled$슬레드$x
-sleep$슬리프$x
+sleep$슬리프$o
 sleeper$슬리퍼$x
 sleeplessness$슬리플레스니스$x
 sleepy$슬리피$x
@@ -4584,7 +4584,7 @@ socially$소셜리$x
 society$소사이어$x
 sociologist$소오셜로지스트$x
 sociology$소초로지$x
-sock$소크$x
+sock$소크$o
 soda$소다$x
 sofa$소파$x
 softly$소프틀리$x
@@ -4611,7 +4611,7 @@ somehow$소메호$x
 someone$소메원$o
 something$소미딩$o
 sometimes$소메타임스$x
-somewhat$소머트$x
+somewhat$소머트$o
 son$손$o
 sonata$소나타$x
 song$송$o
@@ -4627,7 +4627,7 @@ sort$소트$x
 soul$솔$o
 sound$사운드$x
 soundproof$사운드프루프$x
-soup$수프$x
+soup$수프$o
 sour$수워$x
 source$소스$x
 south$사우스$x
@@ -4708,7 +4708,7 @@ stair$스테어$x
 stairs$스테어스$x
 stake$스테이크$x
 stale$스테일$o
-stalk$스토크$x
+stalk$스토크$o
 stall$스톨$o
 stammer$스태머$x
 stamp$스탬프$x
@@ -4759,7 +4759,7 @@ stool$스툴$o
 stop$스톱$o
 storage$스토리지$x
 store$스토어$x
-storm$스토$x
+storm$스토$o
 stormy$스토미$x
 story$스토리$x
 stove$스토브$x
@@ -4898,8 +4898,8 @@ swan$스완$o
 sway$스웨이$x
 swear$스웨어$x
 sweat$스웨트$x
-sweep$스위프$x
-sweet$스위트$x
+sweep$스위프$o
+sweet$스위트$o
 swell$스웰$o
 swift$스위프트$x
 swiftly$스위플틀리$x
@@ -4929,7 +4929,7 @@ tailor$테일러$x
 take$테이크$x
 tale$테일$o
 talent$틀런트$x
-talk$토크$x
+talk$토크$o
 tall$톨$o
 tame$타임$o
 tan$탄$o
@@ -5126,7 +5126,7 @@ trail$트레일$o
 train$트레인$o
 trainer$트레이너$x
 training$트레이닝$o
-trait$트라트$x
+trait$트라트$o
 transaction$트랜색션$o
 transfer$트랜스퍼$x
 transform$트랜스폼$o
@@ -5163,7 +5163,7 @@ triple$트리플$o
 triumph$트리프프$x
 triumphantly$트리펀틀리$x
 trivial$트리비얼$o
-troop$트루프$x
+troop$트루프$o
 trophy$트로피$x
 tropical$트로피컬$o
 trouble$트루블$o
@@ -5181,7 +5181,7 @@ try$트라이$x
 tube$튜브$x
 tuition$튜이션$o
 tumble$텀블$o
-tune$튜$x
+tune$튜$o
 tunnel$터널$o
 turkey$터키$x
 turmoil$터모일$o
@@ -5230,7 +5230,7 @@ uncomplicated$언컴플리카테드$x
 unconsciously$언컨스시우슬리$x
 uncover$언커버$x
 uncurtained$언커타인네드$x
-uncut$언커트$x
+uncut$언커트$o
 undeniably$언디니애블리$x
 under$언더$x
 underdeveloped$언더드벨로페드$x
@@ -5317,7 +5317,7 @@ upon$우폰$o
 upper$업퍼$x
 upright$업라이트$x
 uproot$우프루트$x
-upset$업스$x
+upset$업스$o
 upward$업워드$x
 urban$워번$o
 urge$유지$x
@@ -5389,13 +5389,13 @@ vineyard$비니야드$x
 vintage$빈티지$x
 violence$바일렌스$x
 violent$바이올런트$x
-violet$비올레$x
+violet$비올레$o
 violinist$비올리니스트$x
 virtual$버추얼$o
 virus$비루스$x
 visible$비사이블$o
 vision$비전$o
-visit$비지트$x
+visit$비지트$o
 visitor$비지터$x
 visual$비주얼$o
 visualization$비줄얼리제이션$o
@@ -5420,11 +5420,11 @@ vulnerable$불네레이블$o
 wage$웨이지$x
 wagon$왜곤$o
 waistline$웨이스트라인$o
-wait$와이트$x
+wait$와이트$o
 waiter$웨이터$x
 waitress$웨이트레스$x
 wake$웨이크$x
-walk$워크$x
+walk$워크$o
 wall$월$o
 wallet$월렛$o
 walnut$월넛$o
@@ -5448,7 +5448,7 @@ wastebasket$웨스트바스켓$o
 wasteful$와스터풀$o
 wasteland$워스틀랜드$x
 watch$워치$x
-watchdog$왓치도그$x
+watchdog$왓치도그$o
 water$워터$x
 waterfall$워터폴$o
 waterproof$워터프루프$x
@@ -5472,7 +5472,7 @@ wed$웨드$x
 wedding$웨딩$o
 weed$위드$x
 week$위크$x
-weep$위프$x
+weep$위프$o
 weigh$위$x
 weight$웨이트$x
 welcome$웰컴$o
@@ -5598,7 +5598,7 @@ yearn$연$o
 yell$옐$o
 yellow$옐로$x
 yes$예스$x
-yet$예트$x
+yet$예트$o
 yield$옐드$x
 you$유$x
 young$영$o

@@ -14,7 +14,12 @@ def sehan_precision_recall(target, score):
                 fn += 1
             elif target[i] == 0:
                 tn += 1
-
+                
+    print("tp:" + str(tp))
+    print("tn:" + str(tn))
+    print("fp:" + str(fp))
+    print("fn:" + str(fn))
+    
     precision = tp / (tp + fp)
     recall = tp / (tp + fn)
 

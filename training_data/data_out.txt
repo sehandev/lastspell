@@ -628,7 +628,6 @@ cabinet$카비네$x
 cable$케이블$o
 cafeteria$카프테리아$x
 caffeine$카파인$o
-café$카프$x
 calculate$칼큘레이트$x
 calculator$칼컬레이터$x
 calendar$칼렌다르$x

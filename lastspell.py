@@ -38,7 +38,7 @@ test_target = np.array(origin_target[randstart:randstart+batch_size])
 train_input = np.array(origin_input[:randstart] + origin_input[randstart+batch_size:])
 train_target = np.array(origin_target[:randstart] + origin_target[randstart+batch_size:])
 
-next = - batch_size
+next = -batch_size
 def next_batch(train_input, train_target):
     global next
     next += batch_size
@@ -50,7 +50,7 @@ def next_batch(train_input, train_target):
 # Set options
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
-total_epoch = 500
+total_epoch = 1000
 n_step = len(last5[0])  # input length
 # len(last5[0]) : 5
 
@@ -86,7 +86,7 @@ prediction = tf.cast(tf.argmax(model, 1), tf.int32)
 prediction_check = tf.equal(prediction, Y)
 accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
 
-array_precision, array_recall = [0], [0]
+array_precision, array_recall = [], []
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
@@ -96,24 +96,21 @@ with tf.Session() as sess:
         _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
         predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
         if epoch % 10 == 0:
-            print("\n==========================")
-            print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
-            predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})
-            
-            _precision, _recall = check_pr.sehan_precision_recall(test_target, predict)
-            array_precision.append(_precision)
-            array_recall.append(_recall)
-            
-            print("테스트 정확도: %.3f%%"%(accuracy_val*100))
+          print("\n==========================")
+          print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
+          predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})
+          print("테스트 정확도: %.3f%%"%(accuracy_val*100))
+
+#           _precision, _recall = check_pr.sehan_precision_recall(test_target, predict)
+#           array_precision.append(_precision)
+#           array_recall.append(_recall)
 
 
-array_precision.append(1)
-array_recall.append(1)
 
-print("\n == array_precision ==========================")
-print(array_precision)
-print("\n == array_precision ==========================")
-print(array_recall)
+# print("\n == array_precision ==========================")
+# print(array_precision)
+# print("\n == array_precision ==========================")
+# print(array_recall)
 
 
 plt.figure(figsize=(7, 8))

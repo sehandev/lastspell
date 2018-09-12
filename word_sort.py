@@ -1,7 +1,10 @@
+def make_test(true_array, false_array, size):
+    test_data = [[] for _ in range(size * 0.1)]
+
 def make_tf_data():
     train_length = 5
     
-    with open("training_data/data_out_after.txt", 'r') as f:
+    with open("training_data/data_out.txt", 'r') as f:
         word_list = f.read().split('\n')
         # word_list : ["able$에이블$o", "about$어바웃$o", ...]
     
@@ -29,8 +32,21 @@ def make_tf_data():
             t += '$'
         r_last5.append(t)
     
-    return r_last5, syllable_check, len(last5)
+    true_array, false_array = [], []
+    for i in range(len(r_last5)):
+        if syllable_check[i] == 1:
+            true_array.append(r_last5[i])
+        elif syllable_check[i] == 0:
+            false_array.append(r_last5[i])
+    
+    test_data = make_test(true_array, false_array, len(r_last5))
 
+    print("== Data ====")
+    print("True : " + str(syllable_check.count(1)))
+    print("False : " + str(syllable_check.count(0)))
+    
+    return r_last5, syllable_check, len(last5)
+  
 def deduplication():
     words = []
     
