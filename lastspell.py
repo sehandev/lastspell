@@ -10,54 +10,29 @@ import matplotlib.pyplot as plt
 import word_sort
 import check_pr
 
-last5, syll_check, count_word = word_sort.make_tf_data()
-# last5 : ["elba$", "tuoba", ...]
-# syll_check : [1, 1, ...]
-
-#syll_check = [random.randint(0, 1) for _ in range(count_word)]
-#print(syll_check)
-
-eng = ['$', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-dic_eng = {n: i for i, n in enumerate(eng)}
-# dic_eng : {'$' : 0, 'a': 1, 'b': 2, 'c': 3, ..., 'j': 10, 'k', 11, ...}
-
-origin_input = []
-origin_target = syll_check
-# origin_target : [1, 1, ...]
-
-for t in last5:
-    input = [dic_eng[i] for i in t]
-    origin_input.append(np.eye(27)[input])
-
-
-# Seperate test data
-batch_size = int(count_word * 0.05)
-randstart = random.randint(0, count_word-batch_size)
-test_input = np.array(origin_input[randstart:randstart+batch_size])
-test_target = np.array(origin_target[randstart:randstart+batch_size])
-train_input = np.array(origin_input[:randstart] + origin_input[randstart+batch_size:])
-train_target = np.array(origin_target[:randstart] + origin_target[randstart+batch_size:])
-
-next = -batch_size
-def next_batch(train_input, train_target):
-    global next
-    next += batch_size
-    if next > count_word:
-        next -= count_word
-    return train_input[next:next+batch_size], train_target[next:next+batch_size]
-    
-    
+train_data, test_data = word_sort.lastspell_data()
+ 
 # Set options
+batch_size = int(len(train_data[0]) * 0.05)
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
 total_epoch = 1000
-n_step = len(last5[0])  # input length
+n_step = len(train_data[0])  # input length
 # len(last5[0]) : 5
 
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False
 
+next = -batch_size
+def next_batch(train_input, train_target):
+    global next
+    next += batch_size
+    check = next - len(train_data[0])
+    if check > 0:
+        next = -check
+    return train_input[next:next+batch_size], train_target[next:next+batch_size]
 
+   
 # Modeling RNN
 X = tf.placeholder(tf.float32, [None, n_step, n_input])  # X : ?
 Y = tf.placeholder(tf.int32, [None])  # Y : ?
@@ -92,13 +67,13 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for epoch in range(1, total_epoch+1):
-        input_batch, target_batch = next_batch(train_input, train_target)
+        input_batch, target_batch = next_batch(train_data[0], train_data[1])
         _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
         predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
         if epoch % 10 == 0:
           print("\n==========================")
           print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
-          predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_input, Y: test_target})
+          predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_data[0], Y: test_data[1]})
           print("테스트 정확도: %.3f%%"%(accuracy_val*100))
 
 #           _precision, _recall = check_pr.sehan_precision_recall(test_target, predict)
