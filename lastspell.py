@@ -17,7 +17,7 @@ batch_size = int(len(train_data[0]) * 0.05)
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
 total_epoch = 1000
-n_step = len(train_data[0])  # input length
+n_step = 5  # input length
 # len(last5[0]) : 5
 
 n_input = 27  # Alphabet = 26

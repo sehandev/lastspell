@@ -76,7 +76,6 @@ def data_to_eye(arr):
 
     temp = []
     for t in arr:
-        print(t)
         input = [dic_eng[i] for i in t]
         temp.append(np.eye(27)[input])
     return temp
