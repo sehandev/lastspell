@@ -16,21 +16,19 @@ train_data, test_data = word_sort.lastspell_data()
 batch_size = int(len(train_data[0]) * 0.05)
 learning_rate = 0.01  # ?
 n_hidden = 128  # hidden layer's depth? 
-total_epoch = 1000
-n_step = 5  # input length
-# len(last5[0]) : 5
+total_epoch = 20
+n_step = len(train_data[0][0])  # input length = 5
 
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False
 
-next = -batch_size
-def next_batch(train_input, train_target):
-    global next
-    next += batch_size
-    check = next - len(train_data[0])
-    if check > 0:
-        next = -check
-    return train_input[next:next+batch_size], train_target[next:next+batch_size]
+index = -batch_size
+def next_batch(index, train_input, train_target):
+    index += batch_size
+    check = len(train_data[0]) - index
+    if check < batch_size:
+      return check, train_input[index:]+train_input[:len(train_data[0])-check], train_target[index:]+train_target[:len(train_data[0])-check]
+    return index, train_input[index:index+batch_size], train_target[index:index+batch_size]
 
    
 # Modeling RNN
@@ -67,9 +65,15 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for epoch in range(1, total_epoch+1):
-        input_batch, target_batch = next_batch(train_data[0], train_data[1])
+        index, input_batch, target_batch = next_batch(index, train_data[0], train_data[1])
+#        print("\n== input_batch ===")
+#        print(input_batch)
+#        print("\n== target_batch ===")
+#        print(target_batch)
+
         _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
-        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
+        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: train_data[0], Y: train_data[1]})
+        print(predict)
         if epoch % 10 == 0:
           print("\n==========================")
           print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
