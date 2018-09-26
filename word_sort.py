@@ -1,6 +1,7 @@
-import random
 import numpy as np
+import random
 
+np.set_printoptions(threshold=np.inf)
 
 def lastspell_data():
     train_length = 5
@@ -8,47 +9,54 @@ def lastspell_data():
         word_list = f.read().split('\n')
         # word_list : ["able$에이블$o", "about$어바웃$o", ...]
     
-    full_length = len(word_list)
+    full_length = len(word_list)  # 단어 개수
 
     pre_true_array = []
     pre_false_array = []
 
     for t in word_list:
         # t : administration$어드미니스트래이션$o
-        cy = t.split('$')[2]
-        if cy == 'o':
+        ox = t.split('$')[2]
+        if ox == 'o':
             pre_true_array.append(t.split('$')[0])
-        elif cy == 'x': 
+        elif ox == 'x': 
             pre_false_array.append(t.split('$')[0])
 
     # precess data / ex) "information" > "noita"
     true_array = processng_data(pre_true_array, train_length)
     false_array = processng_data(pre_false_array, train_length)
 
-
-    # shuffle data
-    random.shuffle(true_array)
-    random.shuffle(false_array)
-
-    # make test data
-    test_input = []
-    test_target = []
+    #make test data
+    test_data = []
     for i in range(int(full_length * 0.05)):
-        test_input.append(true_array.pop())
-        test_target.append(1)
-        test_input.append(false_array.pop())
-        test_target.append(0)
+        test_data.append([true_array.pop(), 1])
+        test_data.append([false_array.pop(), 0])
 
     # make train data
+    train_data = []
+    for i in true_array:
+        train_data.append([i, 1])
+    for i in false_array:
+        train_data.append([i, 0])
+
+    # shuffle datas
+#    random.shuffle(train_data)
+#    random.shuffle(test_data)
+ 
+    # sperate input data and target data
     train_input = []
     train_target = []
-    for i in true_array:
-        train_input.append(i)
-        train_target.append(1)
-    for i in false_array:
-        train_input.append(i)
-        train_target.append(0)
- 
+    for i in test_data:
+        train_input.append(i[0])
+        train_target.append(i[1])
+
+    test_input = []
+    test_target = []
+    for i in test_data:
+        test_input.append(i[0])
+        test_target.append(i[1])
+
+    # change array to eye array
     train_input = data_to_eye(train_input)
     test_input = data_to_eye(test_input)
 

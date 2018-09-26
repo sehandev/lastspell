@@ -13,11 +13,11 @@ import check_pr
 train_data, test_data = word_sort.lastspell_data()
  
 # Set options
-batch_size = int(len(train_data[0]) * 0.05)
-learning_rate = 0.01  # ?
-n_hidden = 128  # hidden layer's depth? 
-total_epoch = 20
-n_step = len(train_data[0][0])  # input length = 5
+batch_size = int(len(train_data[0]) * 0.03)
+learning_rate = 0.05  # optimizer learning rate
+n_hidden = 128  # hidden layer's depth 
+total_epoch = 3000
+n_step = len(train_data[0][0])  # word length = 5
 
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False
@@ -36,7 +36,7 @@ X = tf.placeholder(tf.float32, [None, n_step, n_input])  # X : ?
 Y = tf.placeholder(tf.int32, [None])  # Y : ?
 
 W = tf.Variable(tf.random_normal([n_hidden, n_class]))  # W : weight
-b = tf.Variable(tf.random_normal([n_class]))  # B : bias
+b = tf.Variable(tf.random_normal([n_class]))  # b : bias
 
 
 # RNN cell
@@ -59,37 +59,33 @@ prediction = tf.cast(tf.argmax(model, 1), tf.int32)
 prediction_check = tf.equal(prediction, Y)
 accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
 
-array_precision, array_recall = [], []
+array_accuracy = []
+array_precision = []
+array_recall = []
 
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     for epoch in range(1, total_epoch+1):
         index, input_batch, target_batch = next_batch(index, train_data[0], train_data[1])
-#        print("\n== input_batch ===")
-#        print(input_batch)
-#        print("\n== target_batch ===")
-#        print(target_batch)
-
         _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
-        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: train_data[0], Y: train_data[1]})
-        print(predict)
+        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
         if epoch % 10 == 0:
-          print("\n==========================")
+          print("==========================")
           print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
           predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_data[0], Y: test_data[1]})
-          print("테스트 정확도: %.3f%%"%(accuracy_val*100))
+          print("테스트 정확도: %.3f%%\n"%(accuracy_val*100))
+          array_accuracy.append(accuracy_val)
+          
+          _precision, _recall = check_pr.sehan_precision_recall(test_data[1], predict)
+          array_precision.append(_precision)
+          array_recall.append(_recall)
 
-#           _precision, _recall = check_pr.sehan_precision_recall(test_target, predict)
-#           array_precision.append(_precision)
-#           array_recall.append(_recall)
 
-
-
-# print("\n == array_precision ==========================")
-# print(array_precision)
-# print("\n == array_precision ==========================")
-# print(array_recall)
+#print("\n == array_precision ==========================")
+#print(array_precision)
+#print("\n == array_recall ==========================")
+#print(array_recall)
 
 
 plt.figure(figsize=(7, 8))
