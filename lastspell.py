@@ -6,6 +6,9 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
+print ("hello")
+
+
 # custom import
 import word_sort
 import check_pr
