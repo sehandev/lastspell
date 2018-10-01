@@ -1,4 +1,4 @@
-from io import open as opentt
+from io import open
 
 def check_last(option):
     with opentt('training_data/data_out.txt', 'r', encoding='UTF8') as f:
@@ -18,6 +18,29 @@ def check_last(option):
                     line += '$x'
             res += line + '\n'
 
-    res = res[:-1]
+    res = res[:-1]  # delete blank line
+
     with opentt('training_data/data_out.txt', 'w', encoding='UTF8') as f:
         f.write(res)
+
+def deduplication():
+    words = []
+    
+    with open("training_data/data_in.txt", 'r') as f:
+        for line in f:
+            line = line.strip().lower()
+            if len(line) > 2 and line.isalpha():
+                words.append(line)
+            else:
+                print(line)
+                
+    return(list(set(words)))
+        
+def sort():
+    words = deduplication()
+    words.sort()
+    
+    with open("training_data/data_in_sorted.txt", 'w') as f:
+        for word in words:
+            f.write(word + '\n')
+

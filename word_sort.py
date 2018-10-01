@@ -1,10 +1,23 @@
 import numpy as np
 import random
 
-np.set_printoptions(threshold=np.inf)
-
 def lastspell_data():
-    train_length = 5
+    '''
+    < Function >
+    Make train, test data with words data file.
+    -
+    Make test data with same rate of true, false.
+    Shuffle data.
+
+    < Return >
+    [train_input, train_target]
+    train_input : array of train words.
+    train_target : array of train answers.
+    [test_input, test_target]
+    test_input : array of test words.
+    test_target : array of test answers.
+    '''
+    train_length = 5  # 글자수 통일
     with open("training_data/data_out.txt", 'r') as f:
         word_list = f.read().split('\n')
         # word_list : ["able$에이블$o", "about$어바웃$o", ...]
@@ -40,9 +53,9 @@ def lastspell_data():
         train_data.append([i, 0])
 
     # shuffle datas
-#    random.shuffle(train_data)
-#    random.shuffle(test_data)
- 
+    random.shuffle(train_data)
+    random.shuffle(test_data)
+
     # sperate input data and target data
     train_input = []
     train_target = []
@@ -64,7 +77,17 @@ def lastspell_data():
 
 
 def processng_data(arr, train_length):
-    # arr : ["able", "about", ... ]
+    '''
+    < Function >
+    Change words to datas of same length.
+
+    < Parameter >
+    arr : array of words. ex) ["able", "about", ... ]
+    train_length : int data of limit length. Every words will be sliced to the length.
+
+    < Return >
+    result_arr : array of words of same length. 
+    '''
     result_arr = []
     for t in arr:
         # t : "able"
@@ -78,6 +101,16 @@ def processng_data(arr, train_length):
  
 
 def data_to_eye(arr):
+    '''
+    < Function >
+    Change words to numpy's eye arrays.
+
+    < Parameter >
+    arr : array of words. Words are composed with small alphabet and '$'(=blank).
+
+    < Return >
+    temp : array of numpy's eye arrays.
+    '''
     eng = ['$', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     dic_eng = {n: i for i, n in enumerate(eng)}
     # dic_eng : {'$' : 0, 'a' : 1, 'b' : 2, 'c' : 3, ..., 'j' : 10, 'k' : 11, ...}
@@ -89,27 +122,3 @@ def data_to_eye(arr):
         temp.append(np.eye(27)[input])
     return temp
 
-
-def deduplication():
-    words = []
-    
-    with open("training_data/data_in.txt", 'r') as f:
-        for line in f:
-            line = line.strip().lower()
-            if len(line) > 2 and line.isalpha():
-                words.append(line)
-            else:
-                print(line)
-                
-    return(list(set(words)))
-        
-def sort():
-    words = deduplication()
-    words.sort()
-    
-    with open("training_data/data_in_sorted.txt", 'w') as f:
-        for word in words:
-            f.write(word + '\n')
-            
-if __name__ == "__main__":
-    sort()

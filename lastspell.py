@@ -6,12 +6,10 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-print ("hello")
-
 
 # custom import
-import word_sort
-import check_pr
+import word_sort  # func: lastspell_data
+import calculate_pr  # func: calculate_precision_recall
 
 train_data, test_data = word_sort.lastspell_data()
  
@@ -30,7 +28,7 @@ def next_batch(index, train_input, train_target):
     index += batch_size
     check = len(train_data[0]) - index
     if check < batch_size:
-      return check, train_input[index:]+train_input[:len(train_data[0])-check], train_target[index:]+train_target[:len(train_data[0])-check]
+      return check, (train_input[index:] + train_input[:len(train_data[0])-check]), (train_target[index:] + train_target[:len(train_data[0])-check])
     return index, train_input[index:index+batch_size], train_target[index:index+batch_size]
 
    
@@ -47,7 +45,9 @@ cell1 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
 cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
 cell2 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
 cell3 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
-multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3])
+cell4 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
+
+multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3, cell4])
 
 outputs, _ = tf.nn.dynamic_rnn(multi_cell, X, dtype=tf.float32)  # outputs: [?, 5, 128]
 outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
@@ -80,16 +80,9 @@ with tf.Session() as sess:
           print("테스트 정확도: %.3f%%\n"%(accuracy_val*100))
           array_accuracy.append(accuracy_val)
           
-          _precision, _recall = check_pr.sehan_precision_recall(test_data[1], predict)
-          array_precision.append(_precision)
-          array_recall.append(_recall)
-
-
-#print("\n == array_precision ==========================")
-#print(array_precision)
-#print("\n == array_recall ==========================")
-#print(array_recall)
-
+          precision, recall = calculate_pr.calculate_precision_recall(test_data[1], predict)
+          array_precision.append(precision)
+          array_recall.append(recall)
 
 plt.figure(figsize=(7, 8))
 f_scores = np.linspace(0.2, 0.8, num=4)
@@ -117,4 +110,4 @@ plt.title('Extension of Precision-Recall curve to a class')
 plt.legend(lines, labels, loc=(0, -.38), prop=dict(size=14))
 
 
-plt.savefig('test0.png')
+plt.savefig('result/result.png')
