@@ -39,7 +39,7 @@ def lastspell_data():
     true_array = processng_data(pre_true_array, train_length)
     false_array = processng_data(pre_false_array, train_length)
 
-    #make test data
+    # make test data
     test_data = []
     for i in range(int(full_length * 0.05)):
         test_data.append([true_array.pop(), 1])
@@ -114,7 +114,6 @@ def data_to_eye(arr):
     eng = ['$', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     dic_eng = {n: i for i, n in enumerate(eng)}
     # dic_eng : {'$' : 0, 'a' : 1, 'b' : 2, 'c' : 3, ..., 'j' : 10, 'k' : 11, ...}
-    print(dic_eng)
 
     temp = []
     for t in arr:

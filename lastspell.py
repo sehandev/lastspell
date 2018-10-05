@@ -1,20 +1,21 @@
-# import
-import tensorflow as tf
 import numpy as np
 import random
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-
+import tensorflow as tf
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # custom import
 import word_sort  # func: lastspell_data
 import calculate_pr  # func: calculate_precision_recall
 
+# Get data
 train_data, test_data = word_sort.lastspell_data()
  
 # Set options
-batch_size = int(len(train_data[0]) * 0.03)
+batch_size = int(len(train_data[0]) * 0.03)  # 3%
 learning_rate = 0.01  # optimizer learning rate
 n_hidden = 128  # hidden layer's depth 
 total_epoch = 2000
@@ -41,11 +42,11 @@ b = tf.Variable(tf.random_normal([n_class]))  # b : bias
 
 
 # RNN cell
-cell1 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
+cell1 = tf.nn.rnn_cell.LSTMCell(n_hidden)
 cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
-cell2 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
-cell3 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
-cell4 = tf.nn.rnn_cell.BasicLSTMCell(n_hidden)
+cell2 = tf.nn.rnn_cell.LSTMCell(n_hidden)
+cell3 = tf.nn.rnn_cell.LSTMCell(n_hidden)
+cell4 = tf.nn.rnn_cell.LSTMCell(n_hidden)
 
 multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3, cell4])
 
