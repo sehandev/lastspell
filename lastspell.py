@@ -15,10 +15,10 @@ import calculate_pr  # func: calculate_precision_recall
 train_data, test_data = word_sort.lastspell_data()
  
 # Set options
-batch_size = 200
+batch_size = 500
 learning_rate = 1e-3  # optimizer learning rate
 n_hidden = 128  # hidden layer's depth 
-total_epoch = 2000
+total_epoch = 20000
 n_step = len(train_data[0][0])  # word length = 5
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False
@@ -76,25 +76,28 @@ with tf.Session() as sess:
     if ckpt and ckpt.model_checkpoint_path:
         saver.restore(sess, ckpt.model_checkpoint_path)
 
-    with open("model/start_epoch", 'r') as f:
+    with open("./start_epoch", 'r') as f:
         start_epoch = int(f.read())
 
     for epoch in range(start_epoch, total_epoch+1):
         index, input_batch, target_batch = next_batch(index, train_data[0], train_data[1])
         _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
+
+        predict, test_accuracy = sess.run([prediction, accuracy], feed_dict={X: test_data[0], Y: test_data[1]})
+        precision, recall = calculate_pr.calculate_precision_recall(test_data[1], predict)
+        array_precision.append(precision)
+        array_recall.append(recall)
+
         if epoch % 10 == 0:
             train_accuracy = sess.run(accuracy, feed_dict={X: input_batch, Y: target_batch})
-            predict, test_accuracy = sess.run([prediction, accuracy], feed_dict={X: test_data[0], Y: test_data[1]})
             print("==========================")
             print("Epoch: {:03d} // loss: {:.6f}".format(epoch, loss))
             print("Training accuracy: {:.3f} // Test accuracy {:.3f}".format(train_accuracy, test_accuracy))
-            precision, recall = calculate_pr.calculate_precision_recall(test_data[1], predict)
-            array_precision.append(precision)
-            array_recall.append(recall)
-            if epoch % 1000 == 0:
-                saver.save(sess, checkpoint_path, global_step=epoch)
-                with open("model/start_epoch", 'w') as f:
-                    f.write(str(epoch))
+
+        if epoch % 1000 == 0:
+            saver.save(sess, checkpoint_path, global_step=epoch)
+            with open("./start_epoch", 'w') as f:
+                f.write(str(epoch))
 
     while True:
         print("\nWrite word to test. (Quit : q)", end=' > ')
