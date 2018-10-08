@@ -44,3 +44,4 @@ def sort():
         for word in words:
             f.write(word + '\n')
 
+sort()

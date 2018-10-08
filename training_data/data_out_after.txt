@@ -2315,6 +2315,7 @@ heel$힐$o
 height$하이트$x
 helicopter$헬리컵터$x
 hell$헬$o
+hello$헬로$x
 helmet$헬멧$o
 help$헬프$x
 helpful$헬프풀$o

@@ -15,12 +15,11 @@ import calculate_pr  # func: calculate_precision_recall
 train_data, test_data = word_sort.lastspell_data()
  
 # Set options
-batch_size = int(len(train_data[0]) * 0.03)  # 3%
-learning_rate = 0.01  # optimizer learning rate
+batch_size = 200
+learning_rate = 1e-3  # optimizer learning rate
 n_hidden = 128  # hidden layer's depth 
-total_epoch = 2000
+total_epoch = 10000
 n_step = len(train_data[0][0])  # word length = 5
-
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False
 
@@ -34,8 +33,8 @@ def next_batch(index, train_input, train_target):
 
    
 # Modeling RNN
-X = tf.placeholder(tf.float32, [None, n_step, n_input])  # X : ?
-Y = tf.placeholder(tf.int32, [None])  # Y : ?
+X = tf.placeholder(tf.float32, [None, n_step, n_input])
+Y = tf.placeholder(tf.int32, [None])
 
 W = tf.Variable(tf.random_normal([n_hidden, n_class]))  # W : weight
 b = tf.Variable(tf.random_normal([n_class]))  # b : bias
@@ -46,9 +45,8 @@ cell1 = tf.nn.rnn_cell.LSTMCell(n_hidden)
 cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
 cell2 = tf.nn.rnn_cell.LSTMCell(n_hidden)
 cell3 = tf.nn.rnn_cell.LSTMCell(n_hidden)
-cell4 = tf.nn.rnn_cell.LSTMCell(n_hidden)
 
-multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3, cell4])
+multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3])
 
 outputs, _ = tf.nn.dynamic_rnn(multi_cell, X, dtype=tf.float32)  # outputs: [?, 5, 128]
 outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
@@ -67,23 +65,49 @@ array_accuracy = []
 array_precision = []
 array_recall = []
 
+SAVER_DIR = "model"
+saver = tf.train.Saver()
+checkpoint_path = os.path.join(SAVER_DIR, "model")
+ckpt = tf.train.get_checkpoint_state(SAVER_DIR)
+
 with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
-    for epoch in range(1, total_epoch+1):
+    if ckpt and ckpt.model_checkpoint_path:
+        saver.restore(sess, ckpt.model_checkpoint_path)
+
+    with open("model/start_epoch", 'r') as f:
+        start_epoch = int(f.read())
+
+    for epoch in range(start_epoch, total_epoch+1):
         index, input_batch, target_batch = next_batch(index, train_data[0], train_data[1])
         _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
-        predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: input_batch, Y: target_batch})
         if epoch % 10 == 0:
-          print("==========================")
-          print('Epoch: {:03d} // loss: {:.6f} // training accuracy: {:.3f}'.format(epoch, loss, accuracy_val))
-          predict, accuracy_val = sess.run([prediction, accuracy], feed_dict={X: test_data[0], Y: test_data[1]})
-          print("테스트 정확도: %.3f%%\n"%(accuracy_val*100))
-          array_accuracy.append(accuracy_val)
-          
-          precision, recall = calculate_pr.calculate_precision_recall(test_data[1], predict)
-          array_precision.append(precision)
-          array_recall.append(recall)
+            train_accuracy = sess.run(accuracy, feed_dict={X: input_batch, Y: target_batch})
+            predict, test_accuracy = sess.run([prediction, accuracy], feed_dict={X: test_data[0], Y: test_data[1]})
+            print("==========================")
+            print("Epoch: {:03d} // loss: {:.6f}".format(epoch, loss))
+            print("Training accuracy: {:.3f} // Test accuracy {:.3f}".format(train_accuracy, test_accuracy))
+            precision, recall = calculate_pr.calculate_precision_recall(test_data[1], predict)
+            array_precision.append(precision)
+            array_recall.append(recall)
+            if epoch % 1000 == 0:
+                saver.save(sess, checkpoint_path, global_step=epoch)
+                with open("model/start_epoch", 'w') as f:
+                    f.write(str(epoch))
+
+    while True:
+        print("\nWrite word to test. (Quit : q)", end=' > ')
+        user_word = input()
+        if user_word == 'q':
+            break
+        t = word_sort.processng_data([user_word], n_step)
+        user_arr = word_sort.data_to_eye(t)
+        predict = sess.run(prediction, feed_dict={X: user_arr})
+        if predict == [1]:
+            print("받침 있음")
+        elif predict == [0]:
+            print("받침 없음")
 
 plt.figure(figsize=(7, 8))
 f_scores = np.linspace(0.2, 0.8, num=4)
@@ -110,5 +134,5 @@ plt.ylabel('Precision')
 plt.title('Extension of Precision-Recall curve to a class')
 plt.legend(lines, labels, loc=(0, -.38), prop=dict(size=14))
 
-
 plt.savefig('result/result.png')
+

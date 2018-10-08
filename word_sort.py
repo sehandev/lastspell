@@ -19,8 +19,8 @@ def lastspell_data():
     '''
     train_length = 5  # 글자수 통일
     with open("training_data/data_out.txt", 'r') as f:
-        word_list = f.read().split('\n')
-        # word_list : ["able$에이블$o", "about$어바웃$o", ...]
+        word_list = f.read().split('\n')[:-1]
+        # word_list : ["able$o", "about$o", ...]
     
     full_length = len(word_list)  # 단어 개수
 
@@ -28,8 +28,8 @@ def lastspell_data():
     pre_false_array = []
 
     for t in word_list:
-        # t : administration$어드미니스트래이션$o
-        ox = t.split('$')[2]
+        # t : administration$o
+        ox = t.split('$')[1]
         if ox == 'o':
             pre_true_array.append(t.split('$')[0])
         elif ox == 'x': 
@@ -117,7 +117,7 @@ def data_to_eye(arr):
 
     temp = []
     for t in arr:
-        input = [dic_eng[i] for i in t]
-        temp.append(np.eye(27)[input])
+        spell = [dic_eng[i] for i in t]
+        temp.append(np.eye(27)[spell])
     return temp
 

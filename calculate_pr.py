@@ -36,15 +36,12 @@ def calculate_precision_recall(target, predict):
     if (tp + fp) != 0 and (tp + fn) != 0:
         precision = tp / (tp + fp)
         recall = tp / (tp + fn)
-
         print("precision : " + str(precision))
         print("recall : " + str(recall))
-        print("\n\n")
-
     else:
         precision = 0
         recall = 0
-        print("precision and recall make some ERROR\n\n")
+        print("precision and recall make some ERROR")
 
     return precision, recall
 
