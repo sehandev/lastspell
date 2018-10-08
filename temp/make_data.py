@@ -26,10 +26,10 @@ def check_last(option):
 def deduplication():
     words = []
     
-    with open("training_data/data_in.txt", 'r') as f:
+    with open("../training_data/data_in.txt", 'r') as f:
         for line in f:
             line = line.strip().lower()
-            if len(line) > 2 and line.isalpha():
+            if len(line) > 3 and line.isalpha():
                 words.append(line)
             else:
                 print(line)
@@ -40,8 +40,18 @@ def sort():
     words = deduplication()
     words.sort()
     
-    with open("training_data/data_in_sorted.txt", 'w') as f:
+    with open("../training_data/data_in_sorted.txt", 'w') as f:
         for word in words:
             f.write(word + '\n')
+
+def temp():
+    with open("../dict/cntlist.rev", 'r') as f:
+        temp = f.readlines()
+    word_arr = []
+    for t in temp:
+        word_arr.append(t.split('%')[0])
+    with open("../training_data/data_in2.txt", 'w') as f:
+        for w in word_arr:
+            f.write(w+'\n')
 
 sort()

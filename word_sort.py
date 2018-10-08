@@ -111,13 +111,20 @@ def data_to_eye(arr):
     < Return >
     temp : array of numpy's eye arrays.
     '''
-    eng = ['$', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    eng = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
     dic_eng = {n: i for i, n in enumerate(eng)}
-    # dic_eng : {'$' : 0, 'a' : 1, 'b' : 2, 'c' : 3, ..., 'j' : 10, 'k' : 11, ...}
+    # dic_eng : {'a' : 0, 'b' : 1, 'c' : 2, ..., 'j' : 9, 'k' : 10, ...}
 
     temp = []
     for t in arr:
-        spell = [dic_eng[i] for i in t]
+        spell = []
+        for w in t:
+            if w in eng:
+                print("in!"+w)
+                spell.append(dic_eng[w])
+            else:
+                print("no!"+w)
+                spell.append(26)
         temp.append(np.eye(27)[spell])
     return temp
 
