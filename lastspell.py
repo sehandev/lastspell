@@ -18,7 +18,7 @@ train_data, test_data = word_sort.lastspell_data()
 batch_size = 200
 learning_rate = 1e-3  # optimizer learning rate
 n_hidden = 128  # hidden layer's depth 
-total_epoch = 10000
+total_epoch = 2000
 n_step = len(train_data[0][0])  # word length = 5
 n_input = 27  # Alphabet = 26
 n_class = 2  # True or False

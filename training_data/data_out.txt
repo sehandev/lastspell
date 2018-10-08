@@ -453,6 +453,7 @@ behind$x
 belief$x
 believe$x
 believer$x
+bello$x
 belonging$o
 beloved$x
 belt$x
