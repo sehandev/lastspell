@@ -11,10 +11,10 @@ class Lastspell:
     def __init__(self):
         # set options
         self.train_length = 5
-        self.batch_size = 500
+        self.batch_size = 1000
         self.learning_rate = 1e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 20000
+        self.total_epoch = 50000
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -83,8 +83,6 @@ class Lastspell:
 
         # run model
         for epoch in range(start_epoch, self.total_epoch+1):
-            print(len(self.train_data[0]))
-            print(len(self.train_data[1]))
             self.index, input_batch, target_batch = self.next_batch(self.index, self.train_data[0], self.train_data[1])
             _, loss = self.sess.run([self.optimizer, self.cost], feed_dict={self.X: input_batch, self.Y: target_batch})
 
@@ -93,11 +91,12 @@ class Lastspell:
             self.array_precision.append(precision)
             self.array_recall.append(recall)
 
-            if epoch % 10 == 0:
+            if epoch % 100 == 0:
                 train_accuracy = self.sess.run(self.accuracy, feed_dict={self.X: input_batch, self.Y: target_batch})
                 print("==========================")
                 print("Epoch: {:03d} // loss: {:.6f}".format(epoch, loss))
                 print("Training accuracy: {:.3f} // Test accuracy {:.3f}".format(train_accuracy, test_accuracy))
+                print("precision : {:.3f} // recall {:.3f}".format(precision, recall))
 
             if epoch % 1000 == 0:
                 self.saver.save(self.sess, self.checkpoint_path, global_step=epoch)
@@ -110,13 +109,28 @@ class Lastspell:
             user_word = input()
             if user_word == 'q':
                 break
-            t = self.processng_data([user_word], n_step)
+            t = self.processng_data([user_word])
             user_arr = self.data_to_eye(t)
             predict = self.sess.run(self.prediction, feed_dict={self.X: user_arr})
             if predict == [1]:
                 print("받침 있음")
             elif predict == [0]:
                 print("받침 없음")
+
+    def add_data(self):
+        with open("./training_data/data_in_sorted.txt", 'r') as f:
+            word_list = f.read().split('\n')[:-1]
+        w = self.processng_data(word_list)
+        w = self.data_to_eye(w)
+        predict = self.sess.run(self.prediction, feed_dict={self.X: w})
+        with open("./result/result_add.csv", 'w') as f:
+            for i in range(len(word_list)):
+                if predict[i] == 1:
+                    ox = 'o'
+                elif predict[i] == 0:
+                    ox = 'x'
+                f.write(word_list[i] + "$" + ox + "\n")
+                
 
     def make_graph(self):
         plt.figure(figsize=(7, 8))
@@ -143,7 +157,6 @@ class Lastspell:
         plt.ylabel('Precision')
         plt.title('Extension of Precision-Recall curve to a class')
         plt.legend(lines, labels, loc=(0, -.38), prop=dict(size=14))
-
         plt.savefig('result/result.png')
 
     def lastspell_data(self):
@@ -189,8 +202,6 @@ class Lastspell:
             test_data.append([true_array.pop(), 1])
             test_data.append([false_array.pop(), 0])
 
-        print("true : " + str(len(true_array)))
-        print("false : " + str(len(false_array)))
         # make train data
         train_data = []
         for i in true_array:
@@ -199,8 +210,8 @@ class Lastspell:
             train_data.append([i, 0])
 
         # shuffle datas
-#        random.shuffle(train_data)
-#        random.shuffle(test_data)
+        random.shuffle(train_data)
+        random.shuffle(test_data)
 
         # sperate input data and target data
         train_input = []
@@ -218,6 +229,9 @@ class Lastspell:
         # change array to eye array
         train_input = self.data_to_eye(train_input)
         test_input = self.data_to_eye(test_input)
+
+        # update full_length without test_data
+        self.full_length = len(train_input)
 
         return [train_input, train_target], [test_input, test_target]
 
@@ -309,19 +323,17 @@ class Lastspell:
         if (tp + fp) != 0 and (tp + fn) != 0:
             precision = tp / (tp + fp)
             recall = tp / (tp + fn)
-            print("precision : " + str(precision))
-            print("recall : " + str(recall))
+#            print("precision : " + str(precision))
+#            print("recall : " + str(recall))
         else:
             precision = 0
             recall = 0
             print("precision and recall make some ERROR")
-
         return precision, recall
 
     def next_batch(self, index, train_input, train_target):
         index += self.batch_size
         check = self.full_length - index
-        print("check : " + str(check))
         if check < self.batch_size:
             return check, (train_input[index:] + train_input[:self.full_length-check]), (train_target[index:] + train_target[:self.full_length-check])
         return index, train_input[index:index+self.batch_size], train_target[index:index+self.batch_size]
