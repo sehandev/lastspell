@@ -29,6 +29,8 @@ class Lastspell:
         # make model
         self.design_model()
         self.run_model()
+        self.make_graph
+
     
     def design_model(self):
         # RNN cell
@@ -337,3 +339,4 @@ class Lastspell:
         if check < self.batch_size:
             return check, (train_input[index:] + train_input[:self.full_length-check]), (train_target[index:] + train_target[:self.full_length-check])
         return index, train_input[index:index+self.batch_size], train_target[index:index+self.batch_size]
+
