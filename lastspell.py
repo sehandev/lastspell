@@ -14,7 +14,7 @@ class Lastspell:
         self.batch_size = 1000
         self.learning_rate = 1e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 50000
+        self.total_epoch = 10000
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -29,7 +29,7 @@ class Lastspell:
         # make model
         self.design_model()
         self.run_model()
-        self.make_graph
+        self.make_graph()
 
     
     def design_model(self):
@@ -125,7 +125,7 @@ class Lastspell:
         w = self.processng_data(word_list)
         w = self.data_to_eye(w)
         predict = self.sess.run(self.prediction, feed_dict={self.X: w})
-        with open("./result/result_add.csv", 'w') as f:
+        with open("./result/result_add.txt", 'w') as f:
             for i in range(len(word_list)):
                 if predict[i] == 1:
                     ox = 'o'
