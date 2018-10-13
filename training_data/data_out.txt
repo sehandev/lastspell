@@ -13635,6 +13635,7 @@ segmental$o
 segregate$x
 segregated$x
 segregationist$x
+sehan$o
 seismic$o
 seismograph$x
 seize$x
