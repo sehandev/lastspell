@@ -23,7 +23,7 @@ class Lastspell:
         self.batch_size = 1000
         self.learning_rate = 1e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 10000
+        self.total_epoch = 1000
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -35,11 +35,14 @@ class Lastspell:
         # make session
         self.sess = tf.Session()
         
+        # make tensorboard
+        self.writer = tf.summary.FileWriter('./board/lastspell', self.sess.graph)
+
         # make model
         self.design_model()
+        self.summary_model()
         self.run_model()
         self.make_graph()
-
     
     def design_model(self):
         '''
@@ -66,14 +69,14 @@ class Lastspell:
         outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
         outputs = outputs[-1]  # [?, 128]
 
-        model = tf.matmul(outputs, W) + b
+        self.model = tf.matmul(outputs, W) + b
 
         # cost
-        self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=model, labels=self.Y))
+        self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
         self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
 
         # accuracy
-        self.prediction = tf.cast(tf.argmax(model, 1), tf.int32)
+        self.prediction = tf.cast(tf.argmax(self.model, 1), tf.int32)
         prediction_check = tf.equal(self.prediction, self.Y)
         self.accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
 
@@ -87,6 +90,15 @@ class Lastspell:
         self.saver = tf.train.Saver()
         self.checkpoint_path = os.path.join(SAVER_DIR, "model")
         self.ckpt = tf.train.get_checkpoint_state(SAVER_DIR)
+
+    def summary_model(self):
+        tf.summary.scalar('model', self.model)
+        tf.summary.scalar('prediction', self.prediction)
+        tf.summary.scalar('accuracy', self.accuracy)
+
+        self.merged = tf.summary.merge_all()
+        #train_writer = tf.train.SummaryWriter('summary/train', self.sess.graph)
+        #test_writer = tf.train.SummaryWriter('summary/test', self.sess.graph)
 
     def run_model(self):
         '''
@@ -115,8 +127,10 @@ class Lastspell:
             
             if epoch % 100 == 0:
                 # test with train & test data
-                train_accuracy = self.sess.run(self.accuracy, feed_dict={self.X: input_batch, self.Y: target_batch})
-                predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
+                summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch})
+                self.writer.add_summary(summary, epoch)
+                summary, predict, test_accuracy = self.sess.run([self.merged, self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
+                self.writer.add_summary(summary, epoch)
  
                 # calculate precision and recall
                 precision, recall = self.calculate_precision_recall(self.test_data[1], predict)
@@ -134,6 +148,41 @@ class Lastspell:
                 self.saver.save(self.sess, self.checkpoint_path, global_step=epoch)
                 with open("./start_epoch", 'w') as f:
                     f.write(str(epoch))
+
+    def make_graph(self):
+        '''
+        < Feature >
+        make precision recall graph
+        save graph to png file
+
+        < Return >
+        no return
+        '''
+        plt.figure(figsize=(7, 8))
+        f_scores = np.linspace(0.2, 0.8, num=4)
+        lines = []
+        labels = []
+        for f_score in f_scores:
+            x = np.linspace(0.01, 1)
+            y = f_score * x / (2 * x - f_score)
+            l, = plt.plot(x[y >= 0], y[y >= 0], color='gray', alpha=0.2)
+            plt.annotate('f1={0:0.1f}'.format(f_score), xy=(0.9, y[45] + 0.02))
+        lines.append(l)
+        labels.append('iso-f1 curves')
+
+        l, = plt.plot(self.array_recall, self.array_precision, color='navy', lw=2)
+        lines.append(l)
+        labels.append('Precision-recall for class')
+
+        fig = plt.gcf()
+        fig.subplots_adjust(bottom=0.25)
+        plt.xlim([0.0, 1.0])
+        plt.ylim([0.0, 1.05])
+        plt.xlabel('Recall')
+        plt.ylabel('Precision')
+        plt.title('Extension of Precision-Recall curve to a class')
+        plt.legend(lines, labels, loc=(0, -.38), prop=dict(size=14))
+        plt.savefig('result/result.png')
 
     def user_test(self):
         '''
@@ -187,42 +236,6 @@ class Lastspell:
                     ox = 'x'
                 f.write(word_list[i] + "$" + ox + "\n")
                 
-
-    def make_graph(self):
-        '''
-        < Feature >
-        make precision recall graph
-        save graph to png file
-
-        < Return >
-        no return
-        '''
-        plt.figure(figsize=(7, 8))
-        f_scores = np.linspace(0.2, 0.8, num=4)
-        lines = []
-        labels = []
-        for f_score in f_scores:
-            x = np.linspace(0.01, 1)
-            y = f_score * x / (2 * x - f_score)
-            l, = plt.plot(x[y >= 0], y[y >= 0], color='gray', alpha=0.2)
-            plt.annotate('f1={0:0.1f}'.format(f_score), xy=(0.9, y[45] + 0.02))
-        lines.append(l)
-        labels.append('iso-f1 curves')
-
-        l, = plt.plot(self.array_recall, self.array_precision, color='navy', lw=2)
-        lines.append(l)
-        labels.append('Precision-recall for class')
-
-        fig = plt.gcf()
-        fig.subplots_adjust(bottom=0.25)
-        plt.xlim([0.0, 1.0])
-        plt.ylim([0.0, 1.05])
-        plt.xlabel('Recall')
-        plt.ylabel('Precision')
-        plt.title('Extension of Precision-Recall curve to a class')
-        plt.legend(lines, labels, loc=(0, -.38), prop=dict(size=14))
-        plt.savefig('result/result.png')
-
     def lastspell_data(self):
         '''
         < Feature >>
@@ -298,7 +311,6 @@ class Lastspell:
         self.full_length = len(train_input)
 
         return [train_input, train_target], [test_input, test_target]
-
 
     def processng_data(self, arr):
         '''
