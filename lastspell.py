@@ -23,7 +23,7 @@ class Lastspell:
         self.batch_size = 1000
         self.learning_rate = 1e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 1000
+        self.total_epoch = 999
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -40,7 +40,7 @@ class Lastspell:
 
         # make model
         self.design_model()
-        #self.summary_model()
+        self.summary_model()
         self.run_model()
         self.make_graph()
     
@@ -94,7 +94,7 @@ class Lastspell:
     def summary_model(self):
         #tf.summary.scalar('model', self.model)
         #tf.summary.scalar('prediction', self.prediction)
-        #tf.summary.scalar('accuracy', self.accuracy)
+        tf.summary.scalar('accuracy', self.accuracy)
 
         self.merged = tf.summary.merge_all()
         #train_writer = tf.train.SummaryWriter('summary/train', self.sess.graph)
@@ -110,11 +110,6 @@ class Lastspell:
         no return
         '''
         self.sess.run(tf.global_variables_initializer())
-        tf.summary.scalar('model', self.model)
-        tf.summary.scalar('prediction', self.prediction)
-        tf.summary.scalar('accuracy', self.accuracy)
-
-        self.merged = tf.summary.merge_all()
 
         # load model
         if self.ckpt and self.ckpt.model_checkpoint_path:
@@ -133,8 +128,8 @@ class Lastspell:
             if epoch % 100 == 0:
                 # test with train & test data
                 summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch})
-                #self.writer.add_summary(summary, epoch)
-                summary, predict, test_accuracy = self.sess.run([self.merged, self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
+                self.writer.add_summary(summary, epoch)
+                predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
                 #self.writer.add_summary(summary, epoch)
  
                 # calculate precision and recall
