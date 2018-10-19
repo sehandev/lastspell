@@ -23,7 +23,7 @@ class Lastspell:
         self.batch_size = 1000
         self.learning_rate = 1e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 999
+        self.total_epoch = 4000
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -35,9 +35,6 @@ class Lastspell:
         # make session
         self.sess = tf.Session()
         
-        # make tensorboard
-        self.writer = tf.summary.FileWriter('./board/lastspell', self.sess.graph)
-
         # make model
         self.design_model()
         self.summary_model()
@@ -53,11 +50,18 @@ class Lastspell:
         no return
         '''
         # RNN cell
-        self.X = tf.placeholder(tf.float32, [None, self.n_step, self.n_input])
-        self.Y = tf.placeholder(tf.int32, [None])
+        with tf.name_scope("X"):
+            self.X = tf.placeholder(tf.float32, [None, self.n_step, self.n_input])
+        with tf.name_scope("Y"):
+            self.Y = tf.placeholder(tf.int32, [None])
 
-        W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
-        b = tf.Variable(tf.random_normal([self.n_class]))  # b : bias
+        with tf.name_scope("W"):
+          W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
+        a = tf.Variable(0)
+#           tf.summary.histogram("W", W)
+        with tf.name_scope("b"):
+          b = tf.Variable(tf.random_normal([self.n_class]))  # b : bias
+#           tf.summary.histogram("b", b)
 
         cell1 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
         cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
@@ -65,21 +69,25 @@ class Lastspell:
         cell3 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
         multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3])
 
-        outputs, _ = tf.nn.dynamic_rnn(multi_cell, self.X, dtype=tf.float32)  # outputs: [?, 5, 128]
-        outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
-        outputs = outputs[-1]  # [?, 128]
+        with tf.name_scope("outputs"):
+          outputs, _ = tf.nn.dynamic_rnn(multi_cell, self.X, dtype=tf.float32)  # outputs: [?, 5, 128]
+          outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
+          outputs = outputs[-1]  # [?, 128]
 
-        self.model = tf.matmul(outputs, W) + b
+        with tf.name_scope("model"):
+          self.model = tf.matmul(outputs, W) + b
 
         # cost
-        self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
-        self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
+        with tf.name_scope("optimizer"):
+          self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
+          self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
 
         # accuracy
-        self.prediction = tf.cast(tf.argmax(self.model, 1), tf.int32)
-        prediction_check = tf.equal(self.prediction, self.Y)
-        self.accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
-
+        with tf.name_scope("accuracy"):
+          self.prediction = tf.cast(tf.argmax(self.model, 1), tf.int32)
+          prediction_check = tf.equal(self.prediction, self.Y)
+          self.accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
+          
         # result
         self.array_accuracy = []
         self.array_precision = []
@@ -92,13 +100,13 @@ class Lastspell:
         self.ckpt = tf.train.get_checkpoint_state(SAVER_DIR)
 
     def summary_model(self):
-        #tf.summary.scalar('model', self.model)
-        #tf.summary.scalar('prediction', self.prediction)
-        tf.summary.scalar('accuracy', self.accuracy)
+        # make tensorboard
+        self.writer = tf.summary.FileWriter('./board/lastspell', self.sess.graph)
+
+        tf.summary.scalar('Accuracy', self.accuracy)
+        tf.summary.scalar('Loss', self.cost)
 
         self.merged = tf.summary.merge_all()
-        #train_writer = tf.train.SummaryWriter('summary/train', self.sess.graph)
-        #test_writer = tf.train.SummaryWriter('summary/test', self.sess.graph)
 
     def run_model(self):
         '''
@@ -125,25 +133,24 @@ class Lastspell:
             self.index, input_batch, target_batch = self.next_batch(self.index, self.train_data[0], self.train_data[1])
             _, loss = self.sess.run([self.optimizer, self.cost], feed_dict={self.X: input_batch, self.Y: target_batch})
             
-            if epoch % 100 == 0:
-                # test with train & test data
-                summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch})
-                self.writer.add_summary(summary, epoch)
-                predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
-                #self.writer.add_summary(summary, epoch)
- 
-                # calculate precision and recall
-                precision, recall = self.calculate_precision_recall(self.test_data[1], predict)
-                self.array_precision.append(precision)
-                self.array_recall.append(recall)
+            # test with train & test data
+            summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch})
+            predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
+            self.writer.add_summary(summary, epoch)
 
+            # calculate precision and recall
+            precision, recall = self.calculate_precision_recall(self.test_data[1], predict)
+            self.array_precision.append(precision)
+            self.array_recall.append(recall)
+
+            if epoch % 100 == 0:
                 # print information
                 print("==========================")
                 print("Epoch: {:03d} // loss: {:.6f}".format(epoch, loss))
                 print("Training accuracy: {:.3f} // Test accuracy {:.3f}".format(train_accuracy, test_accuracy))
                 print("precision : {:.3f} // recall {:.3f}".format(precision, recall))
 
-            if epoch % 1000 == 0:
+            if epoch % 10000000 == 0:
                 # save model & epoch
                 self.saver.save(self.sess, self.checkpoint_path, global_step=epoch)
                 with open("./start_epoch", 'w') as f:
