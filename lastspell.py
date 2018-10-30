@@ -56,12 +56,10 @@ class Lastspell:
             self.Y = tf.placeholder(tf.int32, [None])
 
         with tf.name_scope("W"):
-          W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
+        W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
         a = tf.Variable(0)
-#           tf.summary.histogram("W", W)
         with tf.name_scope("b"):
-          b = tf.Variable(tf.random_normal([self.n_class]))  # b : bias
-#           tf.summary.histogram("b", b)
+            b = tf.Variable(tf.random_normal([self.n_class]))  # b : bias
 
         cell1 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
         cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
@@ -70,24 +68,24 @@ class Lastspell:
         multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3])
 
         with tf.name_scope("outputs"):
-          outputs, _ = tf.nn.dynamic_rnn(multi_cell, self.X, dtype=tf.float32)  # outputs: [?, 5, 128]
-          outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
-          outputs = outputs[-1]  # [?, 128]
+            outputs, _ = tf.nn.dynamic_rnn(multi_cell, self.X, dtype=tf.float32)  # outputs: [?, 5, 128]
+            outputs = tf.transpose(outputs, [1, 0, 2])  # [5, ?, 128]
+            outputs = outputs[-1]  # [?, 128]
 
         with tf.name_scope("model"):
-          self.model = tf.matmul(outputs, W) + b
+            self.model = tf.matmul(outputs, W) + b
 
         # cost
         with tf.name_scope("optimizer"):
-          self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
-          self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
+            self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
+            self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
 
         # accuracy
         with tf.name_scope("accuracy"):
-          self.prediction = tf.cast(tf.argmax(self.model, 1), tf.int32)
-          prediction_check = tf.equal(self.prediction, self.Y)
-          self.accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
-          
+            self.prediction = tf.cast(tf.argmax(self.model, 1), tf.int32)
+            prediction_check = tf.equal(self.prediction, self.Y)
+            self.accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
+        
         # result
         self.array_accuracy = []
         self.array_precision = []
