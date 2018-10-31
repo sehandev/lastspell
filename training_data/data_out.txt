@@ -46,7 +46,7 @@ abridge$x
 abridgment$x
 abroad$x
 abrogate$x
-abrupt$o
+abrupt$x
 abruptly$x
 abruptness$x
 abscess$x
@@ -66,7 +66,7 @@ absorption$o
 absorptive$x
 abstain$o
 abstention$o
-abstract$o
+abstract$x
 abstracted$x
 abstraction$o
 abstractionism$o
@@ -93,7 +93,7 @@ accelerator$x
 accent$x
 accenting$o
 accentuate$x
-accept$o
+accept$x
 acceptable$o
 acceptance$x
 accepted$x
@@ -160,7 +160,7 @@ acolyte$x
 acoustic$o
 acoustical$o
 acoustically$x
-acquaint$o
+acquaint$x
 acquaintance$x
 acquainted$x
 acquiesce$x
@@ -196,12 +196,12 @@ acutely$x
 adam$o
 adamant$x
 adamantly$x
-adapt$o
+adapt$x
 adaptable$o
 adaptation$o
 adapted$x
 added$x
-addict$o
+addict$x
 addicted$x
 addictive$x
 addition$o
@@ -212,7 +212,7 @@ addlebrained$x
 address$x
 addressed$x
 adenoma$x
-adept$o
+adept$x
 adequacy$x
 adequate$x
 adequately$x
@@ -247,20 +247,20 @@ admissible$o
 admission$o
 admit$o
 admittedly$x
-admix$o
+admix$x
 admonish$x
 admonition$o
 adolescence$x
 adolescent$x
 adonis$x
-adopt$o
+adopt$x
 adopted$x
 adoption$o
 adore$x
 adorn$o
 adrenal$o
 adrift$x
-adroit$x
+adroit$o
 adroitly$x
 adroitness$x
 adsorb$x
@@ -332,7 +332,7 @@ affinity$x
 affirm$o
 affirmation$o
 affirmative$x
-affix$o
+affix$x
 affixed$x
 afflict$x
 afflicted$x
@@ -344,7 +344,7 @@ afire$x
 aflame$o
 aflare$x
 afloat$x
-afoot$o
+afoot$x
 aforesaid$x
 afraid$x
 africa$x
@@ -446,7 +446,7 @@ alignment$x
 alike$x
 aliquot$o
 alive$x
-alkali$o
+alkali$x
 alkaline$o
 alkylbenzenesulfonate$x
 allegation$o
@@ -885,7 +885,7 @@ ashen$o
 ashore$x
 asia$x
 aside$x
-asleep$x
+asleep$o
 aspect$x
 asphalt$x
 aspirant$x
@@ -926,7 +926,7 @@ associated$x
 association$o
 assorted$x
 assortment$x
-assume$x
+assume$o
 assumed$x
 assumption$o
 assurance$x
@@ -950,7 +950,7 @@ astral$o
 astray$x
 astride$x
 astringent$x
-astronaut$x
+astronaut$o
 astronomer$x
 astronomical$o
 astronomy$x
@@ -1009,7 +1009,7 @@ attire$x
 attired$x
 attitude$x
 attorney$x
-attract$o
+attract$x
 attraction$o
 attractive$x
 attributable$o
@@ -1148,7 +1148,7 @@ baggage$x
 baggy$x
 bagpipe$x
 bags$x
-bait$x
+bait$o
 bake$x
 baked$x
 bakery$x
@@ -1159,9 +1159,9 @@ bald$x
 balding$o
 bale$o
 baleful$o
-bali$o
+bali$x
 balinese$x
-balk$o
+balk$x
 balkanize$x
 balkiness$x
 balking$o
@@ -1184,7 +1184,7 @@ balm$o
 balsam$o
 baltimore$x
 balustrade$x
-balzac$x
+balzac$o
 bamboo$x
 banal$o
 banana$x
@@ -1203,7 +1203,7 @@ banister$x
 banjo$x
 bank$x
 banker$x
-bankrupt$o
+bankrupt$x
 bankruptcy$x
 banner$x
 bannerlike$x
@@ -1267,7 +1267,7 @@ basket$o
 basketball$o
 basophilic$o
 bass$x
-bassinet$x
+bassinet$o
 bastard$x
 baste$x
 bastion$o
@@ -1356,7 +1356,7 @@ beforehand$x
 befriend$x
 befuddle$o
 befuddled$x
-beget$x
+beget$o
 beggar$x
 beggary$x
 begin$o
@@ -1525,7 +1525,7 @@ bitterly$x
 bitterness$x
 bitters$x
 bittersweet$x
-bivouac$x
+bivouac$o
 bizarre$x
 blab$o
 black$o
@@ -1562,7 +1562,7 @@ blazing$o
 bleach$x
 bleached$x
 bleachers$x
-bleak$o
+bleak$x
 bleakly$x
 bleary$x
 bleat$x
@@ -1763,7 +1763,7 @@ bowstring$o
 boxcar$x
 boxed$x
 boxer$x
-boycott$o
+boycott$x
 boyhood$x
 boyish$x
 brace$x
@@ -1801,7 +1801,7 @@ brazil$o
 brazilian$o
 breach$x
 bread$x
-breadfruit$x
+breadfruit$o
 breadth$x
 break$x
 breakable$o
@@ -1850,7 +1850,7 @@ brightly$x
 brightness$x
 brilliance$x
 brilliancy$x
-brilliant$o
+brilliant$x
 brilliantly$x
 brim$o
 brindle$o
@@ -1925,7 +1925,7 @@ buddha$x
 buddhist$x
 buddy$x
 budge$x
-budget$x
+budget$o
 budgetary$x
 buff$x
 buffalo$x
@@ -1940,7 +1940,7 @@ builder$x
 building$o
 buildup$o
 built$x
-bulb$x
+bulb$o
 bulgaria$x
 bulge$x
 bulging$o
@@ -2027,7 +2027,7 @@ bypass$x
 cabana$x
 cabbage$x
 cabin$o
-cabinet$x
+cabinet$o
 cable$o
 cache$x
 cackle$o
@@ -2206,7 +2206,7 @@ carven$o
 carving$o
 cascade$x
 case$x
-casebook$x
+casebook$o
 cash$x
 cashier$x
 cashmere$x
@@ -2333,7 +2333,7 @@ chamber$x
 chambered$x
 chambermaid$x
 champ$x
-champagne$x
+champagne$o
 champion$o
 championship$o
 chance$x
@@ -2387,7 +2387,7 @@ checkbook$o
 checklist$x
 checkout$o
 checkup$o
-cheek$x
+cheek$o
 cheekbone$o
 cheer$x
 cheerful$o
@@ -2443,7 +2443,7 @@ chinless$x
 chip$o
 chipper$x
 chiropractor$x
-chirp$o
+chirp$x
 chisel$o
 chiseled$x
 chivalrous$x
@@ -2453,7 +2453,7 @@ chloride$x
 chlorine$o
 chlorothiazide$x
 chlorpromazine$o
-chock$x
+chock$o
 chockful$o
 chocolate$x
 choice$x
@@ -2496,7 +2496,7 @@ chronic$o
 chronicle$o
 chronologically$x
 chrysanthemum$o
-chuck$x
+chuck$o
 chuckle$o
 chuff$x
 chug$x
@@ -2515,7 +2515,7 @@ churning$o
 chute$x
 cicada$x
 cigar$x
-cigarette$o
+cigarette$x
 ciliate$x
 cilium$o
 cinch$x
@@ -2622,7 +2622,7 @@ clergy$x
 clergyman$o
 cleric$o
 clerical$o
-clerk$o
+clerk$x
 clerking$o
 cleveland$x
 clever$x
@@ -2647,7 +2647,7 @@ clink$x
 clip$o
 clipping$o
 clique$x
-cloak$o
+cloak$x
 clobber$x
 clock$o
 clocking$o
@@ -2727,7 +2727,7 @@ cockeyed$x
 cockpit$o
 cockroach$x
 cocky$x
-coconut$x
+coconut$o
 cocoon$o
 coddle$o
 code$x
@@ -2740,7 +2740,7 @@ coexistence$x
 coexistent$x
 coffee$x
 coffeehouse$x
-coffeepot$x
+coffeepot$o
 coffin$o
 cognate$x
 cognizance$x
@@ -2829,7 +2829,7 @@ comforts$x
 comic$o
 comically$x
 coming$o
-command$o
+command$x
 commandeer$x
 commander$x
 commanding$o
@@ -2902,7 +2902,7 @@ compassion$o
 compassionate$x
 compassionately$x
 compatible$o
-compatriot$x
+compatriot$o
 compel$o
 compelled$x
 compensate$x
@@ -2982,7 +2982,7 @@ conceive$x
 concentrate$x
 concentrated$x
 concentration$o
-concept$o
+concept$x
 conception$o
 conceptual$o
 conceptuality$x
@@ -3058,7 +3058,7 @@ confidentially$x
 confidently$x
 confiding$o
 configuration$o
-confine$x
+confine$o
 confinement$x
 confines$x
 confining$o
@@ -3068,7 +3068,7 @@ confirmed$x
 confiscate$x
 conflict$x
 conflicting$o
-confluent$o
+confluent$x
 conform$o
 conformity$x
 confound$x
@@ -3168,7 +3168,7 @@ constantly$x
 constatation$o
 constellation$o
 consternation$o
-constituent$o
+constituent$x
 constitute$x
 constitution$o
 constitutional$o
@@ -3234,15 +3234,15 @@ continuously$x
 continuum$o
 contortion$o
 contour$x
-contraband$o
+contraband$x
 contrabass$x
 contraception$o
 contraceptive$x
-contract$o
+contract$x
 contraction$o
 contractor$x
 contractual$o
-contradict$o
+contradict$x
 contradiction$o
 contradictorily$x
 contradictory$x
@@ -3331,7 +3331,7 @@ coping$o
 copper$x
 copy$x
 copyright$x
-coquette$o
+coquette$x
 coral$o
 cord$x
 cordial$o
@@ -3522,7 +3522,7 @@ credo$x
 creed$x
 creedal$o
 creek$o
-creep$x
+creep$o
 creeper$x
 creeping$o
 cremate$x
@@ -3579,7 +3579,7 @@ crosswalk$x
 crotchety$x
 crouch$x
 crow$x
-crowbait$x
+crowbait$o
 crowd$x
 crowded$x
 crown$o
@@ -3876,7 +3876,7 @@ deduction$o
 deductive$x
 deed$x
 deem$o
-deep$x
+deep$o
 deepen$o
 deepening$o
 deeply$x
@@ -3961,7 +3961,7 @@ deluge$x
 deluxe$x
 delve$x
 demagogue$x
-demand$o
+demand$x
 demander$x
 demanding$o
 demandingly$x
@@ -4035,9 +4035,9 @@ deploy$x
 deportee$x
 depose$x
 deposed$x
-deposit$x
+deposit$o
 depositor$x
-depot$x
+depot$o
 deprave$x
 depravity$x
 deprecating$o
@@ -4150,7 +4150,7 @@ determining$o
 deterrent$x
 detest$x
 detonate$x
-detract$o
+detract$x
 detractor$x
 detribalize$x
 detroit$o
@@ -4162,7 +4162,7 @@ developer$x
 developing$o
 development$x
 developmental$o
-deviant$o
+deviant$x
 deviate$x
 deviation$o
 device$x
@@ -4423,7 +4423,7 @@ disinterest$x
 disinterested$x
 disjointed$x
 disk$x
-diskette$o
+diskette$x
 dislike$x
 dislocation$o
 dislodge$x
@@ -4528,7 +4528,7 @@ distort$x
 distortable$o
 distorted$x
 distortion$o
-distract$o
+distract$x
 distractedly$x
 distraction$o
 distraught$x
@@ -4645,7 +4645,7 @@ dotted$x
 double$o
 doubleheader$x
 doubly$x
-doubt$o
+doubt$x
 doubtful$o
 doubtless$x
 dough$x
@@ -4918,7 +4918,7 @@ efficiency$x
 efficient$x
 efficiently$x
 effloresce$x
-effluent$o
+effluent$x
 effort$x
 effortless$x
 effortlessly$x
@@ -4929,7 +4929,7 @@ eggs$x
 egocentric$o
 egotism$o
 egotist$x
-egypt$o
+egypt$x
 eight$x
 eighteen$o
 eighteenth$x
@@ -4974,7 +4974,7 @@ electronic$o
 electronics$x
 electrophoresis$x
 electrophorus$x
-electroshock$x
+electroshock$o
 electrostatic$o
 electrotherapist$x
 elegance$x
@@ -5262,7 +5262,7 @@ episode$x
 epistemology$x
 epistolatory$x
 epitaph$x
-epithet$x
+epithet$o
 epitome$o
 epitomize$x
 epoch$x
@@ -5301,8 +5301,8 @@ erratically$x
 erroneous$x
 error$x
 ersatz$x
-erudite$o
-erupt$o
+erudite$x
+erupt$x
 eruption$o
 erythroid$x
 escalation$o
@@ -5351,7 +5351,7 @@ ethics$x
 ethiopian$o
 ethnic$o
 ethos$x
-etiquette$o
+etiquette$x
 etymological$o
 euclyptus$x
 eugenic$o
@@ -5434,7 +5434,7 @@ excellence$x
 excellent$x
 excellently$x
 excelsior$x
-except$o
+except$x
 exception$o
 exceptional$o
 exceptionally$x
@@ -5498,12 +5498,12 @@ existent$x
 existential$o
 existentialist$x
 existing$o
-exit$x
+exit$o
 exodus$x
 exonerate$x
 exorcise$x
 exotic$o
-expand$o
+expand$x
 expanded$x
 expanding$o
 expanse$x
@@ -5600,7 +5600,7 @@ extinguish$x
 extinguished$x
 extirpate$x
 extra$x
-extract$o
+extract$x
 extracurricular$x
 extralegal$o
 extramarital$o
@@ -5661,7 +5661,7 @@ factual$o
 faculty$x
 fade$x
 faded$x
-fadeout$x
+fadeout$o
 faery$x
 fail$o
 failure$x
@@ -5796,7 +5796,7 @@ feline$o
 fell$o
 fella$x
 fellow$x
-fellowship$x
+fellowship$o
 felon$o
 felt$x
 female$o
@@ -5844,7 +5844,7 @@ fictional$o
 fictive$x
 fiddle$o
 fidelity$x
-fidget$x
+fidget$o
 field$x
 fielder$x
 fieldhand$x
@@ -5978,7 +5978,7 @@ flattened$x
 flatter$x
 flattery$x
 flatus$x
-flaunt$o
+flaunt$x
 flautist$x
 flavor$x
 flaw$x
@@ -6033,14 +6033,14 @@ flounder$x
 flour$x
 flourish$x
 flourishing$o
-flout$o
+flout$x
 flow$x
 flower$x
 flowerbed$x
 flowering$o
 flowing$o
 flub$o
-fluent$o
+fluent$x
 fluff$x
 fluffy$x
 fluid$x
@@ -6236,7 +6236,7 @@ framing$o
 franc$o
 france$x
 franchise$x
-frangipani$o
+frangipani$x
 frank$x
 frankly$x
 frantic$o
@@ -6315,7 +6315,7 @@ frown$o
 frowningly$x
 frowzled$x
 frozen$o
-fruit$x
+fruit$o
 fruitful$o
 fruitfulness$x
 fruitless$x
@@ -6387,7 +6387,7 @@ gabble$o
 gabbling$o
 gable$o
 gadfly$x
-gadget$x
+gadget$o
 gadgetry$x
 gaelic$o
 gage$x
@@ -6396,7 +6396,7 @@ gaiety$x
 gaily$x
 gain$o
 gainful$o
-gait$x
+gait$o
 galaxy$x
 gallant$x
 gallantry$x
@@ -6419,7 +6419,7 @@ gamecock$o
 gamin$o
 gamma$x
 gamut$o
-gang$x
+gang$o
 gangster$x
 gape$x
 gaping$o
@@ -6458,7 +6458,7 @@ gauge$x
 gaunt$x
 gauntleted$x
 gauss$x
-gavotte$o
+gavotte$x
 gawk$x
 gayly$x
 gaze$x
@@ -6551,7 +6551,7 @@ girl$o
 girlfriend$x
 girlish$x
 girlishly$x
-girt$o
+girt$x
 give$x
 giveaway$x
 given$o
@@ -6671,7 +6671,7 @@ gossip$o
 gouge$x
 gourd$x
 gourmet$o
-gout$o
+gout$x
 govern$o
 governed$x
 governess$x
@@ -6776,7 +6776,7 @@ greece$x
 greed$x
 greedily$x
 greedy$x
-greek$x
+greek$o
 green$o
 greener$x
 greenery$x
@@ -6861,7 +6861,7 @@ guarding$o
 guatemala$x
 guatemalan$o
 gubernatorial$o
-guerrilla$o
+guerrilla$x
 guess$x
 guessing$o
 guest$x
@@ -7204,7 +7204,7 @@ hide$x
 hideaway$x
 hideous$x
 hideously$x
-hideout$x
+hideout$o
 hiding$o
 hierarchy$x
 high$x
@@ -7261,7 +7261,7 @@ hoarse$x
 hoarsely$x
 hobble$o
 hobby$x
-hock$x
+hock$o
 hockey$x
 hodgepodge$x
 hoist$x
@@ -7277,7 +7277,7 @@ holler$x
 hollering$o
 hollow$x
 hollowness$x
-hollyhock$x
+hollyhock$o
 hollywood$x
 holmes$x
 holocaust$x
@@ -7330,7 +7330,7 @@ hook$o
 hooked$x
 hookup$o
 hookworm$o
-hoop$x
+hoop$o
 hoot$x
 hope$x
 hopeful$o
@@ -7471,7 +7471,7 @@ hyperbolically$x
 hypercellularity$x
 hyperemia$x
 hyperemic$o
-hyperfine$x
+hyperfine$o
 hyperplasia$x
 hypertrophied$x
 hypertrophy$x
@@ -7862,7 +7862,7 @@ ineffable$o
 ineffectively$x
 inefficient$x
 ineligible$o
-inept$o
+inept$x
 ineptly$x
 inequality$x
 inert$x
@@ -7930,7 +7930,7 @@ inflict$x
 infliction$o
 inflow$x
 influence$x
-influent$o
+influent$x
 influential$o
 influx$x
 inform$o
@@ -8126,7 +8126,7 @@ inter$x
 interact$x
 interaction$o
 intercede$x
-intercept$o
+intercept$x
 interceptor$x
 interchange$x
 interchangeable$o
@@ -8251,7 +8251,7 @@ invalidate$x
 invaluable$o
 invariable$o
 invariably$x
-invariant$o
+invariant$x
 invasion$o
 inveigh$x
 invent$x
@@ -8399,7 +8399,7 @@ jazz$x
 jazzy$x
 jealous$x
 jealousy$x
-jeep$x
+jeep$o
 jeer$x
 jeffersonian$o
 jejunum$o
@@ -8411,7 +8411,7 @@ jerking$o
 jerky$x
 jerusalem$o
 jest$x
-jesuit$x
+jesuit$o
 jesus$x
 jetting$o
 jewel$o
@@ -8555,7 +8555,7 @@ kipling$o
 kiss$x
 kissing$o
 kitchen$o
-kitchenette$o
+kitchenette$x
 kite$x
 kitten$o
 kittenish$x
@@ -8572,7 +8572,7 @@ knife$x
 knifelike$x
 knight$x
 knightly$x
-knit$x
+knit$o
 knob$o
 knock$o
 knocking$o
@@ -8701,16 +8701,16 @@ lavishly$x
 lawless$x
 lawman$o
 lawn$o
-lawsuit$x
+lawsuit$o
 lawyer$x
 laxness$x
 layer$x
-layette$o
+layette$x
 laying$o
 layman$o
 layoff$x
 layout$o
-layup$x
+layup$o
 laze$x
 lazily$x
 lazy$x
@@ -8725,11 +8725,11 @@ leaf$x
 leafhopper$x
 leaflet$o
 league$x
-leak$o
+leak$x
 leakage$x
 lean$o
 leaning$o
-leap$x
+leap$o
 leapfrog$x
 leaping$o
 learn$o
@@ -8764,7 +8764,7 @@ legal$o
 legally$x
 legatee$x
 legation$o
-legend$o
+legend$x
 legendary$x
 legged$x
 leggy$x
@@ -8900,7 +8900,7 @@ lined$x
 lineman$o
 linen$o
 liner$x
-lineup$x
+lineup$o
 linger$x
 lingering$o
 lingeringly$x
@@ -9026,7 +9026,7 @@ loophole$o
 loose$x
 loosely$x
 loosen$o
-loot$o
+loot$x
 looted$x
 lope$x
 lopsidedly$x
@@ -9112,7 +9112,7 @@ luster$x
 lustily$x
 lustre$x
 lusty$x
-luxuriant$o
+luxuriant$x
 luxurious$x
 luxuriously$x
 luxury$x
@@ -9185,7 +9185,7 @@ makeready$x
 makeshift$x
 makeup$o
 making$o
-maladroit$x
+maladroit$o
 malady$x
 malaise$x
 malaria$x
@@ -9193,7 +9193,7 @@ male$o
 malediction$o
 maleness$x
 malevolency$x
-malfeasant$o
+malfeasant$x
 malformed$x
 malign$o
 malignancy$x
@@ -9424,7 +9424,7 @@ meditative$x
 mediterranean$o
 medium$o
 medley$x
-meek$x
+meek$o
 meekly$x
 meet$x
 meeting$o
@@ -9554,7 +9554,7 @@ midst$x
 midsummer$x
 midwatch$x
 midway$x
-midweek$x
+midweek$o
 midwest$x
 midwestern$o
 midwife$x
@@ -9632,7 +9632,7 @@ minor$x
 minority$x
 minstrel$o
 mint$x
-minuet$x
+minuet$o
 minus$x
 minute$x
 minutia$x
@@ -9690,7 +9690,7 @@ missile$o
 missing$o
 mission$o
 missionary$x
-mississippi$o
+mississippi$x
 missive$x
 missouri$x
 mist$x
@@ -9958,7 +9958,7 @@ must$x
 mustache$x
 mustached$x
 muster$x
-mutant$o
+mutant$x
 mutational$o
 mute$x
 muted$x
@@ -10283,7 +10283,7 @@ notarize$x
 notation$o
 notch$x
 note$x
-notebook$x
+notebook$o
 noted$x
 noteworthy$x
 nothing$o
@@ -10412,7 +10412,7 @@ occluded$x
 occlusion$o
 occlusive$x
 occupancy$x
-occupant$o
+occupant$x
 occupation$o
 occupational$o
 occupied$x
@@ -10446,7 +10446,7 @@ official$o
 officially$x
 officiate$x
 offsaddle$o
-offset$x
+offset$o
 offshore$x
 offspring$o
 offstage$x
@@ -10548,7 +10548,7 @@ oration$o
 orator$x
 oratorical$o
 oratorio$x
-orbit$x
+orbit$o
 orbital$o
 orchard$x
 orchestra$x
@@ -10757,7 +10757,7 @@ overtone$o
 overture$x
 overturn$o
 overturned$x
-overvaliant$o
+overvaliant$x
 overweight$x
 overwhelm$o
 overwhelmed$x
@@ -10824,7 +10824,7 @@ paleocortex$x
 paleocortical$o
 palermo$x
 palestine$o
-palette$o
+palette$x
 paling$o
 pall$o
 pallid$x
@@ -10875,12 +10875,12 @@ parakeet$x
 parallel$o
 parallelism$o
 paralyze$x
-paramagnet$x
+paramagnet$o
 paramagnetic$o
 parameter$x
 parametric$o
 paramount$x
-paranoiac$x
+paranoiac$o
 paranoid$x
 paraphernalia$x
 paraphrase$x
@@ -10993,7 +10993,7 @@ patient$x
 patiently$x
 patina$x
 patriarchal$o
-patriot$x
+patriot$o
 patriotic$o
 patriotism$o
 patristic$o
@@ -11027,11 +11027,11 @@ peaked$x
 peaky$x
 peal$o
 pealing$o
-peanut$x
+peanut$o
 pear$x
 pearl$o
 pearly$x
-peasant$o
+peasant$x
 peasanthood$x
 peat$x
 pebble$o
@@ -11141,7 +11141,7 @@ perish$x
 periwinkle$o
 perky$x
 permanence$x
-permanent$o
+permanent$x
 permanently$x
 permeate$x
 permeated$x
@@ -11224,7 +11224,7 @@ pharmacist$x
 pharmacological$o
 pharmacy$x
 phase$x
-pheasant$o
+pheasant$x
 phenomenon$o
 phenothiazine$o
 philadelphia$x
@@ -11377,7 +11377,7 @@ placement$x
 placid$x
 placidly$x
 plague$x
-plagued$o
+plagued$x
 plain$o
 plainclothesman$o
 plainly$x
@@ -11386,7 +11386,7 @@ plaintively$x
 plan$o
 planar$x
 plane$o
-planet$x
+planet$o
 planetary$x
 planetoid$x
 plank$x
@@ -11435,7 +11435,7 @@ playwright$x
 plaza$x
 plead$x
 pleading$o
-pleasant$o
+pleasant$x
 pleasantly$x
 please$x
 pleased$x
@@ -11449,7 +11449,7 @@ plenty$x
 plethora$x
 pleura$x
 pleural$o
-pliant$o
+pliant$x
 plight$x
 plod$x
 plodding$o
@@ -11516,7 +11516,7 @@ polka$x
 poll$o
 pollen$o
 polls$x
-pollutant$o
+pollutant$x
 pollute$x
 polluted$x
 pollution$o
@@ -11594,7 +11594,7 @@ possessive$x
 possibility$x
 possible$o
 possibly$x
-possum$x
+possum$o
 post$x
 postcard$x
 poster$x
@@ -12176,7 +12176,7 @@ pushing$o
 pushup$o
 pussy$x
 putout$o
-putt$o
+putt$x
 puzzle$o
 puzzled$x
 puzzlement$x
@@ -12192,7 +12192,7 @@ quadriceps$x
 quadruple$o
 quadrupling$o
 quail$o
-quaint$o
+quaint$x
 quake$x
 quaker$x
 quakeress$x
@@ -12247,7 +12247,7 @@ quickness$x
 quicksilver$x
 quickstep$o
 quiescent$x
-quiet$x
+quiet$o
 quietly$x
 quietness$x
 quill$o
@@ -12258,7 +12258,7 @@ quip$o
 quirk$x
 quirt$x
 quit$o
-quite$o
+quite$x
 quiver$x
 quivering$o
 quixotic$o
@@ -12266,8 +12266,8 @@ quiz$x
 quota$x
 quotation$o
 quote$x
-rabat$x
-rabbi$o
+rabat$o
+rabbi$x
 rabbit$o
 rabble$o
 race$x
@@ -12311,7 +12311,7 @@ rain$o
 rainbow$x
 rainfall$o
 rainforest$x
-rainstorm$x
+rainstorm$o
 raise$x
 raised$x
 raising$o
@@ -12390,7 +12390,7 @@ reactive$x
 reactivity$x
 read$x
 readable$o
-readapt$o
+readapt$x
 reader$x
 readily$x
 readiness$x
@@ -12411,7 +12411,7 @@ realization$o
 realize$x
 really$x
 realm$o
-reap$x
+reap$o
 reappear$x
 reappearance$x
 rear$x
@@ -12727,7 +12727,7 @@ remainder$x
 remaining$o
 remains$x
 remake$x
-remand$o
+remand$x
 remark$x
 remarkable$o
 remarkably$x
@@ -12823,7 +12823,7 @@ repressed$x
 repression$o
 repressive$x
 reprieve$x
-reprimand$o
+reprimand$x
 reprint$x
 reprisal$o
 reproach$x
@@ -12929,7 +12929,7 @@ responsiveness$x
 rest$x
 restate$x
 restatement$x
-restaurant$o
+restaurant$x
 restful$o
 restive$x
 restively$x
@@ -12985,7 +12985,7 @@ retiring$o
 retort$x
 retouch$x
 retrace$x
-retract$o
+retract$x
 retraining$o
 retranslate$x
 retreat$x
@@ -13049,7 +13049,7 @@ rheumatism$o
 rhino$x
 rhinoceros$x
 rhinotracheitis$x
-rhubarb$o
+rhubarb$x
 rhyme$o
 rhythm$o
 rhythmic$o
@@ -13098,7 +13098,7 @@ ring$o
 ringing$o
 rink$x
 rinse$x
-riot$x
+riot$o
 riotous$x
 ripe$x
 ripen$o
@@ -13133,7 +13133,7 @@ roasted$x
 robber$x
 robbery$x
 robe$x
-robot$o
+oobot$o
 robust$x
 robustness$x
 rock$o
@@ -13176,7 +13176,7 @@ rope$x
 rosary$x
 rose$x
 rosebud$x
-rosette$o
+rosette$x
 roster$x
 rostrum$o
 rosy$x
@@ -13206,7 +13206,7 @@ rouse$x
 rousing$o
 rousseau$x
 rousseauan$o
-rout$o
+rout$x
 route$x
 routine$o
 routinely$x
@@ -13438,7 +13438,7 @@ scathing$o
 scathingly$x
 scatter$x
 scattered$x
-scavenger$o
+scavenger$x
 scavenging$o
 scenario$x
 scene$o
@@ -13484,7 +13484,7 @@ scoffing$o
 scold$x
 scolding$o
 scoop$o
-scoot$o
+scoot$x
 scope$x
 scorch$x
 scorched$x
@@ -13710,7 +13710,7 @@ separated$x
 separately$x
 separation$o
 sepia$x
-sept$o
+sept$x
 septation$o
 september$x
 septic$o
@@ -13740,7 +13740,7 @@ serve$x
 service$x
 serviceable$o
 services$x
-serviette$o
+serviette$x
 servile$o
 session$o
 setback$o
@@ -13766,7 +13766,7 @@ severity$x
 sewage$x
 sewer$x
 sewing$o
-sextet$o
+sextet$x
 sexual$o
 sexually$x
 sexy$x
@@ -13810,7 +13810,7 @@ share$x
 shared$x
 sharer$x
 shark$x
-sharp$o
+sharp$x
 sharpen$o
 sharply$x
 sharpness$x
@@ -13838,7 +13838,7 @@ shell$o
 shelter$x
 sheltered$x
 shelve$x
-shenanigan$x
+shenanigan$o
 shepherd$x
 sheriff$x
 sherry$x
@@ -13873,7 +13873,7 @@ shit$o
 shiver$x
 shivering$o
 shivery$x
-shock$x
+shock$o
 shocked$x
 shocking$o
 shockingly$x
@@ -13907,7 +13907,7 @@ shotgun$o
 should$x
 shoulder$x
 shouldered$x
-shout$o
+shout$x
 shouting$o
 shove$x
 shovel$o
@@ -13992,7 +13992,7 @@ silence$x
 silenced$x
 silent$x
 silently$x
-silhouette$o
+silhouette$x
 silicate$x
 silicone$o
 silk$x
@@ -14124,7 +14124,7 @@ slaver$x
 slavery$x
 slavic$o
 sled$x
-sleek$x
+sleek$o
 sleep$o
 sleeper$x
 sleepily$x
@@ -14146,7 +14146,7 @@ slim$o
 slime$o
 sling$o
 slinging$o
-slingshot$x
+slingshot$o
 slink$x
 slip$o
 slippage$x
@@ -14182,7 +14182,7 @@ sluicing$o
 slum$o
 slumber$x
 slump$x
-slurp$o
+slurp$x
 slurred$x
 smack$o
 small$o
@@ -14223,7 +14223,7 @@ smug$x
 smuggle$o
 smuggler$x
 snack$o
-snag$o
+snag$x
 snail$o
 snake$x
 snap$o
@@ -14245,15 +14245,15 @@ snip$o
 sniper$x
 sniveling$o
 snobbish$x
-snoop$x
+snoop$o
 snore$x
 snoring$o
 snort$x
-snout$o
+snout$x
 snow$x
 snowball$o
 snowfall$o
-snowstorm$x
+snowstorm$o
 snowy$x
 snub$x
 snuffbox$x
@@ -14654,7 +14654,7 @@ stairwell$o
 stake$x
 stale$o
 stalin$o
-stalk$o
+stalk$x
 stalked$x
 stalking$o
 stall$o
@@ -14708,7 +14708,7 @@ statistically$x
 statistician$o
 statuary$x
 statue$x
-statuette$o
+statuette$x
 stature$x
 status$x
 statute$x
@@ -14734,7 +14734,7 @@ steaming$o
 steamship$o
 steed$x
 steel$o
-steep$x
+steep$o
 steeple$o
 steeply$x
 steer$x
@@ -14783,7 +14783,7 @@ still$o
 stillness$x
 stilt$x
 stilted$x
-stimulant$o
+stimulant$x
 stimulate$x
 stimulating$o
 stimulation$o
@@ -14828,7 +14828,7 @@ storekeeper$x
 storeria$x
 storeroom$o
 storied$x
-storm$x
+storm$o
 stormy$x
 story$x
 storyline$o
@@ -14971,7 +14971,7 @@ subcommittee$x
 subconscious$x
 subconsciously$x
 subcontinent$x
-subcontract$o
+subcontract$x
 subdivision$o
 subdue$x
 subdued$x
@@ -15030,7 +15030,7 @@ subtitle$o
 subtle$o
 subtlety$x
 subtly$x
-subtract$o
+subtract$x
 suburb$x
 suburban$o
 suburbanite$x
@@ -15050,7 +15050,7 @@ succinctly$x
 succor$x
 succumb$o
 such$x
-suck$x
+suck$o
 sucker$x
 suckle$o
 suction$o
@@ -15066,7 +15066,7 @@ suffice$x
 sufficiency$x
 sufficient$x
 sufficiently$x
-suffix$o
+suffix$x
 suffocate$x
 suffocating$o
 suffocation$o
@@ -15079,7 +15079,7 @@ suggested$x
 suggestion$o
 suggestive$x
 suicide$x
-suit$x
+suit$o
 suitability$x
 suitable$o
 suitably$x
@@ -15258,7 +15258,7 @@ swaying$o
 swear$x
 swearing$o
 sweat$x
-sweatband$o
+sweatband$x
 sweater$x
 sweating$o
 sweatshirt$x
@@ -15266,7 +15266,7 @@ sweaty$x
 swede$x
 sweden$o
 swedish$x
-sweep$x
+sweep$o
 sweeping$o
 sweet$x
 sweetheart$x
@@ -15282,7 +15282,7 @@ swiftly$x
 swig$x
 swim$o
 swimming$o
-swimsuit$x
+swimsuit$o
 swindle$o
 swing$o
 swinging$o
@@ -15300,7 +15300,7 @@ switzerland$x
 swivel$o
 swollen$o
 swoon$o
-swoop$x
+swoop$o
 sword$x
 sworn$o
 syllabicity$x
@@ -15355,7 +15355,7 @@ table$o
 tableau$x
 tablecloth$x
 tablet$o
-tabletop$x
+tabletop$o
 taboo$x
 tabulate$x
 tabulation$o
@@ -15388,7 +15388,7 @@ tale$o
 talent$x
 talented$x
 talismanic$o
-talk$o
+talk$x
 talkative$x
 talking$o
 talks$x
@@ -15433,7 +15433,7 @@ taste$x
 tasteful$o
 tasty$x
 tattered$x
-taunt$o
+taunt$x
 taunting$o
 taut$x
 tavern$o
@@ -15705,7 +15705,7 @@ thoughtful$o
 thoughtfully$x
 thoughtfulness$x
 thoughtless$x
-thousand$o
+thousand$x
 thrash$x
 thread$x
 threadbare$x
@@ -15727,7 +15727,7 @@ thrilling$o
 thrive$x
 thriving$o
 throat$x
-throb$x
+throb$o
 throbbing$o
 throe$x
 thrombosed$x
@@ -15738,21 +15738,21 @@ throng$o
 thronged$x
 throttle$o
 through$x
-throughout$x
+throughout$o
 throw$x
 thrust$x
 thruway$x
 thud$x
 thudding$o
 thuggee$x
-thumb$x
+thumb$o
 thumbnail$o
 thump$x
 thumping$o
 thunder$x
 thundering$o
 thunderous$x
-thunderstorm$x
+thunderstorm$o
 thursday$x
 thus$x
 thwack$o
@@ -15764,12 +15764,12 @@ thyronine$o
 thyrotoxic$o
 thyrotrophin$o
 thyroxine$o
-tibet$x
+tibet$o
 tibetan$o
 tick$o
 ticket$o
 tickle$o
-tidbit$x
+tidbit$o
 tide$x
 tidewater$x
 tidings$x
@@ -15862,7 +15862,7 @@ tonal$o
 tone$o
 toned$x
 tongue$x
-tongued$o
+tongued$x
 tonight$x
 tons$x
 tool$o
@@ -15933,7 +15933,7 @@ traceable$o
 trachea$x
 tracing$o
 track$o
-tract$o
+tract$x
 tractarian$o
 tractor$x
 trade$x
@@ -15984,7 +15984,7 @@ transcription$o
 transcultural$o
 transducer$x
 transfer$x
-transfix$o
+transfix$x
 transform$o
 transformation$o
 transformed$x
@@ -15994,7 +15994,7 @@ transgress$x
 transgression$o
 transience$x
 transistor$x
-transit$x
+transit$o
 transition$o
 transitional$o
 translate$x
@@ -16051,7 +16051,7 @@ treatment$x
 treaty$x
 treble$o
 tree$x
-treetop$x
+treetop$o
 trek$x
 tremble$o
 trembling$o
@@ -16498,7 +16498,7 @@ union$o
 unique$x
 uniquely$x
 uniqueness$x
-unit$x
+unit$o
 unitarian$o
 unite$x
 united$x
@@ -16567,7 +16567,7 @@ unpatriotic$o
 unpaved$x
 unperformed$x
 unpicturesque$x
-unpleasant$o
+unpleasant$x
 unpleasantly$x
 unplowed$x
 unplumbed$x
@@ -16733,7 +16733,7 @@ upraised$x
 upright$x
 uprising$o
 uproar$x
-uproot$o
+uproot$x
 upset$o
 upshot$o
 upstairs$x
@@ -16769,7 +16769,7 @@ usher$x
 ussr$x
 usual$o
 usually$x
-usurp$o
+usurp$x
 utah$x
 utensil$o
 utilitarian$o
@@ -16784,7 +16784,7 @@ utter$x
 utterance$x
 utterly$x
 vacancy$x
-vacant$o
+vacant$x
 vacantly$x
 vacate$x
 vacation$o
@@ -16802,7 +16802,7 @@ vagueness$x
 vain$o
 valentine$o
 valet$o
-valiant$o
+valiant$x
 valid$x
 validate$x
 validation$o
@@ -16831,7 +16831,7 @@ vaquero$x
 variability$x
 variable$o
 variance$x
-variant$o
+variant$x
 variation$o
 varied$x
 variegated$x
@@ -16885,7 +16885,7 @@ verandah$x
 verb$x
 verbal$o
 verbena$x
-verdict$o
+verdict$x
 verge$x
 veridical$o
 verification$o
@@ -16947,7 +16947,7 @@ viewers$x
 viewpoint$x
 vigilance$x
 vigilantism$o
-vignette$o
+vignette$x
 vigor$x
 vigorous$x
 vigorously$x
@@ -16996,7 +16996,7 @@ visibility$x
 visible$o
 visibly$x
 vision$o
-visit$x
+visit$o
 visiting$o
 visitor$x
 visored$x
@@ -17082,7 +17082,7 @@ wailing$o
 wainscoted$x
 waist$x
 waistline$o
-wait$x
+wait$o
 waiter$x
 waiting$o
 waitress$x
@@ -17199,7 +17199,7 @@ wealth$x
 wealthy$x
 wean$o
 weaning$o
-weapon$o
+woapon$o
 wear$x
 wearer$x
 wearied$x
@@ -17218,7 +17218,7 @@ wedge$x
 wednesday$x
 weed$x
 weeds$x
-week$x
+week$o
 weekday$x
 weekend$x
 weekly$x
@@ -17303,7 +17303,7 @@ whiten$o
 whiteness$x
 whitewashed$x
 whiz$x
-whodunit$x
+whodunit$o
 whoever$x
 whole$o
 wholehearted$x
@@ -17311,7 +17311,7 @@ wholesaler$x
 wholesome$o
 wholly$x
 whom$o
-whoop$x
+whoop$o
 whore$x
 whorl$o
 whose$x
@@ -17470,7 +17470,7 @@ works$x
 worksheet$x
 workshop$o
 worktable$o
-workweek$x
+workweek$o
 world$x
 worldly$x
 worldwide$x

@@ -1,0 +1,2006 @@
+precision and recall make some ERROR
+precision and recall make some ERROR
+precision and recall make some ERROR
+precision and recall make some ERROR
+precision and recall make some ERROR
+precision and recall make some ERROR
+==========================
+Epoch: 010 // loss: 0.538791
+Training accuracy: 0.831 // Test accuracy 0.749
+precision : 0.962 // recall 0.519
+==========================
+Epoch: 020 // loss: 0.264531
+Training accuracy: 0.924 // Test accuracy 0.918
+precision : 0.943 // recall 0.889
+==========================
+Epoch: 030 // loss: 0.206216
+Training accuracy: 0.928 // Test accuracy 0.917
+precision : 0.963 // recall 0.867
+==========================
+Epoch: 040 // loss: 0.202997
+Training accuracy: 0.926 // Test accuracy 0.930
+precision : 0.970 // recall 0.887
+==========================
+Epoch: 050 // loss: 0.169803
+Training accuracy: 0.943 // Test accuracy 0.938
+precision : 0.973 // recall 0.900
+==========================
+Epoch: 060 // loss: 0.172140
+Training accuracy: 0.941 // Test accuracy 0.936
+precision : 0.973 // recall 0.897
+==========================
+Epoch: 070 // loss: 0.163788
+Training accuracy: 0.947 // Test accuracy 0.941
+precision : 0.975 // recall 0.905
+==========================
+Epoch: 080 // loss: 0.151572
+Training accuracy: 0.952 // Test accuracy 0.941
+precision : 0.985 // recall 0.897
+==========================
+Epoch: 090 // loss: 0.150280
+Training accuracy: 0.949 // Test accuracy 0.943
+precision : 0.985 // recall 0.899
+==========================
+Epoch: 100 // loss: 0.157923
+Training accuracy: 0.946 // Test accuracy 0.945
+precision : 0.978 // recall 0.911
+==========================
+Epoch: 110 // loss: 0.140097
+Training accuracy: 0.953 // Test accuracy 0.940
+precision : 0.984 // recall 0.894
+==========================
+Epoch: 120 // loss: 0.129008
+Training accuracy: 0.957 // Test accuracy 0.944
+precision : 0.983 // recall 0.905
+==========================
+Epoch: 130 // loss: 0.124146
+Training accuracy: 0.950 // Test accuracy 0.961
+precision : 0.977 // recall 0.945
+==========================
+Epoch: 140 // loss: 0.095552
+Training accuracy: 0.965 // Test accuracy 0.964
+precision : 0.989 // recall 0.938
+==========================
+Epoch: 150 // loss: 0.081171
+Training accuracy: 0.973 // Test accuracy 0.970
+precision : 0.987 // recall 0.953
+==========================
+Epoch: 160 // loss: 0.098946
+Training accuracy: 0.958 // Test accuracy 0.971
+precision : 0.992 // recall 0.950
+==========================
+Epoch: 170 // loss: 0.071217
+Training accuracy: 0.969 // Test accuracy 0.964
+precision : 0.993 // recall 0.935
+==========================
+Epoch: 180 // loss: 0.076852
+Training accuracy: 0.977 // Test accuracy 0.969
+precision : 0.990 // recall 0.947
+==========================
+Epoch: 190 // loss: 0.088347
+Training accuracy: 0.960 // Test accuracy 0.969
+precision : 0.994 // recall 0.943
+==========================
+Epoch: 200 // loss: 0.071845
+Training accuracy: 0.971 // Test accuracy 0.960
+precision : 0.991 // recall 0.927
+==========================
+Epoch: 210 // loss: 0.065839
+Training accuracy: 0.978 // Test accuracy 0.969
+precision : 0.995 // recall 0.943
+==========================
+Epoch: 220 // loss: 0.085792
+Training accuracy: 0.969 // Test accuracy 0.975
+precision : 0.995 // recall 0.955
+==========================
+Epoch: 230 // loss: 0.062419
+Training accuracy: 0.972 // Test accuracy 0.966
+precision : 0.994 // recall 0.938
+==========================
+Epoch: 240 // loss: 0.067667
+Training accuracy: 0.976 // Test accuracy 0.974
+precision : 0.992 // recall 0.956
+==========================
+Epoch: 250 // loss: 0.073566
+Training accuracy: 0.970 // Test accuracy 0.972
+precision : 0.991 // recall 0.953
+==========================
+Epoch: 260 // loss: 0.056491
+Training accuracy: 0.977 // Test accuracy 0.969
+precision : 0.993 // recall 0.944
+==========================
+Epoch: 270 // loss: 0.059454
+Training accuracy: 0.983 // Test accuracy 0.975
+precision : 0.992 // recall 0.958
+==========================
+Epoch: 280 // loss: 0.066335
+Training accuracy: 0.972 // Test accuracy 0.974
+precision : 0.995 // recall 0.952
+==========================
+Epoch: 290 // loss: 0.052695
+Training accuracy: 0.976 // Test accuracy 0.971
+precision : 0.996 // recall 0.945
+==========================
+Epoch: 300 // loss: 0.060904
+Training accuracy: 0.978 // Test accuracy 0.976
+precision : 0.992 // recall 0.960
+==========================
+Epoch: 310 // loss: 0.064824
+Training accuracy: 0.973 // Test accuracy 0.976
+precision : 0.991 // recall 0.960
+==========================
+Epoch: 320 // loss: 0.050141
+Training accuracy: 0.975 // Test accuracy 0.972
+precision : 0.994 // recall 0.950
+==========================
+Epoch: 330 // loss: 0.055532
+Training accuracy: 0.980 // Test accuracy 0.979
+precision : 0.991 // recall 0.967
+==========================
+Epoch: 340 // loss: 0.060114
+Training accuracy: 0.974 // Test accuracy 0.973
+precision : 0.989 // recall 0.957
+==========================
+Epoch: 350 // loss: 0.053235
+Training accuracy: 0.976 // Test accuracy 0.975
+precision : 0.992 // recall 0.958
+==========================
+Epoch: 360 // loss: 0.047214
+Training accuracy: 0.979 // Test accuracy 0.979
+precision : 0.991 // recall 0.967
+==========================
+Epoch: 370 // loss: 0.051277
+Training accuracy: 0.975 // Test accuracy 0.973
+precision : 0.994 // recall 0.952
+==========================
+Epoch: 380 // loss: 0.053117
+Training accuracy: 0.978 // Test accuracy 0.974
+precision : 0.994 // recall 0.953
+==========================
+Epoch: 390 // loss: 0.051592
+Training accuracy: 0.980 // Test accuracy 0.979
+precision : 0.990 // recall 0.968
+==========================
+Epoch: 400 // loss: 0.053354
+Training accuracy: 0.977 // Test accuracy 0.981
+precision : 0.991 // recall 0.972
+==========================
+Epoch: 410 // loss: 0.046334
+Training accuracy: 0.984 // Test accuracy 0.975
+precision : 0.991 // recall 0.959
+==========================
+Epoch: 420 // loss: 0.051057
+Training accuracy: 0.981 // Test accuracy 0.982
+precision : 0.987 // recall 0.977
+==========================
+Epoch: 430 // loss: 0.052757
+Training accuracy: 0.979 // Test accuracy 0.980
+precision : 0.991 // recall 0.968
+==========================
+Epoch: 440 // loss: 0.040676
+Training accuracy: 0.981 // Test accuracy 0.978
+precision : 0.993 // recall 0.964
+==========================
+Epoch: 450 // loss: 0.052179
+Training accuracy: 0.981 // Test accuracy 0.983
+precision : 0.989 // recall 0.977
+==========================
+Epoch: 460 // loss: 0.048274
+Training accuracy: 0.980 // Test accuracy 0.982
+precision : 0.992 // recall 0.972
+==========================
+Epoch: 470 // loss: 0.041721
+Training accuracy: 0.980 // Test accuracy 0.977
+precision : 0.992 // recall 0.963
+==========================
+Epoch: 480 // loss: 0.055587
+Training accuracy: 0.984 // Test accuracy 0.981
+precision : 0.987 // recall 0.975
+==========================
+Epoch: 490 // loss: 0.049043
+Training accuracy: 0.980 // Test accuracy 0.981
+precision : 0.993 // recall 0.969
+==========================
+Epoch: 500 // loss: 0.041205
+Training accuracy: 0.985 // Test accuracy 0.980
+precision : 0.993 // recall 0.967
+==========================
+Epoch: 510 // loss: 0.052398
+Training accuracy: 0.982 // Test accuracy 0.983
+precision : 0.990 // recall 0.976
+==========================
+Epoch: 520 // loss: 0.043113
+Training accuracy: 0.982 // Test accuracy 0.983
+precision : 0.993 // recall 0.973
+==========================
+Epoch: 530 // loss: 0.043146
+Training accuracy: 0.981 // Test accuracy 0.980
+precision : 0.990 // recall 0.969
+==========================
+Epoch: 540 // loss: 0.050494
+Training accuracy: 0.984 // Test accuracy 0.985
+precision : 0.987 // recall 0.982
+==========================
+Epoch: 550 // loss: 0.046830
+Training accuracy: 0.981 // Test accuracy 0.981
+precision : 0.991 // recall 0.972
+==========================
+Epoch: 560 // loss: 0.042633
+Training accuracy: 0.985 // Test accuracy 0.982
+precision : 0.990 // recall 0.974
+==========================
+Epoch: 570 // loss: 0.050495
+Training accuracy: 0.986 // Test accuracy 0.981
+precision : 0.985 // recall 0.976
+==========================
+Epoch: 580 // loss: 0.054220
+Training accuracy: 0.984 // Test accuracy 0.980
+precision : 0.988 // recall 0.970
+==========================
+Epoch: 590 // loss: 0.043156
+Training accuracy: 0.986 // Test accuracy 0.984
+precision : 0.992 // recall 0.975
+==========================
+Epoch: 600 // loss: 0.047356
+Training accuracy: 0.983 // Test accuracy 0.985
+precision : 0.987 // recall 0.982
+==========================
+Epoch: 610 // loss: 0.042054
+Training accuracy: 0.982 // Test accuracy 0.982
+precision : 0.992 // recall 0.973
+==========================
+Epoch: 620 // loss: 0.042764
+Training accuracy: 0.988 // Test accuracy 0.983
+precision : 0.992 // recall 0.974
+==========================
+Epoch: 630 // loss: 0.042000
+Training accuracy: 0.985 // Test accuracy 0.983
+precision : 0.991 // recall 0.975
+==========================
+Epoch: 640 // loss: 0.041457
+Training accuracy: 0.982 // Test accuracy 0.984
+precision : 0.993 // recall 0.974
+==========================
+Epoch: 650 // loss: 0.039069
+Training accuracy: 0.988 // Test accuracy 0.982
+precision : 0.991 // recall 0.973
+==========================
+Epoch: 660 // loss: 0.044929
+Training accuracy: 0.984 // Test accuracy 0.984
+precision : 0.991 // recall 0.976
+==========================
+Epoch: 670 // loss: 0.042619
+Training accuracy: 0.982 // Test accuracy 0.983
+precision : 0.993 // recall 0.973
+==========================
+Epoch: 680 // loss: 0.039499
+Training accuracy: 0.987 // Test accuracy 0.982
+precision : 0.993 // recall 0.972
+==========================
+Epoch: 690 // loss: 0.044692
+Training accuracy: 0.984 // Test accuracy 0.984
+precision : 0.989 // recall 0.980
+==========================
+Epoch: 700 // loss: 0.039975
+Training accuracy: 0.983 // Test accuracy 0.981
+precision : 0.992 // recall 0.969
+==========================
+Epoch: 710 // loss: 0.038036
+Training accuracy: 0.987 // Test accuracy 0.982
+precision : 0.993 // recall 0.970
+==========================
+Epoch: 720 // loss: 0.044021
+Training accuracy: 0.986 // Test accuracy 0.985
+precision : 0.989 // recall 0.981
+==========================
+Epoch: 730 // loss: 0.041421
+Training accuracy: 0.980 // Test accuracy 0.981
+precision : 0.992 // recall 0.970
+==========================
+Epoch: 740 // loss: 0.032751
+Training accuracy: 0.991 // Test accuracy 0.987
+precision : 0.992 // recall 0.982
+==========================
+Epoch: 750 // loss: 0.050442
+Training accuracy: 0.983 // Test accuracy 0.988
+precision : 0.992 // recall 0.983
+==========================
+Epoch: 760 // loss: 0.034071
+Training accuracy: 0.984 // Test accuracy 0.985
+precision : 0.993 // recall 0.976
+==========================
+Epoch: 770 // loss: 0.040491
+Training accuracy: 0.988 // Test accuracy 0.983
+precision : 0.992 // recall 0.974
+==========================
+Epoch: 780 // loss: 0.041110
+Training accuracy: 0.987 // Test accuracy 0.985
+precision : 0.989 // recall 0.981
+==========================
+Epoch: 790 // loss: 0.037182
+Training accuracy: 0.982 // Test accuracy 0.981
+precision : 0.993 // recall 0.969
+==========================
+Epoch: 800 // loss: 0.038074
+Training accuracy: 0.989 // Test accuracy 0.987
+precision : 0.993 // recall 0.981
+==========================
+Epoch: 810 // loss: 0.046847
+Training accuracy: 0.983 // Test accuracy 0.985
+precision : 0.989 // recall 0.982
+==========================
+Epoch: 820 // loss: 0.035411
+Training accuracy: 0.984 // Test accuracy 0.983
+precision : 0.992 // recall 0.974
+==========================
+Epoch: 830 // loss: 0.038832
+Training accuracy: 0.989 // Test accuracy 0.986
+precision : 0.993 // recall 0.980
+==========================
+Epoch: 840 // loss: 0.052059
+Training accuracy: 0.985 // Test accuracy 0.986
+precision : 0.991 // recall 0.982
+==========================
+Epoch: 850 // loss: 0.033658
+Training accuracy: 0.986 // Test accuracy 0.982
+precision : 0.991 // recall 0.974
+==========================
+Epoch: 860 // loss: 0.037918
+Training accuracy: 0.991 // Test accuracy 0.984
+precision : 0.993 // recall 0.975
+==========================
+Epoch: 870 // loss: 0.046514
+Training accuracy: 0.985 // Test accuracy 0.984
+precision : 0.989 // recall 0.980
+==========================
+Epoch: 880 // loss: 0.034120
+Training accuracy: 0.985 // Test accuracy 0.984
+precision : 0.993 // recall 0.974
+==========================
+Epoch: 890 // loss: 0.034063
+Training accuracy: 0.991 // Test accuracy 0.986
+precision : 0.991 // recall 0.982
+==========================
+Epoch: 900 // loss: 0.042023
+Training accuracy: 0.987 // Test accuracy 0.986
+precision : 0.993 // recall 0.980
+==========================
+Epoch: 910 // loss: 0.034944
+Training accuracy: 0.986 // Test accuracy 0.986
+precision : 0.993 // recall 0.978
+==========================
+Epoch: 920 // loss: 0.038021
+Training accuracy: 0.993 // Test accuracy 0.988
+precision : 0.992 // recall 0.984
+==========================
+Epoch: 930 // loss: 0.042580
+Training accuracy: 0.985 // Test accuracy 0.987
+precision : 0.993 // recall 0.981
+==========================
+Epoch: 940 // loss: 0.034162
+Training accuracy: 0.988 // Test accuracy 0.982
+precision : 0.993 // recall 0.970
+==========================
+Epoch: 950 // loss: 0.033854
+Training accuracy: 0.991 // Test accuracy 0.986
+precision : 0.992 // recall 0.981
+==========================
+Epoch: 960 // loss: 0.051963
+Training accuracy: 0.983 // Test accuracy 0.985
+precision : 0.990 // recall 0.981
+==========================
+Epoch: 970 // loss: 0.032654
+Training accuracy: 0.988 // Test accuracy 0.985
+precision : 0.994 // recall 0.975
+==========================
+Epoch: 980 // loss: 0.032501
+Training accuracy: 0.990 // Test accuracy 0.989
+precision : 0.992 // recall 0.985
+==========================
+Epoch: 990 // loss: 0.038032
+Training accuracy: 0.981 // Test accuracy 0.986
+precision : 0.994 // recall 0.978
+==========================
+Epoch: 1000 // loss: 0.031217
+Training accuracy: 0.985 // Test accuracy 0.986
+precision : 0.991 // recall 0.981
+==========================
+Epoch: 1010 // loss: 0.030140
+Training accuracy: 0.993 // Test accuracy 0.986
+precision : 0.992 // recall 0.980
+==========================
+Epoch: 1020 // loss: 0.039409
+Training accuracy: 0.984 // Test accuracy 0.987
+precision : 0.991 // recall 0.983
+==========================
+Epoch: 1030 // loss: 0.030826
+Training accuracy: 0.987 // Test accuracy 0.986
+precision : 0.994 // recall 0.978
+==========================
+Epoch: 1040 // loss: 0.031684
+Training accuracy: 0.988 // Test accuracy 0.989
+precision : 0.992 // recall 0.985
+==========================
+Epoch: 1050 // loss: 0.038615
+Training accuracy: 0.984 // Test accuracy 0.985
+precision : 0.985 // recall 0.984
+==========================
+Epoch: 1060 // loss: 0.026621
+Training accuracy: 0.989 // Test accuracy 0.986
+precision : 0.994 // recall 0.978
+==========================
+Epoch: 1070 // loss: 0.033365
+Training accuracy: 0.991 // Test accuracy 0.990
+precision : 0.992 // recall 0.989
+==========================
+Epoch: 1080 // loss: 0.038080
+Training accuracy: 0.984 // Test accuracy 0.986
+precision : 0.987 // recall 0.985
+==========================
+Epoch: 1090 // loss: 0.025323
+Training accuracy: 0.990 // Test accuracy 0.986
+precision : 0.992 // recall 0.981
+==========================
+Epoch: 1100 // loss: 0.030155
+Training accuracy: 0.987 // Test accuracy 0.990
+precision : 0.992 // recall 0.989
+==========================
+Epoch: 1110 // loss: 0.041710
+Training accuracy: 0.986 // Test accuracy 0.987
+precision : 0.991 // recall 0.983
+==========================
+Epoch: 1120 // loss: 0.030637
+Training accuracy: 0.991 // Test accuracy 0.984
+precision : 0.992 // recall 0.976
+==========================
+Epoch: 1130 // loss: 0.035265
+Training accuracy: 0.992 // Test accuracy 0.988
+precision : 0.989 // recall 0.988
+==========================
+Epoch: 1140 // loss: 0.037852
+Training accuracy: 0.988 // Test accuracy 0.985
+precision : 0.991 // recall 0.980
+==========================
+Epoch: 1150 // loss: 0.034692
+Training accuracy: 0.989 // Test accuracy 0.988
+precision : 0.995 // recall 0.980
+==========================
+Epoch: 1160 // loss: 0.024354
+Training accuracy: 0.993 // Test accuracy 0.988
+precision : 0.988 // recall 0.988
+==========================
+Epoch: 1170 // loss: 0.044345
+Training accuracy: 0.981 // Test accuracy 0.984
+precision : 0.987 // recall 0.981
+==========================
+Epoch: 1180 // loss: 0.029706
+Training accuracy: 0.989 // Test accuracy 0.990
+precision : 0.991 // recall 0.989
+==========================
+Epoch: 1190 // loss: 0.026800
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.994 // recall 0.983
+==========================
+Epoch: 1200 // loss: 0.038052
+Training accuracy: 0.985 // Test accuracy 0.986
+precision : 0.986 // recall 0.986
+==========================
+Epoch: 1210 // loss: 0.025758
+Training accuracy: 0.990 // Test accuracy 0.987
+precision : 0.992 // recall 0.982
+==========================
+Epoch: 1220 // loss: 0.026879
+Training accuracy: 0.989 // Test accuracy 0.986
+precision : 0.992 // recall 0.980
+==========================
+Epoch: 1230 // loss: 0.036074
+Training accuracy: 0.988 // Test accuracy 0.986
+precision : 0.989 // recall 0.983
+==========================
+Epoch: 1240 // loss: 0.023319
+Training accuracy: 0.992 // Test accuracy 0.985
+precision : 0.992 // recall 0.977
+==========================
+Epoch: 1250 // loss: 0.026997
+Training accuracy: 0.993 // Test accuracy 0.987
+precision : 0.991 // recall 0.983
+==========================
+Epoch: 1260 // loss: 0.031856
+Training accuracy: 0.990 // Test accuracy 0.988
+precision : 0.990 // recall 0.986
+==========================
+Epoch: 1270 // loss: 0.026954
+Training accuracy: 0.990 // Test accuracy 0.987
+precision : 0.991 // recall 0.983
+==========================
+Epoch: 1280 // loss: 0.022461
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.990 // recall 0.988
+==========================
+Epoch: 1290 // loss: 0.029486
+Training accuracy: 0.988 // Test accuracy 0.989
+precision : 0.991 // recall 0.986
+==========================
+Epoch: 1300 // loss: 0.028693
+Training accuracy: 0.989 // Test accuracy 0.986
+precision : 0.992 // recall 0.980
+==========================
+Epoch: 1310 // loss: 0.020693
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.990 // recall 0.988
+==========================
+Epoch: 1320 // loss: 0.033274
+Training accuracy: 0.991 // Test accuracy 0.985
+precision : 0.990 // recall 0.981
+==========================
+Epoch: 1330 // loss: 0.024820
+Training accuracy: 0.993 // Test accuracy 0.985
+precision : 0.991 // recall 0.980
+==========================
+Epoch: 1340 // loss: 0.036250
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.989 // recall 0.990
+==========================
+Epoch: 1350 // loss: 0.029366
+Training accuracy: 0.986 // Test accuracy 0.988
+precision : 0.989 // recall 0.986
+==========================
+Epoch: 1360 // loss: 0.019535
+Training accuracy: 0.989 // Test accuracy 0.985
+precision : 0.990 // recall 0.981
+==========================
+Epoch: 1370 // loss: 0.025325
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.990 // recall 0.988
+==========================
+Epoch: 1380 // loss: 0.030522
+Training accuracy: 0.990 // Test accuracy 0.986
+precision : 0.992 // recall 0.980
+==========================
+Epoch: 1390 // loss: 0.024986
+Training accuracy: 0.993 // Test accuracy 0.986
+precision : 0.992 // recall 0.981
+==========================
+Epoch: 1400 // loss: 0.029783
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.990 // recall 0.986
+==========================
+Epoch: 1410 // loss: 0.027508
+Training accuracy: 0.991 // Test accuracy 0.989
+precision : 0.990 // recall 0.988
+==========================
+Epoch: 1420 // loss: 0.018526
+Training accuracy: 0.991 // Test accuracy 0.988
+precision : 0.990 // recall 0.986
+==========================
+Epoch: 1430 // loss: 0.022867
+Training accuracy: 0.990 // Test accuracy 0.984
+precision : 0.982 // recall 0.985
+==========================
+Epoch: 1440 // loss: 0.034274
+Training accuracy: 0.988 // Test accuracy 0.986
+precision : 0.987 // recall 0.985
+==========================
+Epoch: 1450 // loss: 0.021941
+Training accuracy: 0.991 // Test accuracy 0.985
+precision : 0.995 // recall 0.975
+==========================
+Epoch: 1460 // loss: 0.024148
+Training accuracy: 0.991 // Test accuracy 0.988
+precision : 0.991 // recall 0.984
+==========================
+Epoch: 1470 // loss: 0.038842
+Training accuracy: 0.989 // Test accuracy 0.985
+precision : 0.990 // recall 0.981
+==========================
+Epoch: 1480 // loss: 0.023742
+Training accuracy: 0.991 // Test accuracy 0.989
+precision : 0.991 // recall 0.986
+==========================
+Epoch: 1490 // loss: 0.020930
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.988 // recall 0.988
+==========================
+Epoch: 1500 // loss: 0.037097
+Training accuracy: 0.989 // Test accuracy 0.986
+precision : 0.990 // recall 0.982
+==========================
+Epoch: 1510 // loss: 0.019085
+Training accuracy: 0.993 // Test accuracy 0.985
+precision : 0.991 // recall 0.980
+==========================
+Epoch: 1520 // loss: 0.020103
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.989 // recall 0.990
+==========================
+Epoch: 1530 // loss: 0.034004
+Training accuracy: 0.989 // Test accuracy 0.986
+precision : 0.991 // recall 0.981
+==========================
+Epoch: 1540 // loss: 0.020400
+Training accuracy: 0.991 // Test accuracy 0.988
+precision : 0.992 // recall 0.984
+==========================
+Epoch: 1550 // loss: 0.020550
+Training accuracy: 0.992 // Test accuracy 0.990
+precision : 0.992 // recall 0.988
+==========================
+Epoch: 1560 // loss: 0.029163
+Training accuracy: 0.991 // Test accuracy 0.986
+precision : 0.992 // recall 0.981
+==========================
+Epoch: 1570 // loss: 0.018045
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.995 // recall 0.980
+==========================
+Epoch: 1580 // loss: 0.031654
+Training accuracy: 0.988 // Test accuracy 0.986
+precision : 0.987 // recall 0.985
+==========================
+Epoch: 1590 // loss: 0.032484
+Training accuracy: 0.992 // Test accuracy 0.986
+precision : 0.989 // recall 0.984
+==========================
+Epoch: 1600 // loss: 0.022337
+Training accuracy: 0.995 // Test accuracy 0.989
+precision : 0.993 // recall 0.984
+==========================
+Epoch: 1610 // loss: 0.022942
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.991 // recall 0.984
+==========================
+Epoch: 1620 // loss: 0.031219
+Training accuracy: 0.990 // Test accuracy 0.984
+precision : 0.990 // recall 0.978
+==========================
+Epoch: 1630 // loss: 0.016507
+Training accuracy: 0.994 // Test accuracy 0.987
+precision : 0.991 // recall 0.983
+==========================
+Epoch: 1640 // loss: 0.019187
+Training accuracy: 0.990 // Test accuracy 0.985
+precision : 0.992 // recall 0.977
+==========================
+Epoch: 1650 // loss: 0.032979
+Training accuracy: 0.993 // Test accuracy 0.990
+precision : 0.992 // recall 0.988
+==========================
+Epoch: 1660 // loss: 0.014361
+Training accuracy: 0.994 // Test accuracy 0.986
+precision : 0.993 // recall 0.978
+==========================
+Epoch: 1670 // loss: 0.020974
+Training accuracy: 0.993 // Test accuracy 0.991
+precision : 0.990 // recall 0.993
+==========================
+Epoch: 1680 // loss: 0.045757
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.993 // recall 0.984
+==========================
+Epoch: 1690 // loss: 0.019507
+Training accuracy: 0.991 // Test accuracy 0.987
+precision : 0.994 // recall 0.980
+==========================
+Epoch: 1700 // loss: 0.022566
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.991 // recall 0.988
+==========================
+Epoch: 1710 // loss: 0.028135
+Training accuracy: 0.992 // Test accuracy 0.988
+precision : 0.993 // recall 0.983
+==========================
+Epoch: 1720 // loss: 0.017611
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 1730 // loss: 0.028779
+Training accuracy: 0.991 // Test accuracy 0.989
+precision : 0.992 // recall 0.986
+==========================
+Epoch: 1740 // loss: 0.026446
+Training accuracy: 0.988 // Test accuracy 0.986
+precision : 0.991 // recall 0.982
+==========================
+Epoch: 1750 // loss: 0.014889
+Training accuracy: 0.994 // Test accuracy 0.986
+precision : 0.994 // recall 0.978
+==========================
+Epoch: 1760 // loss: 0.018143
+Training accuracy: 0.993 // Test accuracy 0.990
+precision : 0.991 // recall 0.989
+==========================
+Epoch: 1770 // loss: 0.022874
+Training accuracy: 0.990 // Test accuracy 0.987
+precision : 0.992 // recall 0.982
+==========================
+Epoch: 1780 // loss: 0.014084
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.994 // recall 0.981
+==========================
+Epoch: 1790 // loss: 0.018720
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.990 // recall 0.986
+==========================
+Epoch: 1800 // loss: 0.035249
+Training accuracy: 0.986 // Test accuracy 0.984
+precision : 0.989 // recall 0.980
+==========================
+Epoch: 1810 // loss: 0.023237
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.991 // recall 0.986
+==========================
+Epoch: 1820 // loss: 0.020651
+Training accuracy: 0.992 // Test accuracy 0.988
+precision : 0.995 // recall 0.980
+==========================
+Epoch: 1830 // loss: 0.026365
+Training accuracy: 0.990 // Test accuracy 0.988
+precision : 0.991 // recall 0.984
+==========================
+Epoch: 1840 // loss: 0.017080
+Training accuracy: 0.994 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 1850 // loss: 0.016725
+Training accuracy: 0.994 // Test accuracy 0.987
+precision : 0.993 // recall 0.981
+==========================
+Epoch: 1860 // loss: 0.031018
+Training accuracy: 0.993 // Test accuracy 0.987
+precision : 0.997 // recall 0.977
+==========================
+Epoch: 1870 // loss: 0.016087
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.992 // recall 0.985
+==========================
+Epoch: 1880 // loss: 0.019159
+Training accuracy: 0.996 // Test accuracy 0.988
+precision : 0.993 // recall 0.982
+==========================
+Epoch: 1890 // loss: 0.022489
+Training accuracy: 0.993 // Test accuracy 0.988
+precision : 0.993 // recall 0.982
+==========================
+Epoch: 1900 // loss: 0.008658
+Training accuracy: 0.994 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 1910 // loss: 0.018328
+Training accuracy: 0.992 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 1920 // loss: 0.021853
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.995 // recall 0.981
+==========================
+Epoch: 1930 // loss: 0.011031
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 1940 // loss: 0.020521
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.994 // recall 0.981
+==========================
+Epoch: 1950 // loss: 0.025324
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.992 // recall 0.985
+==========================
+Epoch: 1960 // loss: 0.011668
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 1970 // loss: 0.020750
+Training accuracy: 0.995 // Test accuracy 0.988
+precision : 0.992 // recall 0.983
+==========================
+Epoch: 1980 // loss: 0.023381
+Training accuracy: 0.991 // Test accuracy 0.986
+precision : 0.998 // recall 0.974
+==========================
+Epoch: 1990 // loss: 0.011139
+Training accuracy: 0.995 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2000 // loss: 0.014754
+Training accuracy: 0.994 // Test accuracy 0.988
+precision : 0.991 // recall 0.985
+==========================
+Epoch: 2010 // loss: 0.025466
+Training accuracy: 0.990 // Test accuracy 0.989
+precision : 0.997 // recall 0.981
+==========================
+Epoch: 2020 // loss: 0.015848
+Training accuracy: 0.996 // Test accuracy 0.986
+precision : 0.991 // recall 0.982
+==========================
+Epoch: 2030 // loss: 0.020867
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.993 // recall 0.984
+==========================
+Epoch: 2040 // loss: 0.024019
+Training accuracy: 0.993 // Test accuracy 0.987
+precision : 0.992 // recall 0.982
+==========================
+Epoch: 2050 // loss: 0.017330
+Training accuracy: 0.995 // Test accuracy 0.988
+precision : 0.991 // recall 0.984
+==========================
+Epoch: 2060 // loss: 0.014957
+Training accuracy: 0.995 // Test accuracy 0.987
+precision : 0.990 // recall 0.984
+==========================
+Epoch: 2070 // loss: 0.026393
+Training accuracy: 0.994 // Test accuracy 0.987
+precision : 0.990 // recall 0.984
+==========================
+Epoch: 2080 // loss: 0.009040
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 2090 // loss: 0.015046
+Training accuracy: 0.994 // Test accuracy 0.991
+precision : 0.992 // recall 0.990
+==========================
+Epoch: 2100 // loss: 0.020690
+Training accuracy: 0.993 // Test accuracy 0.988
+precision : 0.991 // recall 0.984
+==========================
+Epoch: 2110 // loss: 0.010002
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.998 // recall 0.981
+==========================
+Epoch: 2120 // loss: 0.018666
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.992 // recall 0.986
+==========================
+Epoch: 2130 // loss: 0.019688
+Training accuracy: 0.992 // Test accuracy 0.989
+precision : 0.994 // recall 0.984
+==========================
+Epoch: 2140 // loss: 0.011565
+Training accuracy: 0.996 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2150 // loss: 0.015039
+Training accuracy: 0.995 // Test accuracy 0.988
+precision : 0.992 // recall 0.984
+==========================
+Epoch: 2160 // loss: 0.020433
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 2170 // loss: 0.007875
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 2180 // loss: 0.013780
+Training accuracy: 0.995 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 2190 // loss: 0.019971
+Training accuracy: 0.994 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 2200 // loss: 0.012895
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 2210 // loss: 0.015591
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.993 // recall 0.988
+==========================
+Epoch: 2220 // loss: 0.019884
+Training accuracy: 0.992 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2230 // loss: 0.015580
+Training accuracy: 0.994 // Test accuracy 0.990
+precision : 0.994 // recall 0.986
+==========================
+Epoch: 2240 // loss: 0.015873
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.992 // recall 0.986
+==========================
+Epoch: 2250 // loss: 0.028888
+Training accuracy: 0.992 // Test accuracy 0.988
+precision : 0.990 // recall 0.986
+==========================
+Epoch: 2260 // loss: 0.014686
+Training accuracy: 0.995 // Test accuracy 0.989
+precision : 0.991 // recall 0.988
+==========================
+Epoch: 2270 // loss: 0.014546
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 2280 // loss: 0.024474
+Training accuracy: 0.992 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 2290 // loss: 0.012281
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 2300 // loss: 0.013240
+Training accuracy: 0.995 // Test accuracy 0.987
+precision : 0.993 // recall 0.981
+==========================
+Epoch: 2310 // loss: 0.018040
+Training accuracy: 0.991 // Test accuracy 0.989
+precision : 0.998 // recall 0.980
+==========================
+Epoch: 2320 // loss: 0.010747
+Training accuracy: 0.995 // Test accuracy 0.992
+precision : 0.994 // recall 0.990
+==========================
+Epoch: 2330 // loss: 0.020659
+Training accuracy: 0.996 // Test accuracy 0.988
+precision : 0.995 // recall 0.981
+==========================
+Epoch: 2340 // loss: 0.017972
+Training accuracy: 0.992 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2350 // loss: 0.010333
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 2360 // loss: 0.016885
+Training accuracy: 0.998 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2370 // loss: 0.015489
+Training accuracy: 0.995 // Test accuracy 0.986
+precision : 0.994 // recall 0.978
+==========================
+Epoch: 2380 // loss: 0.014848
+Training accuracy: 0.995 // Test accuracy 0.989
+precision : 0.994 // recall 0.983
+==========================
+Epoch: 2390 // loss: 0.022195
+Training accuracy: 0.993 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 2400 // loss: 0.027963
+Training accuracy: 0.992 // Test accuracy 0.988
+precision : 0.994 // recall 0.981
+==========================
+Epoch: 2410 // loss: 0.011521
+Training accuracy: 0.995 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 2420 // loss: 0.016415
+Training accuracy: 0.994 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 2430 // loss: 0.014199
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.993 // recall 0.984
+==========================
+Epoch: 2440 // loss: 0.010968
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 2450 // loss: 0.014242
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 2460 // loss: 0.025976
+Training accuracy: 0.990 // Test accuracy 0.985
+precision : 0.997 // recall 0.974
+==========================
+Epoch: 2470 // loss: 0.013464
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.994 // recall 0.984
+==========================
+Epoch: 2480 // loss: 0.017417
+Training accuracy: 0.998 // Test accuracy 0.988
+precision : 0.993 // recall 0.983
+==========================
+Epoch: 2490 // loss: 0.018181
+Training accuracy: 0.995 // Test accuracy 0.989
+precision : 0.997 // recall 0.981
+==========================
+Epoch: 2500 // loss: 0.009477
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 2510 // loss: 0.009715
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 2520 // loss: 0.011594
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.998 // recall 0.980
+==========================
+Epoch: 2530 // loss: 0.014555
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 2540 // loss: 0.017039
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 2550 // loss: 0.022684
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 2560 // loss: 0.007715
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 2570 // loss: 0.022356
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.997 // recall 0.981
+==========================
+Epoch: 2580 // loss: 0.012288
+Training accuracy: 0.995 // Test accuracy 0.992
+precision : 0.998 // recall 0.986
+==========================
+Epoch: 2590 // loss: 0.010401
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 2600 // loss: 0.013404
+Training accuracy: 0.994 // Test accuracy 0.991
+precision : 0.999 // recall 0.984
+==========================
+Epoch: 2610 // loss: 0.017781
+Training accuracy: 0.995 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 2620 // loss: 0.010345
+Training accuracy: 0.995 // Test accuracy 0.989
+precision : 0.995 // recall 0.983
+==========================
+Epoch: 2630 // loss: 0.014406
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.994 // recall 0.984
+==========================
+Epoch: 2640 // loss: 0.017334
+Training accuracy: 0.996 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2650 // loss: 0.006925
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 2660 // loss: 0.009393
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.995 // recall 0.986
+==========================
+Epoch: 2670 // loss: 0.016820
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 2680 // loss: 0.007945
+Training accuracy: 0.997 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 2690 // loss: 0.009221
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.994 // recall 0.983
+==========================
+Epoch: 2700 // loss: 0.015905
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 2710 // loss: 0.009784
+Training accuracy: 0.998 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2720 // loss: 0.008778
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.997 // recall 0.981
+==========================
+Epoch: 2730 // loss: 0.017067
+Training accuracy: 0.996 // Test accuracy 0.988
+precision : 0.995 // recall 0.981
+==========================
+Epoch: 2740 // loss: 0.003938
+Training accuracy: 0.999 // Test accuracy 0.992
+precision : 0.995 // recall 0.989
+==========================
+Epoch: 2750 // loss: 0.006851
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 2760 // loss: 0.012086
+Training accuracy: 0.996 // Test accuracy 0.988
+precision : 0.997 // recall 0.980
+==========================
+Epoch: 2770 // loss: 0.006768
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.995 // recall 0.983
+==========================
+Epoch: 2780 // loss: 0.012624
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.999 // recall 0.980
+==========================
+Epoch: 2790 // loss: 0.013911
+Training accuracy: 0.993 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 2800 // loss: 0.004281
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 2810 // loss: 0.013922
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.995 // recall 0.986
+==========================
+Epoch: 2820 // loss: 0.010635
+Training accuracy: 0.994 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 2830 // loss: 0.009752
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 2840 // loss: 0.011300
+Training accuracy: 0.998 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 2850 // loss: 0.011878
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.997 // recall 0.981
+==========================
+Epoch: 2860 // loss: 0.007711
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 2870 // loss: 0.008695
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.994 // recall 0.984
+==========================
+Epoch: 2880 // loss: 0.011656
+Training accuracy: 0.997 // Test accuracy 0.990
+precision : 0.998 // recall 0.982
+==========================
+Epoch: 2890 // loss: 0.004004
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.999 // recall 0.981
+==========================
+Epoch: 2900 // loss: 0.007702
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 2910 // loss: 0.007715
+Training accuracy: 0.993 // Test accuracy 0.990
+precision : 0.999 // recall 0.982
+==========================
+Epoch: 2920 // loss: 0.006617
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.999 // recall 0.982
+==========================
+Epoch: 2930 // loss: 0.007202
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.999 // recall 0.983
+==========================
+Epoch: 2940 // loss: 0.017825
+Training accuracy: 0.994 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 2950 // loss: 0.004077
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.999 // recall 0.978
+==========================
+Epoch: 2960 // loss: 0.006259
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 2970 // loss: 0.012922
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.999 // recall 0.980
+==========================
+Epoch: 2980 // loss: 0.005777
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.995 // recall 0.983
+==========================
+Epoch: 2990 // loss: 0.015195
+Training accuracy: 0.996 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 3000 // loss: 0.011207
+Training accuracy: 0.997 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3010 // loss: 0.009019
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3020 // loss: 0.007125
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.998 // recall 0.981
+==========================
+Epoch: 3030 // loss: 0.010957
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3040 // loss: 0.011131
+Training accuracy: 0.997 // Test accuracy 0.985
+precision : 0.989 // recall 0.982
+==========================
+Epoch: 3050 // loss: 0.008669
+Training accuracy: 0.996 // Test accuracy 0.988
+precision : 0.995 // recall 0.981
+==========================
+Epoch: 3060 // loss: 0.005913
+Training accuracy: 0.995 // Test accuracy 0.988
+precision : 0.998 // recall 0.978
+==========================
+Epoch: 3070 // loss: 0.003229
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 3080 // loss: 0.006319
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 3090 // loss: 0.016685
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 3100 // loss: 0.010423
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.995 // recall 0.983
+==========================
+Epoch: 3110 // loss: 0.007951
+Training accuracy: 0.998 // Test accuracy 0.988
+precision : 0.993 // recall 0.982
+==========================
+Epoch: 3120 // loss: 0.014894
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3130 // loss: 0.017231
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 3140 // loss: 0.012448
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.995 // recall 0.983
+==========================
+Epoch: 3150 // loss: 0.018372
+Training accuracy: 0.990 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3160 // loss: 0.009678
+Training accuracy: 0.991 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 3170 // loss: 0.012413
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3180 // loss: 0.019533
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3190 // loss: 0.012039
+Training accuracy: 0.997 // Test accuracy 0.988
+precision : 0.997 // recall 0.978
+==========================
+Epoch: 3200 // loss: 0.017595
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.995 // recall 0.986
+==========================
+Epoch: 3210 // loss: 0.016647
+Training accuracy: 0.994 // Test accuracy 0.989
+precision : 0.998 // recall 0.980
+==========================
+Epoch: 3220 // loss: 0.003918
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 3230 // loss: 0.016953
+Training accuracy: 0.998 // Test accuracy 0.988
+precision : 0.997 // recall 0.978
+==========================
+Epoch: 3240 // loss: 0.015892
+Training accuracy: 0.994 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 3250 // loss: 0.003744
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.999 // recall 0.983
+==========================
+Epoch: 3260 // loss: 0.012041
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 3270 // loss: 0.005367
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.999 // recall 0.978
+==========================
+Epoch: 3280 // loss: 0.006559
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 3290 // loss: 0.009044
+Training accuracy: 0.995 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 3300 // loss: 0.009156
+Training accuracy: 0.996 // Test accuracy 0.989
+precision : 0.998 // recall 0.980
+==========================
+Epoch: 3310 // loss: 0.003449
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 3320 // loss: 0.003618
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.998 // recall 0.982
+==========================
+Epoch: 3330 // loss: 0.007619
+Training accuracy: 0.997 // Test accuracy 0.990
+precision : 1.000 // recall 0.981
+==========================
+Epoch: 3340 // loss: 0.001944
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.999 // recall 0.983
+==========================
+Epoch: 3350 // loss: 0.003170
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 3360 // loss: 0.006245
+Training accuracy: 0.998 // Test accuracy 0.992
+precision : 0.998 // recall 0.986
+==========================
+Epoch: 3370 // loss: 0.002762
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 3380 // loss: 0.005014
+Training accuracy: 0.999 // Test accuracy 0.987
+precision : 0.995 // recall 0.978
+==========================
+Epoch: 3390 // loss: 0.019181
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 3400 // loss: 0.004477
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.995 // recall 0.986
+==========================
+Epoch: 3410 // loss: 0.010575
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 3420 // loss: 0.004740
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 3430 // loss: 0.002879
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 3440 // loss: 0.010116
+Training accuracy: 0.997 // Test accuracy 0.992
+precision : 0.998 // recall 0.986
+==========================
+Epoch: 3450 // loss: 0.011200
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 3460 // loss: 0.002307
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.998 // recall 0.982
+==========================
+Epoch: 3470 // loss: 0.003267
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 3480 // loss: 0.006118
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.995 // recall 0.983
+==========================
+Epoch: 3490 // loss: 0.003609
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.999 // recall 0.980
+==========================
+Epoch: 3500 // loss: 0.005418
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3510 // loss: 0.011622
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3520 // loss: 0.004850
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 3530 // loss: 0.002928
+Training accuracy: 0.998 // Test accuracy 0.993
+precision : 0.997 // recall 0.989
+==========================
+Epoch: 3540 // loss: 0.004378
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.999 // recall 0.984
+==========================
+Epoch: 3550 // loss: 0.003956
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 3560 // loss: 0.003569
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3570 // loss: 0.011164
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 3580 // loss: 0.001732
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 3590 // loss: 0.002070
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.999 // recall 0.984
+==========================
+Epoch: 3600 // loss: 0.006406
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 3610 // loss: 0.005472
+Training accuracy: 0.999 // Test accuracy 0.988
+precision : 0.999 // recall 0.976
+==========================
+Epoch: 3620 // loss: 0.008603
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3630 // loss: 0.006215
+Training accuracy: 0.997 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3640 // loss: 0.006652
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.992 // recall 0.985
+==========================
+Epoch: 3650 // loss: 0.003995
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.998 // recall 0.982
+==========================
+Epoch: 3660 // loss: 0.005725
+Training accuracy: 0.998 // Test accuracy 0.992
+precision : 0.999 // recall 0.985
+==========================
+Epoch: 3670 // loss: 0.001326
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.999 // recall 0.984
+==========================
+Epoch: 3680 // loss: 0.002160
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.999 // recall 0.982
+==========================
+Epoch: 3690 // loss: 0.008942
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.999 // recall 0.981
+==========================
+Epoch: 3700 // loss: 0.004721
+Training accuracy: 0.999 // Test accuracy 0.992
+precision : 0.998 // recall 0.986
+==========================
+Epoch: 3710 // loss: 0.003050
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 3720 // loss: 0.007571
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 3730 // loss: 0.002125
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 3740 // loss: 0.004661
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 3750 // loss: 0.013182
+Training accuracy: 0.997 // Test accuracy 0.988
+precision : 0.997 // recall 0.980
+==========================
+Epoch: 3760 // loss: 0.005768
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.992 // recall 0.985
+==========================
+Epoch: 3770 // loss: 0.006232
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3780 // loss: 0.010610
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 3790 // loss: 0.003897
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3800 // loss: 0.003341
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3810 // loss: 0.007491
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 3820 // loss: 0.001943
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 3830 // loss: 0.002090
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 3840 // loss: 0.004039
+Training accuracy: 0.999 // Test accuracy 0.992
+precision : 0.998 // recall 0.986
+==========================
+Epoch: 3850 // loss: 0.008494
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 3860 // loss: 0.002265
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 3870 // loss: 0.005069
+Training accuracy: 0.997 // Test accuracy 0.993
+precision : 0.999 // recall 0.986
+==========================
+Epoch: 3880 // loss: 0.006173
+Training accuracy: 0.999 // Test accuracy 0.988
+precision : 0.995 // recall 0.980
+==========================
+Epoch: 3890 // loss: 0.001648
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 3900 // loss: 0.004717
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.999 // recall 0.981
+==========================
+Epoch: 3910 // loss: 0.001961
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 3920 // loss: 0.003071
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3930 // loss: 0.003543
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.999 // recall 0.984
+==========================
+Epoch: 3940 // loss: 0.001930
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.993 // recall 0.984
+==========================
+Epoch: 3950 // loss: 0.002947
+Training accuracy: 0.999 // Test accuracy 0.986
+precision : 0.995 // recall 0.977
+==========================
+Epoch: 3960 // loss: 0.006270
+Training accuracy: 0.997 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 3970 // loss: 0.002321
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3980 // loss: 0.001729
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 3990 // loss: 0.009647
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 4000 // loss: 0.002995
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 4010 // loss: 0.003098
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.998 // recall 0.980
+==========================
+Epoch: 4020 // loss: 0.004962
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 4030 // loss: 0.001702
+Training accuracy: 1.000 // Test accuracy 0.993
+precision : 0.998 // recall 0.989
+==========================
+Epoch: 4040 // loss: 0.001412
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4050 // loss: 0.003570
+Training accuracy: 1.000 // Test accuracy 0.992
+precision : 0.997 // recall 0.988
+==========================
+Epoch: 4060 // loss: 0.004995
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 4070 // loss: 0.003676
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.999 // recall 0.983
+==========================
+Epoch: 4080 // loss: 0.011417
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 4090 // loss: 0.002581
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 4100 // loss: 0.001065
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 4110 // loss: 0.003702
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.999 // recall 0.983
+==========================
+Epoch: 4120 // loss: 0.005026
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.999 // recall 0.983
+==========================
+Epoch: 4130 // loss: 0.002053
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.995 // recall 0.986
+==========================
+Epoch: 4140 // loss: 0.008478
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.995 // recall 0.988
+==========================
+Epoch: 4150 // loss: 0.009532
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 4160 // loss: 0.001659
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.998 // recall 0.981
+==========================
+Epoch: 4170 // loss: 0.007470
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 4180 // loss: 0.002075
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.998 // recall 0.982
+==========================
+Epoch: 4190 // loss: 0.005695
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4200 // loss: 0.007542
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4210 // loss: 0.001398
+Training accuracy: 0.999 // Test accuracy 0.992
+precision : 0.995 // recall 0.989
+==========================
+Epoch: 4220 // loss: 0.003309
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 4230 // loss: 0.009510
+Training accuracy: 0.999 // Test accuracy 0.988
+precision : 0.994 // recall 0.982
+==========================
+Epoch: 4240 // loss: 0.000705
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4250 // loss: 0.000892
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 4260 // loss: 0.001592
+Training accuracy: 0.999 // Test accuracy 0.993
+precision : 0.999 // recall 0.986
+==========================
+Epoch: 4270 // loss: 0.002954
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 4280 // loss: 0.001688
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 4290 // loss: 0.001304
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 4300 // loss: 0.004582
+Training accuracy: 1.000 // Test accuracy 0.992
+precision : 0.998 // recall 0.986
+==========================
+Epoch: 4310 // loss: 0.000818
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 4320 // loss: 0.004110
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 4330 // loss: 0.000582
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 4340 // loss: 0.000628
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 4350 // loss: 0.003956
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 4360 // loss: 0.000917
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 4370 // loss: 0.000997
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.998 // recall 0.982
+==========================
+Epoch: 4380 // loss: 0.001623
+Training accuracy: 0.998 // Test accuracy 0.988
+precision : 0.998 // recall 0.978
+==========================
+Epoch: 4390 // loss: 0.000685
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 4400 // loss: 0.002427
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.999 // recall 0.981
+==========================
+Epoch: 4410 // loss: 0.001353
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 4420 // loss: 0.002899
+Training accuracy: 0.997 // Test accuracy 0.988
+precision : 0.998 // recall 0.978
+==========================
+Epoch: 4430 // loss: 0.001377
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.994 // recall 0.986
+==========================
+Epoch: 4440 // loss: 0.005480
+Training accuracy: 0.999 // Test accuracy 0.987
+precision : 0.997 // recall 0.977
+==========================
+Epoch: 4450 // loss: 0.002721
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4460 // loss: 0.006026
+Training accuracy: 0.997 // Test accuracy 0.988
+precision : 0.998 // recall 0.978
+==========================
+Epoch: 4470 // loss: 0.008324
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.997 // recall 0.983
+==========================
+Epoch: 4480 // loss: 0.001337
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 4490 // loss: 0.003598
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 4500 // loss: 0.003494
+Training accuracy: 0.999 // Test accuracy 0.988
+precision : 0.995 // recall 0.981
+==========================
+Epoch: 4510 // loss: 0.000970
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.995 // recall 0.988
+==========================
+Epoch: 4520 // loss: 0.002009
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.993 // recall 0.985
+==========================
+Epoch: 4530 // loss: 0.006298
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 4540 // loss: 0.002377
+Training accuracy: 1.000 // Test accuracy 0.993
+precision : 0.999 // recall 0.988
+==========================
+Epoch: 4550 // loss: 0.004303
+Training accuracy: 0.998 // Test accuracy 0.987
+precision : 0.997 // recall 0.977
+==========================
+Epoch: 4560 // loss: 0.001331
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 4570 // loss: 0.005412
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.999 // recall 0.983
+==========================
+Epoch: 4580 // loss: 0.013358
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 4590 // loss: 0.006270
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.993 // recall 0.988
+==========================
+Epoch: 4600 // loss: 0.004293
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.995 // recall 0.988
+==========================
+Epoch: 4610 // loss: 0.002683
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 4620 // loss: 0.005482
+Training accuracy: 0.997 // Test accuracy 0.990
+precision : 0.994 // recall 0.986
+==========================
+Epoch: 4630 // loss: 0.010098
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 4640 // loss: 0.004920
+Training accuracy: 0.998 // Test accuracy 0.989
+precision : 0.998 // recall 0.981
+==========================
+Epoch: 4650 // loss: 0.002977
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4660 // loss: 0.003258
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 4670 // loss: 0.006622
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 4680 // loss: 0.004379
+Training accuracy: 0.998 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 4690 // loss: 0.001407
+Training accuracy: 1.000 // Test accuracy 0.988
+precision : 0.993 // recall 0.983
+==========================
+Epoch: 4700 // loss: 0.001456
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 4710 // loss: 0.004115
+Training accuracy: 0.999 // Test accuracy 0.988
+precision : 0.997 // recall 0.980
+==========================
+Epoch: 4720 // loss: 0.000865
+Training accuracy: 1.000 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 4730 // loss: 0.002003
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.995 // recall 0.988
+==========================
+Epoch: 4740 // loss: 0.002291
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.995 // recall 0.983
+==========================
+Epoch: 4750 // loss: 0.000269
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 4760 // loss: 0.005752
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.995 // recall 0.985
+==========================
+Epoch: 4770 // loss: 0.002712
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4780 // loss: 0.001887
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 4790 // loss: 0.001654
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.998 // recall 0.984
+==========================
+Epoch: 4800 // loss: 0.002041
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.997 // recall 0.984
+==========================
+Epoch: 4810 // loss: 0.006558
+Training accuracy: 1.000 // Test accuracy 0.988
+precision : 0.995 // recall 0.981
+==========================
+Epoch: 4820 // loss: 0.000645
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.995 // recall 0.986
+==========================
+Epoch: 4830 // loss: 0.002440
+Training accuracy: 0.999 // Test accuracy 0.990
+precision : 0.999 // recall 0.981
+==========================
+Epoch: 4840 // loss: 0.006629
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+==========================
+Epoch: 4850 // loss: 0.001554
+Training accuracy: 1.000 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 4860 // loss: 0.001943
+Training accuracy: 0.999 // Test accuracy 0.989
+precision : 0.995 // recall 0.982
+==========================
+Epoch: 4870 // loss: 0.001104
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 4880 // loss: 0.008138
+Training accuracy: 0.997 // Test accuracy 0.989
+precision : 0.997 // recall 0.982
+==========================
+Epoch: 4890 // loss: 0.001892
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.997 // recall 0.986
+==========================
+Epoch: 4900 // loss: 0.002096
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.999 // recall 0.984
+==========================
+Epoch: 4910 // loss: 0.000952
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.998 // recall 0.983
+==========================
+Epoch: 4920 // loss: 0.002004
+Training accuracy: 0.998 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 4930 // loss: 0.000454
+Training accuracy: 1.000 // Test accuracy 0.993
+precision : 0.999 // recall 0.986
+==========================
+Epoch: 4940 // loss: 0.001828
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.995 // recall 0.984
+==========================
+Epoch: 4950 // loss: 0.001010
+Training accuracy: 0.999 // Test accuracy 0.991
+precision : 0.997 // recall 0.985
+==========================
+Epoch: 4960 // loss: 0.001116
+Training accuracy: 1.000 // Test accuracy 0.990
+precision : 0.999 // recall 0.981
+==========================
+Epoch: 4970 // loss: 0.002020
+Training accuracy: 1.000 // Test accuracy 0.994
+precision : 0.999 // recall 0.990
+==========================
+Epoch: 4980 // loss: 0.016338
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.995 // recall 0.986
+==========================
+Epoch: 4990 // loss: 0.000733
+Training accuracy: 0.997 // Test accuracy 0.991
+precision : 0.998 // recall 0.985
+==========================
+Epoch: 5000 // loss: 0.000485
+Training accuracy: 0.999 // Test accuracy 0.993
+precision : 0.998 // recall 0.988

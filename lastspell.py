@@ -19,11 +19,11 @@ class Lastspell:
         no return
         '''
         # set options
-        self.train_length = 5
+        self.train_length = 7
         self.batch_size = 1000
         self.learning_rate = 1e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 100
+        self.total_epoch = 2000
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -57,8 +57,6 @@ class Lastspell:
 
         with tf.name_scope("W"):
             W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
-        with tf.name_scope("a"):
-            a = tf.Variable(0)
         with tf.name_scope("b"):
             b = tf.Variable(tf.random_normal([self.n_class]))  # b : bias
 
@@ -90,8 +88,8 @@ class Lastspell:
         # accuracy
         with tf.name_scope("accuracy"):
             self.prediction = tf.cast(tf.argmax(self.model, 1), tf.int32)
-            prediction_check = tf.equal(self.prediction, self.Y)
-            self.accuracy = tf.reduce_mean(tf.cast(prediction_check, tf.float32))
+            self.prediction_check = tf.equal(self.prediction, self.Y)
+            self.accuracy = tf.reduce_mean(tf.cast(self.prediction_check, tf.float32))
         
         # result
         self.array_accuracy = []
@@ -107,7 +105,6 @@ class Lastspell:
     def summary_model(self):
         # make tensorboard
         self.writer = tf.summary.FileWriter('./board/lastspell', self.sess.graph)
-
         tf.summary.scalar('Accuracy', self.accuracy)
         tf.summary.scalar('Loss', self.cost)
 
@@ -141,7 +138,6 @@ class Lastspell:
             # test with train & test data
             summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch})
             predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
-            print(predict)
             self.writer.add_summary(summary, epoch)
 
             # calculate precision and recall
@@ -149,12 +145,14 @@ class Lastspell:
             self.array_precision.append(precision)
             self.array_recall.append(recall)
 
-            if epoch % 10 == 0:
+            if epoch % 100 == 0:
                 # print information
                 print("==========================")
                 print("Epoch: {:03d} // loss: {:.6f}".format(epoch, loss))
                 print("Training accuracy: {:.3f} // Test accuracy {:.3f}".format(train_accuracy, test_accuracy))
                 print("precision : {:.3f} // recall {:.3f}".format(precision, recall))
+                if epoch > 1000:
+                    self.check_predict_fails(input_batch, target_batch)
 
             if epoch % 100000 == 0:
                 # save model & epoch
@@ -368,10 +366,8 @@ class Lastspell:
             spell = []
             for w in t:
                 if w in eng:
-                    #print("in!"+w)
                     spell.append(dic_eng[w])
                 else:
-                    #print("no!"+w)
                     spell.append(26)
             temp.append(np.eye(27)[spell])
         return temp
@@ -435,4 +431,23 @@ class Lastspell:
         if check < self.batch_size:
             return check, (train_input[index:] + train_input[:self.full_length-check]), (train_target[index:] + train_target[:self.full_length-check])
         return index, train_input[index:index+self.batch_size], train_target[index:index+self.batch_size]
+
+    def check_predict_fails(self, input_batch, target_batch):
+        prediction_check = self.sess.run(self.prediction_check, feed_dict={self.X : input_batch, self.Y : target_batch})
+        eng = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '$']
+
+        for i in range(len(prediction_check)):
+            if prediction_check[i] == False:
+                temp = []
+                print(i)
+                for w in input_batch[i]:
+                    for j in range(27):
+                        if w[j] == 1:
+                            temp.append(eng[j])
+                print(temp[::-1])
+                print(target_batch[i])
+                print()
+    
+
+
 
