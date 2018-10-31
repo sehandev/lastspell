@@ -23,7 +23,7 @@ class Lastspell:
         self.batch_size = 1000
         self.learning_rate = 1e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 4000
+        self.total_epoch = 100
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -56,16 +56,23 @@ class Lastspell:
             self.Y = tf.placeholder(tf.int32, [None])
 
         with tf.name_scope("W"):
-        W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
-        a = tf.Variable(0)
+            W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
+        with tf.name_scope("a"):
+            a = tf.Variable(0)
         with tf.name_scope("b"):
             b = tf.Variable(tf.random_normal([self.n_class]))  # b : bias
 
         cell1 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
         cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
         cell2 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
+        cell2 = tf.nn.rnn_cell.DropoutWrapper(cell2, output_keep_prob=0.5)
         cell3 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
-        multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3])
+        cell3 = tf.nn.rnn_cell.DropoutWrapper(cell3, output_keep_prob=0.5)
+        cell4 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
+        cell4 = tf.nn.rnn_cell.DropoutWrapper(cell4, output_keep_prob=0.5)
+        cell5 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
+        cell5 = tf.nn.rnn_cell.DropoutWrapper(cell5, output_keep_prob=0.5)
+        multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3, cell4, cell5])
 
         with tf.name_scope("outputs"):
             outputs, _ = tf.nn.dynamic_rnn(multi_cell, self.X, dtype=tf.float32)  # outputs: [?, 5, 128]
@@ -134,6 +141,7 @@ class Lastspell:
             # test with train & test data
             summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch})
             predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
+            print(predict)
             self.writer.add_summary(summary, epoch)
 
             # calculate precision and recall
@@ -141,14 +149,14 @@ class Lastspell:
             self.array_precision.append(precision)
             self.array_recall.append(recall)
 
-            if epoch % 100 == 0:
+            if epoch % 10 == 0:
                 # print information
                 print("==========================")
                 print("Epoch: {:03d} // loss: {:.6f}".format(epoch, loss))
                 print("Training accuracy: {:.3f} // Test accuracy {:.3f}".format(train_accuracy, test_accuracy))
                 print("precision : {:.3f} // recall {:.3f}".format(precision, recall))
 
-            if epoch % 10000000 == 0:
+            if epoch % 100000 == 0:
                 # save model & epoch
                 self.saver.save(self.sess, self.checkpoint_path, global_step=epoch)
                 with open("./start_epoch", 'w') as f:
