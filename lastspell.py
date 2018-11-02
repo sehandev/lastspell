@@ -19,11 +19,11 @@ class Lastspell:
         no return
         '''
         # set options
-        self.train_length = 7
-        self.batch_size = 1000
-        self.learning_rate = 1e-3  # optimizer learning rate
+        self.train_length = 5
+        self.batch_size = 500
+        self.learning_rate = 1e-4  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 2000
+        self.total_epoch = 7000
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -32,8 +32,12 @@ class Lastspell:
         # get data
         self.train_data, self.test_data = self.lastspell_data()
         
+        # gpu option
+        config = tf.ConfigProto()
+#        config.gpu_options.per_process_gpu_memory_fraction = 0.9
+
         # make session
-        self.sess = tf.Session()
+        self.sess = tf.Session(config=config)
         
         # make model
         self.design_model()
@@ -151,7 +155,7 @@ class Lastspell:
                 print("Epoch: {:03d} // loss: {:.6f}".format(epoch, loss))
                 print("Training accuracy: {:.3f} // Test accuracy {:.3f}".format(train_accuracy, test_accuracy))
                 print("precision : {:.3f} // recall {:.3f}".format(precision, recall))
-                if epoch > 1000:
+                if epoch > 5000:
                     self.check_predict_fails(input_batch, target_batch)
 
             if epoch % 100000 == 0:

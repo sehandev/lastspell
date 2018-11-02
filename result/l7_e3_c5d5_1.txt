@@ -1,0 +1,347 @@
+precision and recall make some ERROR
+precision and recall make some ERROR
+precision and recall make some ERROR
+==========================
+Epoch: 100 // loss: 0.120551
+Training accuracy: 0.966 // Test accuracy 0.943
+precision : 0.978 // recall 0.907
+==========================
+Epoch: 200 // loss: 0.069745
+Training accuracy: 0.976 // Test accuracy 0.982
+precision : 0.992 // recall 0.972
+==========================
+Epoch: 300 // loss: 0.041261
+Training accuracy: 0.982 // Test accuracy 0.977
+precision : 0.994 // recall 0.960
+==========================
+Epoch: 400 // loss: 0.024335
+Training accuracy: 0.990 // Test accuracy 0.990
+precision : 0.994 // recall 0.986
+==========================
+Epoch: 500 // loss: 0.018953
+Training accuracy: 0.994 // Test accuracy 0.991
+precision : 0.992 // recall 0.991
+==========================
+Epoch: 600 // loss: 0.010182
+Training accuracy: 0.998 // Test accuracy 0.993
+precision : 0.995 // recall 0.990
+==========================
+Epoch: 700 // loss: 0.007938
+Training accuracy: 0.998 // Test accuracy 0.994
+precision : 0.995 // recall 0.993
+==========================
+Epoch: 800 // loss: 0.005795
+Training accuracy: 0.996 // Test accuracy 0.994
+precision : 0.993 // recall 0.994
+==========================
+Epoch: 900 // loss: 0.014490
+Training accuracy: 0.996 // Test accuracy 0.995
+precision : 0.995 // recall 0.994
+==========================
+Epoch: 1000 // loss: 0.018442
+Training accuracy: 0.994 // Test accuracy 0.994
+precision : 0.995 // recall 0.992
+==========================
+Epoch: 1100 // loss: 0.042992
+Training accuracy: 0.994 // Test accuracy 0.994
+precision : 0.994 // recall 0.993
+114
+['$', '$', '$', 'd', 'e', 'b', 't']
+0
+
+149
+['$', 'd', 'e', 'v', 'o', 'u', 't']
+0
+
+384
+['$', '$', 'b', 'l', 'e', 'a', 't']
+0
+
+470
+['$', '$', '$', 'g', 'o', 'o', 'd']
+1
+
+==========================
+Epoch: 1200 // loss: 0.012005
+Training accuracy: 0.996 // Test accuracy 0.994
+precision : 0.995 // recall 0.993
+261
+['o', 'm', 'e', 'w', 'h', 'a', 't']
+1
+
+405
+['$', '$', 's', 'w', 'e', 'e', 't']
+0
+
+==========================
+Epoch: 1300 // loss: 0.034740
+Training accuracy: 0.998 // Test accuracy 0.994
+precision : 0.994 // recall 0.994
+372
+['p', 'h', 'a', 'l', 'a', 'n', 'x']
+1
+
+==========================
+Epoch: 1400 // loss: 0.015968
+Training accuracy: 0.992 // Test accuracy 0.994
+precision : 0.995 // recall 0.992
+227
+['$', '$', 's', 'n', 'o', 'u', 't']
+0
+
+242
+['$', '$', 's', 'c', 'o', 'o', 't']
+0
+
+385
+['$', '$', '$', 'r', 'o', 'o', 't']
+0
+
+==========================
+Epoch: 1500 // loss: 0.010760
+Training accuracy: 0.996 // Test accuracy 0.994
+precision : 0.994 // recall 0.994
+117
+['$', '$', '$', 'r', 'o', 'u', 't']
+0
+
+173
+['$', '$', 'c', 'r', 'o', 'o', 'k']
+0
+
+==========================
+Epoch: 1600 // loss: 0.007635
+Training accuracy: 0.998 // Test accuracy 0.994
+precision : 0.994 // recall 0.993
+121
+['q', 'u', 'i', 'n', 't', 'e', 't']
+0
+
+==========================
+Epoch: 1700 // loss: 0.002037
+Training accuracy: 1.000 // Test accuracy 0.995
+precision : 0.994 // recall 0.997
+==========================
+Epoch: 1800 // loss: 0.004994
+Training accuracy: 0.998 // Test accuracy 0.995
+precision : 0.997 // recall 0.994
+493
+['$', '$', '$', 'b', 'o', 'o', 't']
+0
+
+==========================
+Epoch: 1900 // loss: 0.003323
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.998 // recall 0.997
+147
+['$', '$', '$', 'c', 'r', 'i', 'b']
+0
+
+==========================
+Epoch: 2000 // loss: 0.016427
+Training accuracy: 0.998 // Test accuracy 0.997
+precision : 0.997 // recall 0.998
+316
+['$', '$', '$', 'g', 'o', 'o', 'd']
+1
+
+==========================
+Epoch: 2100 // loss: 0.012354
+Training accuracy: 0.998 // Test accuracy 0.995
+precision : 0.995 // recall 0.995
+463
+['$', '$', 'i', 'd', 'i', 'o', 't']
+0
+
+==========================
+Epoch: 2200 // loss: 0.001517
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.997 // recall 0.998
+==========================
+Epoch: 2300 // loss: 0.011878
+Training accuracy: 0.996 // Test accuracy 0.997
+precision : 0.995 // recall 0.998
+73
+['$', '$', 's', 'n', 'o', 'u', 't']
+0
+
+88
+['$', '$', 's', 'c', 'o', 'o', 't']
+0
+
+231
+['$', '$', '$', 'r', 'o', 'o', 't']
+0
+
+==========================
+Epoch: 2400 // loss: 0.000820
+Training accuracy: 1.000 // Test accuracy 0.996
+precision : 0.997 // recall 0.995
+==========================
+Epoch: 2500 // loss: 0.004660
+Training accuracy: 0.998 // Test accuracy 0.995
+precision : 0.998 // recall 0.993
+==========================
+Epoch: 2600 // loss: 0.000574
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.997 // recall 0.998
+==========================
+Epoch: 2700 // loss: 0.000683
+Training accuracy: 1.000 // Test accuracy 0.996
+precision : 0.995 // recall 0.997
+==========================
+Epoch: 2800 // loss: 0.000119
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.995 // recall 0.998
+==========================
+Epoch: 2900 // loss: 0.000139
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.995 // recall 0.998
+==========================
+Epoch: 3000 // loss: 0.009590
+Training accuracy: 0.998 // Test accuracy 0.996
+precision : 0.995 // recall 0.997
+57
+['$', '$', 'f', 'l', 'e', 'e', 't']
+0
+
+309
+['$', '$', 'i', 'd', 'i', 'o', 't']
+0
+
+==========================
+Epoch: 3100 // loss: 0.009161
+Training accuracy: 0.994 // Test accuracy 0.997
+precision : 0.995 // recall 0.998
+55
+['$', '$', '$', 's', 'o', 'a', 'p']
+0
+
+317
+['e', 'm', 'i', 'n', 'e', 'n', 't']
+0
+
+446
+['$', '$', 's', 'h', 'o', 'u', 't']
+0
+
+==========================
+Epoch: 3200 // loss: 0.010121
+Training accuracy: 0.994 // Test accuracy 0.995
+precision : 0.994 // recall 0.997
+155
+['$', '$', 'f', 'l', 'o', 'u', 't']
+0
+
+357
+['$', '$', 'b', 'r', 'o', 'o', 'k']
+0
+
+==========================
+Epoch: 3300 // loss: 0.007200
+Training accuracy: 0.996 // Test accuracy 0.990
+precision : 0.994 // recall 0.985
+86
+['$', '$', '$', 's', 'h', 'i', 't']
+1
+
+362
+['$', '$', 'a', 'd', 'a', 'p', 't']
+0
+
+382
+['e', 's', 'c', 'r', 'i', 'p', 't']
+0
+
+==========================
+Epoch: 3400 // loss: 0.000341
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.997 // recall 0.997
+==========================
+Epoch: 3500 // loss: 0.000290
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.997 // recall 0.997
+==========================
+Epoch: 3600 // loss: 0.000119
+Training accuracy: 1.000 // Test accuracy 0.996
+precision : 0.997 // recall 0.995
+==========================
+Epoch: 3700 // loss: 0.004095
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.997 // recall 0.997
+327
+['$', '$', 'c', 'r', 'o', 'o', 'k']
+0
+
+==========================
+Epoch: 3800 // loss: 0.000515
+Training accuracy: 0.998 // Test accuracy 0.996
+precision : 0.995 // recall 0.997
+==========================
+Epoch: 3900 // loss: 0.000040
+Training accuracy: 1.000 // Test accuracy 0.997
+precision : 0.997 // recall 0.997
+==========================
+Epoch: 4000 // loss: 0.002495
+Training accuracy: 0.999 // Test accuracy 0.996
+precision : 0.995 // recall 0.997
+292
+['$', '$', 's', 'h', 'o', 'u', 't']
+0
+
+448
+['$', '$', 'a', 'l', 'e', 'r', 't']
+1
+
+459
+['$', 's', 'e', 'x', 't', 'e', 't']
+0
+
+753
+['$', '$', '$', 'g', 'o', 'u', 't']
+0
+
+2905
+['$', '$', 'c', 'o', 'v', 'e', 't']
+1
+
+3077
+['$', '$', '$', 'r', 'o', 'o', 't']
+0
+
+3847
+['$', '$', 'f', 'l', 'o', 'u', 't']
+0
+
+3914
+['$', '$', 's', 'h', 'e', 'e', 't']
+0
+
+4049
+['$', '$', 'b', 'r', 'o', 'o', 'k']
+0
+
+6019
+['$', '$', 'c', 'r', 'o', 'o', 'k']
+0
+
+6776
+['v', 'e', 'r', 'l', 'o', 'o', 'k']
+1
+
+7857
+['$', '$', '$', 'l', 'o', 'o', 'k']
+1
+
+8162
+['$', '$', '$', 'g', 'o', 'o', 'd']
+1
+
+9423
+['$', '$', '$', 't', 'a', 'u', 't']
+0
+
+14892
+['$', '$', '$', 'h', 'o', 'o', 'k']
+1
+

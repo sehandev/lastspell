@@ -344,7 +344,7 @@ afire$x
 aflame$o
 aflare$x
 afloat$x
-afoot$x
+afoot$o
 aforesaid$x
 afraid$x
 africa$x
@@ -812,7 +812,7 @@ arianist$x
 aridity$x
 arise$x
 aristocracy$x
-aristocrat$o
+aristocrat$x
 aristocratic$o
 aristotelian$o
 aristotle$o
@@ -1880,7 +1880,7 @@ broke$x
 broken$o
 broker$x
 brokerage$x
-bronc$o
+bronc$x
 bronchial$o
 bronchiolar$x
 bronchiole$o
@@ -3972,7 +3972,7 @@ demeanor$x
 demimonde$x
 demineralization$o
 democracy$x
-democrat$o
+democrat$x
 democratic$o
 democratize$x
 demolish$x
@@ -4178,7 +4178,7 @@ devotee$x
 devotion$o
 devotional$o
 devour$x
-devout$o
+devout$x
 dewar$x
 dexamethasone$o
 dexterous$x
@@ -6233,7 +6233,7 @@ frame$o
 framed$x
 framework$x
 framing$o
-franc$o
+franc$x
 france$x
 franchise$x
 frangipani$x
@@ -7331,7 +7331,7 @@ hooked$x
 hookup$o
 hookworm$o
 hoop$o
-hoot$x
+hoot$o
 hope$x
 hopeful$o
 hopefully$x
@@ -8358,7 +8358,7 @@ isothermal$o
 isotonic$o
 isotopic$o
 isotropic$o
-israeli$o
+israeli$x
 issuance$x
 issue$x
 italian$o
@@ -10742,7 +10742,7 @@ oversea$x
 overseas$x
 overshadow$x
 overshoe$x
-overshoot$x
+overshoot$o
 oversimplification$o
 oversimplified$x
 oversized$x
@@ -13883,7 +13883,7 @@ shoeful$o
 shoelace$x
 shoes$x
 shoestring$o
-shoot$x
+shoot$o
 shooter$x
 shooting$o
 shop$o
@@ -17593,7 +17593,7 @@ zenith$x
 zero$x
 zest$x
 zigzag$x
-zinc$o
+zinc$x
 zionism$o
 zionist$x
 zloty$x
