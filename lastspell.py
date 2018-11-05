@@ -21,9 +21,9 @@ class Lastspell:
         # set options
         self.train_length = 5
         self.batch_size = 500
-        self.learning_rate = 1e-4  # optimizer learning rate
+        self.learning_rate = 4e-3  # optimizer learning rate
         self.n_hidden = 128  # hidden layer's depth 
-        self.total_epoch = 7000
+        self.total_epoch = 600
         self.n_step = self.train_length # word length = 5
         self.n_input = 27  # Alphabet = 26
         self.n_class = 2  # True or False
@@ -32,12 +32,8 @@ class Lastspell:
         # get data
         self.train_data, self.test_data = self.lastspell_data()
         
-        # gpu option
-        config = tf.ConfigProto()
-#        config.gpu_options.per_process_gpu_memory_fraction = 0.9
-
         # make session
-        self.sess = tf.Session(config=config)
+        self.sess = tf.Session()
         
         # make model
         self.design_model()
@@ -109,8 +105,7 @@ class Lastspell:
     def summary_model(self):
         # make tensorboard
         self.writer = tf.summary.FileWriter('./board/lastspell', self.sess.graph)
-        tf.summary.scalar('Accuracy', self.accuracy)
-        tf.summary.scalar('Loss', self.cost)
+        tf.summary.scalar('Acc', self.accuracy)
 
         self.merged = tf.summary.merge_all()
 
@@ -452,6 +447,3 @@ class Lastspell:
                 print(target_batch[i])
                 print()
     
-
-
-
