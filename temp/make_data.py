@@ -25,7 +25,7 @@ def check_last(option):
 
 def deduplication():
     words = []
-    
+
     with open("../training_data/data_in.txt", 'r') as f:
         for line in f:
             line = line.strip().lower()
@@ -33,13 +33,13 @@ def deduplication():
                 words.append(line)
             else:
                 print(line)
-                
+
     return(list(set(words)))
-        
+
 def sort():
     words = deduplication()
     words.sort()
-    
+
     with open("../training_data/data_in_sorted.txt", 'w') as f:
         for word in words:
             f.write(word + '\n')

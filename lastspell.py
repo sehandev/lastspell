@@ -5,7 +5,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 class Lastspell:
     def __init__(self):
@@ -59,17 +59,20 @@ class Lastspell:
             W = tf.Variable(tf.random_normal([self.n_hidden, self.n_class]))  # W : weight
         with tf.name_scope("b"):
             b = tf.Variable(tf.random_normal([self.n_class]))  # b : bias
+            
+        with tf.name_scope("dropout"):
+            self.keep_prob = tf.placeholder(tf.float32)
 
         cell1 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
-        cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=0.5)
+        cell1 = tf.nn.rnn_cell.DropoutWrapper(cell1, output_keep_prob=self.keep_prob)
         cell2 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
-        cell2 = tf.nn.rnn_cell.DropoutWrapper(cell2, output_keep_prob=0.5)
+        cell2 = tf.nn.rnn_cell.DropoutWrapper(cell2, output_keep_prob=self.keep_prob)
         cell3 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
-        cell3 = tf.nn.rnn_cell.DropoutWrapper(cell3, output_keep_prob=0.5)
+        cell3 = tf.nn.rnn_cell.DropoutWrapper(cell3, output_keep_prob=self.keep_prob)
         cell4 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
-        cell4 = tf.nn.rnn_cell.DropoutWrapper(cell4, output_keep_prob=0.5)
+        cell4 = tf.nn.rnn_cell.DropoutWrapper(cell4, output_keep_prob=self.keep_prob)
         cell5 = tf.nn.rnn_cell.LSTMCell(self.n_hidden)
-        cell5 = tf.nn.rnn_cell.DropoutWrapper(cell5, output_keep_prob=0.5)
+        cell5 = tf.nn.rnn_cell.DropoutWrapper(cell5, output_keep_prob=self.keep_prob)
         multi_cell = tf.nn.rnn_cell.MultiRNNCell([cell1, cell2, cell3, cell4, cell5])
 
         with tf.name_scope("outputs"):
@@ -82,6 +85,7 @@ class Lastspell:
 
         # cost
         with tf.name_scope("optimizer"):
+            #self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
             self.cost = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.model, labels=self.Y))
             self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
 
@@ -132,11 +136,11 @@ class Lastspell:
         for epoch in range(start_epoch, self.total_epoch+1):
             # forward data to next batch
             self.index, input_batch, target_batch = self.next_batch(self.index, self.train_data[0], self.train_data[1])
-            _, loss = self.sess.run([self.optimizer, self.cost], feed_dict={self.X: input_batch, self.Y: target_batch})
+            _, loss = self.sess.run([self.optimizer, self.cost], feed_dict={self.X: input_batch, self.Y: target_batch, self.keep_prob:0.5})
             
             # test with train & test data
-            summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch})
-            predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1]})
+            summary, train_accuracy = self.sess.run([self.merged, self.accuracy], feed_dict={self.X: input_batch, self.Y: target_batch, self.keep_prob:1.0})
+            predict, test_accuracy = self.sess.run([self.prediction, self.accuracy], feed_dict={self.X: self.test_data[0], self.Y: self.test_data[1], self.keep_prob:1.0})
             self.writer.add_summary(summary, epoch)
 
             # calculate precision and recall
@@ -212,7 +216,7 @@ class Lastspell:
             t = self.processng_data([user_word])
             user_arr = self.data_to_eye(t)
             
-            predict = self.sess.run(self.prediction, feed_dict={self.X: user_arr})
+            predict = self.sess.run(self.prediction, feed_dict={self.X: user_arr, self.keep_prob:1.0})
 
             # print test result
             if predict == [1]:
@@ -235,7 +239,7 @@ class Lastspell:
         w = self.processng_data(word_list)
         w = self.data_to_eye(w)
         
-        predict = self.sess.run(self.prediction, feed_dict={self.X: w})
+        predict = self.sess.run(self.prediction, feed_dict={self.X: w, self.keep_prob:1.0})
 
         # save result from new data
         with open("./result/result_add.txt", 'w') as f:
